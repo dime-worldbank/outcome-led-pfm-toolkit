@@ -5,7 +5,7 @@ description: Compilation and QA (file 4b) of the OLePFM report workflow. Compile
 
 # Compilation and QA (file 4b): Main Report Part 2 and Annex Document
 
-**Compilation and QA, file 2 of 3.** Run these prompts after the consistency audit and Main Report Part 1 from `04a-audit-and-part1.md` are complete and confirmed. Begin directly with Prompt M2a.
+**Compilation and QA, file 2 of 3.** Run these prompts after the consistency audit and Main Report Part 1 from `04a-audit-and-part1.md` are complete and confirmed. Begin directly with Prompt C-06.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
@@ -176,7 +176,7 @@ Adjust before producing the final Annex document.
 
 ### Prompt C-13 — Compile Final Annex Document
 
-Please compile the final Annex document, combining in order: (i) an Annex cover note; (ii) Annex Step 1 (Tables 1.1 and 1.2) from Prompt C-10; (iii) Annex Step 2 (Tables 2.1, 2.2, 2.3) from Prompt C-11; and (iv) Annex Step 3 (Tables 3.1, 3.2, 3.3, 3.4, 3.5) from Prompt AN3.
+Please compile the final Annex document, combining in order: (i) an Annex cover note; (ii) Annex Step 1 (Tables 1.1 and 1.2) from Prompt C-10; (iii) Annex Step 2 (Tables 2.1, 2.2, 2.3) from Prompt C-11; and (iv) Annex Step 3 (Tables 3.1, 3.2, 3.3, 3.4, 3.5) from Prompt C-12.
 
 Apply the following final formatting instructions:
 - The Annex cover note should read: "This document is the companion Annex volume for the [Country] [Sector] OLePFM Reform Diagnosis and Design Main Report. It contains all Annex Step tables and should be read together with Main Report Part 1 (Chapters 1–2) and Main Report Part 2 (Chapters 3–5). The Annex is organised in three steps: Step 1 supports Chapter 2; Step 2 supports Chapter 3; Step 3 supports Chapter 4."

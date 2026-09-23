@@ -25,7 +25,7 @@ When generating every section of the report, cite each source as a Markdown hype
 
 ### ✏️ Review the output — focus on these points
 
-**Source list (Prompt S-1).** Review before proceeding to S2.
+**Source list (Prompt S-1).** Review before proceeding to S-2.
 
 - [ ] The most important recent analytical reports for [country] and [sector] are included
 - [ ] Official government sector strategy documents are identified

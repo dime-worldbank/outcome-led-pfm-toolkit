@@ -49,7 +49,7 @@ Every prompt has a unique ID that says which stage it belongs to and where it si
 | Compilation | C-01 to C-13 | `04a-audit-and-part1.md`, `04b-part2-and-annex.md` |
 | Final QA | QA-1 to QA-5 | `04c-cross-document-qa.md` |
 
-Optional quality checks at the end of a step are numbered by step: 1-Q1 to 1-Q4, 2-Q1 to 2-Q5, 3-Q1 to 3-Q4. Inside each file, prompts sit under a heading naming the guidance-note sub-step they serve (Sub-step 1.4, Sub-step 2.2, and so on), and each prompt heading names the report section or annex table it produces. When adding a prompt, give it the next number in its stage and update the Prompt Sequence Summary table at the end of the file and the manager's run instructions.
+Optional quality checks are numbered by step: 1-Q1 to 1-Q4, 2-Q1 to 2-Q5, 3-Q1 to 3-Q5. Most sit at the end of their step's last file; 3-Q5 sits in the 03a file because it runs right after Table 3.1. Inside each file, prompts sit under a heading naming the guidance-note sub-step they serve (Sub-step 1.4, Sub-step 2.2, and so on), and each prompt heading names the report section or annex table it produces. When adding a prompt, give it the next number in its stage and update the Prompt Sequence Summary table at the end of the file and the manager's run instructions.
 
 ## Sector variants
 

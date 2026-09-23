@@ -5,7 +5,7 @@ description: Step 1 (file 1a) of the OLePFM report workflow. Generates Chapter 1
 
 # Step 1 (file 1a): Chapters 1 & 2
 
-**Step 1, file 1 of 2.** Run these prompts in sequence after the Sources stage is complete. Source identification and session context have already been established — begin directly with Prompt A1.
+**Step 1, file 1 of 2.** Run these prompts in sequence after the Sources stage is complete. Source identification and session context have already been established — begin directly with Prompt 1-01.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 

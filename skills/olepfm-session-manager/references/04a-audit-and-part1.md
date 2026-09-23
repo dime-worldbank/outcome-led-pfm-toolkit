@@ -7,7 +7,7 @@ description: Compilation and QA (file 4a) of the OLePFM report workflow. Runs th
 
 **Compilation and QA, file 1 of 3.** Run these prompts after Step 3 (Chapters 4 & 5) is complete and confirmed. The session context and all prior chapter drafts are already in context.
 
-> **Start with Prompt C-01 (consistency audit) before any compilation step.** Resolve all identified discrepancies before proceeding to M1a. Do not skip this step.
+> **Start with Prompt C-01 (consistency audit) before any compilation step.** Resolve all identified discrepancies before proceeding to C-02. Do not skip this step.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
@@ -138,7 +138,7 @@ Make any editorial adjustments before producing the final Part 1 document.
 
 ### Prompt C-05 — Compile Main Report Part 1
 
-Please compile the final Main Report Part 1 document for the [country] [sector] OLePFM Reform Diagnosis and Design Report, combining in order: (i) the front matter from Prompt C-02; (ii) Chapter 1 from Prompt C-03; and (iii) Chapter 2 from Prompt M1c.
+Please compile the final Main Report Part 1 document for the [country] [sector] OLePFM Reform Diagnosis and Design Report, combining in order: (i) the front matter from Prompt C-02; (ii) Chapter 1 from Prompt C-03; and (iii) Chapter 2 from Prompt C-04.
 
 Apply the following final formatting instructions:
 - All section and sub-section headings must be consistently formatted and numbered.

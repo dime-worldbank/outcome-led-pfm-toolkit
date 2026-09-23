@@ -5,7 +5,7 @@ description: Step 3 (file 3b) of the OLePFM report workflow. Generates Section 4
 
 # Step 3 (file 3b): Sections 4.2 and 4.3 and Annex Table 3.5
 
-**Step 3, file 2 of 3.** Run these prompts after Annex Table 3.1 and Section 4.1 from `03a-reform-results.md` are complete and confirmed. Those outputs are already in context — begin directly with Prompt D1.
+**Step 3, file 2 of 3.** Run these prompts after Annex Table 3.1 and Section 4.1 from `03a-reform-results.md` are complete and confirmed. Those outputs are already in context — begin directly with Prompt 3-06.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 

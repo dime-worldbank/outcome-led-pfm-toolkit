@@ -5,7 +5,7 @@ description: Step 2 of the OLePFM report workflow. Generates Chapter 3 (Role of 
 
 # Step 2: Chapter 3 and Annex Step 2
 
-**Step 2.** Run these prompts after Step 1 (Chapters 1 & 2) is complete and confirmed. The session context, source list, and confirmed challenge titles from Step 1 are already in context — begin directly with Prompt B1.
+**Step 2.** Run these prompts after Step 1 (Chapters 1 & 2) is complete and confirmed. The session context, source list, and confirmed challenge titles from Step 1 are already in context — begin directly with Prompt 2-01.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
@@ -81,7 +81,7 @@ You can rename a bottleneck, merge two closely related ones, challenge a causal 
 
 ### Prompt 2-03 — Five-Why Bottleneck Analysis (repeat for each challenge)
 
-*Use this prompt once for each public sector challenge identified in Section 2.2. Repeat for each challenge before moving to Prompt B4.*
+*Use this prompt once for each public sector challenge identified in Section 2.2. Repeat for each challenge before moving to Prompt 2-04.*
 
 Take Challenge [number]: [paste challenge title and description from Section 2.2].
 

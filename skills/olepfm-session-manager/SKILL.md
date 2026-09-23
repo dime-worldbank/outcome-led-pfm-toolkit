@@ -306,14 +306,15 @@ Bottleneck 6: [title] | Change objective:
 Run all prompts in `03a-reform-results.md` in sequence (Prompts 3-01, 3-02 × n, 3-03, 3-04 × n, 3-05), then `03b-stakeholders-systems-steps.md` (Prompts 3-06 to 3-10, 3-11 × n, 3-12), then `03c-conclusion-compilation.md` (Prompts 3-13 and 3-14).
 > Note: The session context and source list are already in context — begin directly with Prompt 3-01.
 
-> **Critical sequencing:** Complete and confirm Annex Table 3.1 (Prompts 3-02 × n and 3-03) **before** beginning Section 4.1 drafts (Prompts 3-04 × n and 3-05). The reform results in Table 3.1 are the authoritative source for all Section 4.1 content.
+> **Critical sequencing:** Complete and confirm Annex Table 3.1 (Prompts 3-02 × n and 3-03, then check 3-Q5) **before** beginning Section 4.1 drafts (Prompts 3-04 × n and 3-05). The reform results in Table 3.1 are the authoritative source for all Section 4.1 content.
 
 ### Step 3 Completion Gate
 
 Before advancing to Compilation and QA, confirm all of the following:
 
 **Annex Table 3.1** *(must be confirmed before Section 4.1)*
-- [ ] Every sub-bottleneck has a row with specific, evidence-based underlying causes
+- [ ] Every sub-bottleneck has a row with specific, evidence-based underlying causes, distilled from a multi-branch five-whys into root-cause families
+- [ ] Every root-cause family is addressed by a reform and every reform traces to a cause (check 3-Q5 passed)
 - [ ] All key stakeholders named at organizational level — not generic actor types
 - [ ] Every reform result is a concrete, measurable end-state with a feasibility rating
 - [ ] Table stands alone as a self-explanatory reference document

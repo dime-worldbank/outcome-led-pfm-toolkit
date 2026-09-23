@@ -9,7 +9,7 @@ description: Step 1 (file 1a) of the OLePFM report workflow. Generates Chapter 1
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
-> When Prompt 1-11 is complete and confirmed, continue with `01b-annex1.md` (Prompts 1-12, 1-13 and 1-14).
+> When Prompt 1-11 is complete and confirmed, continue with `01b-annex1.md` (Prompts 1-12 to 1-15).
 
 ---
 
@@ -134,6 +134,8 @@ Use colour-coding to distinguish: core public sector bodies; local government; f
 
 Include external actors such as development partners, faith-based providers, and NGOs where relevant. Use solid lines for hierarchical authority and resource flows and dashed lines for coordination and support relationships.
 
+Caption the figure **Figure: Organizational Map** with a Source line, as in the template.
+
 ---
 
 ### ✏️ Review the output — focus on these points
@@ -158,7 +160,7 @@ Using the sources identified, please provide an analysis of the overall revenues
 
 Use the table "Figures: Fiscal Analysis" from the template for further guidance on this analysis.
 
-Where data is available, also generate: (a) pie charts for the most recent year; and (b) column charts for trends. Prepare a data table for each chart generated, including the data source.
+Where data is available, also generate: (a) pie charts for the most recent year; and (b) column charts for trends. Prepare a data table for each chart generated, including the data source. Present the charts under the template heading **Figures: Fiscal Analysis**, within the Fiscal Policy Context part of Section 2.3.2.
 
 ---
 
@@ -180,7 +182,7 @@ There should be no more than 250 words per channel/row. Provide a summary narrat
 
 Please prepare a diagram using draw.io / diagrams.net of the main financial flows from central government through intermediate organizations to the point of [sector] service delivery in [country], showing: (i) each distinct financing channel using a distinct colour; (ii) the organizations through which funds flow at each stage; and (iii) the relative size of each flow encoded in line thickness, with thicker lines representing larger flows.
 
-Include bottleneck indicators (amber diamond nodes) showing the key failure point in each channel. Provide a legend explaining the colour coding, line thickness scale, and bottleneck symbols.
+Include bottleneck indicators (amber diamond nodes) showing the key failure point in each channel. Provide a legend explaining the colour coding, line thickness scale, and bottleneck symbols. Caption it **Figure: Main Financial Flows**, as in the template.
 
 ---
 

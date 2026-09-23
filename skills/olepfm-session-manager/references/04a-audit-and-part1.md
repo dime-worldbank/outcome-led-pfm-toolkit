@@ -116,8 +116,8 @@ Apply the following editorial instructions:
 (i) **Section 2.1:** Confirm that outcome data cited is consistent with the executive summary and Chapter 5. Standardize any figures that appear with different values in different locations.
 (ii) **Section 2.2:** Confirm that each challenge is described in terms of observable frontline service delivery failures — without reference to money or PFM. Confirm challenge titles and numbers are identical to those used in Sections 3.2.1, 3.2.2, 4.1, and 5.2. Add a cross-reference at the end of Section 2.2 directing readers to Annex Table 1.1.
 (iii) **Section 2.3.1:** Confirm key policy documents and legislative instruments are referenced with correct titles, years, and act numbers.
-(iv) **Section 2.3.2:** Confirm a cross-reference to Annex Table 1.2 appears at the end of Section 2.3.2. Confirm the financial flows sub-section names and describes all main financing channels; each channel description notes its approximate size in the most recent available year. Confirm the PFM sub-section covers budget formulation, budget execution (wages and non-wage), procurement, audit and accountability, and digital financial management systems — in that order.
-(v) **Section 2.3.4:** Confirm the three feasibility dimensions are each addressed with specific [country] evidence and are consistent with the feasibility ratings used in Chapters 3 and 4.
+(iv) **Section 2.3.2:** Confirm a cross-reference to Annex Table 1.2 appears at the end of Section 2.3.2. Confirm the financial flows sub-section names and describes all main financing channels; each channel description notes its approximate size in the most recent available year; and a cross-reference to Annex Table 1.3 appears in that sub-section. Confirm the PFM sub-section covers budget formulation, budget execution (wages and non-wage), procurement, audit and accountability, and digital financial management systems — in that order.
+(v) **Section 2.3.3:** Confirm the three feasibility dimensions are each addressed with specific [country] evidence and are consistent with the feasibility ratings used in Chapters 3 and 4.
 
 Present the final compiled Chapter 2 in full.
 
@@ -128,8 +128,8 @@ Present the final compiled Chapter 2 in full.
 **Main Report Part 1 (Prompt C-04).** Read Chapters 1 and 2 consecutively before finalizing Part 1.
 
 - [ ] The opening of Chapter 2 flows naturally from the end of Chapter 1
-- [ ] The four public sector challenges in Section 2.2 are specific and vivid — a reader unfamiliar with [country]'s [sector] understands what is actually going wrong at the frontline
-- [ ] The institutional architecture description in Section 2.3.2 is correctly cross-referenced to Annex Table 1.2
+- [ ] The public sector challenges in Section 2.2 are specific and vivid — a reader unfamiliar with [country]'s [sector] understands what is actually going wrong at the frontline
+- [ ] The institutional architecture in Section 2.3.1 and the PFM description in Section 2.3.2 are correctly cross-referenced to Annex Table 1.2, and the financial flows to Annex Table 1.3
 - [ ] The financial flows section gives enough analytical context for the Chapter 3 bottleneck analysis without pre-empting it
 
 Make any editorial adjustments before producing the final Part 1 document.

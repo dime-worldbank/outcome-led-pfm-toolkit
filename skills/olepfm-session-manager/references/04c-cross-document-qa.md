@@ -50,7 +50,7 @@ List any inconsistencies in challenge title, numbering, or characterisation acro
 
 Please check that all quantitative outcome and spending data cited across the three compiled documents are internally consistent.
 
-Check that: (i) key outcome indicators appear with the same value, year, and source citation in every location where they are cited across the executive summary, Chapter 2, Chapter 5, and Annex Table 1.1; and (ii) financial flows data appear with the same value, year, and source citation in every location where they are cited across the executive summary, Section 2.3.3, Sections 3.1 and 3.2, and Annex Table 2.1.
+Check that: (i) key outcome indicators appear with the same value, year, and source citation in every location where they are cited across the executive summary, Chapter 2, Chapter 5, and Annex Table 1.1; and (ii) financial flows data appear with the same value, year, and source citation in every location where they are cited across the executive summary, Section 2.3.2, Sections 3.1 and 3.2, and Annex Tables 1.3 and 2.1.
 
 List any inconsistencies with the recommended correction and the most reliable source.
 
@@ -91,7 +91,7 @@ Flag and suggest revisions for each.
 | C-07 | 04b | Final compiled Chapter 4 | Part 2 |
 | C-08 | 04b | Final compiled Chapter 5 | Part 2 |
 | C-09 | 04b | Full Main Report Part 2 + bibliography | Part 2 |
-| C-10 | 04b | Annex Step 1 (Tables 1.1, 1.2) | Annex |
+| C-10 | 04b | Annex Step 1 (Tables 1.1 to 1.3) | Annex |
 | C-11 | 04b | Annex Step 2 (Tables 2.1, 2.2, 2.3) | Annex |
 | C-12 | 04b | Annex Step 3 (Tables 3.1–3.5) | Annex |
 | C-13 | 04b | Full Annex document | Annex |

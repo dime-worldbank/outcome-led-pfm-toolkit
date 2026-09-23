@@ -43,7 +43,7 @@ Please compile the final version of Chapter 4 for the [country] [sector] OLePFM 
 Apply the following editorial instructions:
 (i) Confirm the Chapter 4 opening correctly describes the three-section structure and cross-references Annex Tables 3.1, 3.2, 3.3, 3.4, and 3.5 by their exact titles.
 (ii) Confirm for Section 4.1 that: (a) the introductory paragraph explains the sequencing logic linking the change objectives; (b) each change objective sub-section opens with the change objective restated in full; (c) every reform result is labelled as Reform Result [number] with a feasibility rating Feasibility: [H/M/L]; (d) the summary reform results table at the end of Section 4.1 is complete and consistent with Annex Table 3.1; and (e) every sub-bottleneck description cross-references its code from Annex Table 2.2 and its full analysis in Annex Table 3.1.
-(iii) Confirm for Section 4.2 that: (a) the section opens with the standard three-category framing (authorizers, conveners, reform teams); (b) at least two to four specific political economy challenges are named and analyzed; (c) the sequencing logic is explicitly described; (d) Annex Tables 3.2 and 3.3 are cross-referenced.
+(iii) Confirm for Section 4.2 that: (a) the section opens with the standard framing of stakeholder roles (authorizers, conveners, reform teams and change coalitions); (b) at least two to four specific political economy challenges are named and analyzed; (c) the sequencing logic is explicitly described; (d) Annex Tables 3.2 and 3.3 are cross-referenced.
 (iv) Confirm for Section 4.3 that the three sub-categories are covered and Annex Table 3.4 is cross-referenced.
 
 Present the final compiled Chapter 4 in full.
@@ -95,14 +95,15 @@ Apply the following final formatting instructions:
 
 Compile the Annex in four sequential prompts (Prompts C-10 through C-13). The Annex is designed to stand alone as a reference document — all tables should be self-explanatory without requiring the reader to refer to the main report.
 
-### Prompt C-10 — Annex Step 1: Tables 1.1 and 1.2
+### Prompt C-10 — Annex Step 1: Tables 1.1, 1.2 and 1.3
 
-Please compile the final Annex Step 1 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, including Tables 1.1 and 1.2.
+Please compile the final Annex Step 1 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, including Tables 1.1, 1.2 and 1.3.
 
 Apply the following editorial instructions:
 (i) Add a brief (approximately 50 words) framing note explaining that Annex Step 1 contains the detailed outcome and context data supporting Chapter 2.
 (ii) Confirm all outcome indicators in Table 1.1 are consistent with Section 2.1; all public sector challenges use exactly the same titles and descriptions as in Section 2.2; and the table includes a source row or footnote for each indicator.
 (iii) Confirm for Table 1.2 that: (a) all organizations named are also named in Section 2.3.2; (b) no organization is named in Section 2.3.2 but absent from Table 1.2; (c) the PFM functions column correctly describes each organization's role; and (d) the table uses consistent organizational name conventions throughout.
+(iv) Confirm for Table 1.3 that every financing channel named in Section 2.3.2 appears with the same name, relative value and key problems, and that no channel appears in the table but not in the text.
 
 Present the final Annex Step 1 in full.
 
@@ -126,8 +127,8 @@ Please compile the final Annex Step 2 for the [country] [sector] OLePFM Reform D
 Apply the following editorial instructions:
 (i) Add a brief (approximately 50 words) framing note.
 (ii) Confirm for Table 2.1 that: (a) the four-row structure (Roles A through D) matches exactly the four sub-sections of Section 3.1; (b) actual role descriptions are consistent with the Section 3.1 narrative; and (c) each cell in the actual role column cites at least one source.
-(iii) Confirm for Table 2.2 that: (a) every individual bottleneck code appears in Table 2.2 and no bottleneck cited in Sections 3.2.1 or 4.1 is absent; (b) impact and feasibility ratings are consistent with Section 3.2.1 and the priority ranking rationale in Section 3.2.2; (c) taxonomy classifications reference the correct OLePFM Synthesis Annex 4 category.
-(iv) Confirm for Table 2.3 that: (a) all [number] priority bottlenecks appear with titles exactly matching Section 3.2.2; (b) the constituent bottleneck codes column lists the same individual codes cited in Section 3.2.2; (c) the change objective exactly matches the change objective stated in Section 3.2.2 and restated in Section 4.1.
+(iii) Confirm for Table 2.2 that: (a) every individual bottleneck code appears in Table 2.2 and no bottleneck cited in Sections 3.2.1 or 4.1 is absent; (b) impact and feasibility ratings are consistent with Section 3.2.1 and the priority ranking rationale in Section 3.2.2; (c) the Type of Bottleneck classification (Technical / Institutional / PFM) is consistent with Section 3.2.1.
+(iv) Confirm for Table 2.3 that: (a) all [number] priority bottlenecks appear with titles exactly matching Section 3.2.2; (b) the constituent bottleneck codes column lists the same individual codes cited in Section 3.2.2; (c) no change objective is recorded in Table 2.3 — the template records it in Annex Table 3.1 — and the feasibility column describes feasibility in prose with its rating.
 
 Present the final Annex Step 2 in full.
 
@@ -152,9 +153,9 @@ Please compile the final Annex Step 3 for the [country] [sector] OLePFM Reform D
 Apply the following editorial instructions:
 (i) Add a brief (approximately 50 words) framing note explaining that Annex Step 3 contains the full action plan supporting Chapter 4.
 (ii) Confirm for Table 3.1 that: (a) all [number] priority bottlenecks appear as clearly labelled header rows in the same order as Section 4.1; (b) every sub-bottleneck in Table 3.1 corresponds exactly to a sub-bottleneck described in Section 4.1, with the same code and title; (c) every reform result has the same code, description, and feasibility rating as in Section 4.1.
-(iii) Confirm for Table 3.2 that all [number] change objectives have a row, and the authorizers, team leaders, results team members, and coalition members are consistent with Section 4.2.
+(iii) Confirm for Table 3.2 that each of the four role types (Authorizers, Team Leaders, Results Team, Coalition Members) has a row with named members and roles consistent with Section 4.2.
 (iv) Confirm for Table 3.3 that all key stakeholders identified in Section 4.2 as significant sources of political economy risk appear, and the motivation approach for each is specific — not generic.
-(v) Confirm for Table 3.4 that all three categories (digital systems, capacity development, TA) are covered and every investment described in Section 4.3 appears.
+(v) Confirm for Table 3.4 that all three categories (Digital Systems Development, Capacity Building/Skills, Technical Assistance) are covered and every investment described in Section 4.3 appears.
 (vi) Confirm for Table 3.5 that: (a) all [total number] reform results have exactly three key steps; (b) responsible organizations are consistent with Table 3.2; (c) timing of Low-feasibility reforms follows the sequencing principle; and (d) the implementation horizon is applied consistently throughout.
 
 Present the final Annex Step 3 in full.
@@ -176,7 +177,7 @@ Adjust before producing the final Annex document.
 
 ### Prompt C-13 — Compile Final Annex Document
 
-Please compile the final Annex document, combining in order: (i) an Annex cover note; (ii) Annex Step 1 (Tables 1.1 and 1.2) from Prompt C-10; (iii) Annex Step 2 (Tables 2.1, 2.2, 2.3) from Prompt C-11; and (iv) Annex Step 3 (Tables 3.1, 3.2, 3.3, 3.4, 3.5) from Prompt C-12.
+Please compile the final Annex document, combining in order: (i) an Annex cover note; (ii) Annex Step 1 (Tables 1.1, 1.2 and 1.3) from Prompt C-10; (iii) Annex Step 2 (Tables 2.1, 2.2, 2.3) from Prompt C-11; and (iv) Annex Step 3 (Tables 3.1, 3.2, 3.3, 3.4, 3.5) from Prompt C-12.
 
 Apply the following final formatting instructions:
 - The Annex cover note should read: "This document is the companion Annex volume for the [Country] [Sector] OLePFM Reform Diagnosis and Design Main Report. It contains all Annex Step tables and should be read together with Main Report Part 1 (Chapters 1–2) and Main Report Part 2 (Chapters 3–5). The Annex is organised in three steps: Step 1 supports Chapter 2; Step 2 supports Chapter 3; Step 3 supports Chapter 4."
@@ -196,7 +197,7 @@ Apply the following final formatting instructions:
 | C-07 | Final compiled Chapter 4 | Part 2 |
 | C-08 | Final compiled Chapter 5 | Part 2 |
 | C-09 | Full Main Report Part 2 + bibliography | Part 2 |
-| C-10 | Annex Step 1 (Tables 1.1, 1.2) | Annex |
+| C-10 | Annex Step 1 (Tables 1.1 to 1.3) | Annex |
 | C-11 | Annex Step 2 (Tables 2.1, 2.2, 2.3) | Annex |
 | C-12 | Annex Step 3 (Tables 3.1–3.5) | Annex |
 | C-13 | Full Annex document | Annex |

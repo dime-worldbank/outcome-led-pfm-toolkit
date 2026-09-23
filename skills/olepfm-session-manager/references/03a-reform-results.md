@@ -1,6 +1,6 @@
 ---
 title: OLePFM Step 3 (3a) — Annex Table 3.1 and Section 4.1
-description: Step 3 (file 3a) of the OLePFM report workflow. Generates the Chapter 4 introduction, Annex Table 3.1 (causes of and resolutions to priority bottlenecks), and Section 4.1 (change objectives and reform results). Continue with 03b-stakeholders-systems-steps.md.
+description: Step 3 (file 3a) of the OLePFM report workflow. Generates the Chapter 4 introduction, Annex Table 3.1 (causal analysis of bottlenecks and proposed reforms), and Section 4.1 (reforms to deliver change objectives). Continue with 03b-stakeholders-systems-steps.md.
 ---
 
 # Step 3 (file 3a): Annex Table 3.1 and Section 4.1
@@ -27,7 +27,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 
 Using the standard introductory text from the OLePFM Sector Reform Design Report Template, please draft the opening paragraph for Chapter 4 — Reforms to Resolve Bottlenecks — for [country] in the [sector] sector.
 
-The introduction should: (i) state that the chapter sets out the reform action plan for addressing the [number] priority bottlenecks identified in Chapter 3; (ii) describe the three sub-sections: Section 4.1 (Change Objectives and Reform Results), Section 4.2 (Stakeholder Strategy), and Section 4.3 (Systems, Capacity Development and Technical Assistance); (iii) cross-reference Annex Table 3.1 as the supporting analysis for Section 4.1, Annex Tables 3.2 and 3.3 for Section 4.2, Annex Table 3.4 for Section 4.3, and Annex Table 3.5 as the sequenced implementation roadmap; and (iv) explain the logic connecting the change objectives — describe the sequencing from most upstream/structural to most cross-cutting and enabling, as set out in the OLePFM template.
+The introduction should: (i) state that the chapter sets out the reform strategy for addressing the [number] priority PFM bottlenecks identified in Chapter 3; (ii) describe the three sub-sections: Section 4.1 (Reforms to Deliver Change Objectives), Section 4.2 (Stakeholder Strategy), and Section 4.3 (Systems, Capacity Development and TA); (iii) cross-reference Annex Table 3.1 as the supporting analysis for Section 4.1, Annex Tables 3.2 and 3.3 for Section 4.2, Annex Table 3.4 for Section 4.3, and Annex Table 3.5 as the sequenced implementation roadmap; and (iv) explain the logic connecting the change objectives — describe the sequencing from most upstream/structural to most cross-cutting and enabling.
 
 Keep to approximately 150 words.
 
@@ -75,17 +75,17 @@ Please prepare the Annex Step 3 Table 3.1 entry for Priority Bottleneck [number]
 
 Then produce the table entry in the format of the OLePFM Sector Reform Design Report Template:
 
-A header row identifying the priority bottleneck number and title, and listing the OLePFM Synthesis Annex 4 taxonomy categories that apply to this bottleneck as a whole (e.g. Category 6: Inefficient deployment and management of resources; Category 3: Unsustainable fiscal position).
+A header row in the template's form — **Bottleneck [number]: [title]** in the first column and **Change Objective [number]: [change objective, as stated in Section 3.2.2]** in the second — also listing the OLePFM Synthesis Annex 4 taxonomy categories that apply to this bottleneck as a whole (e.g. Category 6: Inefficient deployment and management of resources; Category 3: Unsustainable fiscal position).
 
 One substantive row per sub-bottleneck, with the following columns:
 
 | Column | Content required |
 |---|---|
-| Problems / Sub-Bottleneck | A clear title and a description (approximately 80 words) of the specific nature and extent of the sub-bottleneck, the gap it creates in the system, and the OLePFM taxonomy sub-category code that applies (e.g. Taxonomy: 6.1; 7.2). |
+| Sub-Bottlenecks (problems) | A clear title and a description (approximately 80 words) of the specific nature and extent of the sub-bottleneck, the gap it creates in the system, and the OLePFM taxonomy sub-category code that applies (e.g. Taxonomy: 6.1; 7.2). |
 | Underlying Causes | The root-cause families distilled from the multi-branch five-whys in (a) — typically four to seven, each a concrete failure with hyperlinked citations, e.g. ([World Bank, 2010](https://…)), and the raw-cause codes it consolidates (e.g. [c2, c5]). No generic causes; no branch left un-interrogated. |
 | Stakeholders | All key organizations — by specific name, not type — whose behaviour or decisions must change for this reform result to be achieved. Include: the organization(s) with formal authority over the change; those who must implement it; those whose compliance is required; and any actor whose resistance could block it. |
-| Reform Results (Resolved Problem) | The reform result(s) that resolve this sub-bottleneck, written as a concrete measurable end-state in approximately 80–100 words. Label each result as Reform Result [number.sub-number] and end with Feasibility: [H/M/L]. |
-| Reforms Required | The specific reforms which address the underlying causes and deliver the reform result. Each reform should reference the cause family/codes it addresses, and every cause family must be covered by a reform (or flagged as a parallel track). This is the fifth column of Annex Table 3.1 in the template. |
+| Reform Result (Resolved Problem) | The reform result(s) that resolve this sub-bottleneck, written as a concrete measurable end-state in approximately 80–100 words. Label each result as Reform Result [number.sub-number] and end with Feasibility: [H/M/L]. |
+| Reforms Required (which address causes) | The specific reforms which address the underlying causes and deliver the reform result. Each reform should reference the cause family/codes it addresses, and every cause family must be covered by a reform (or flagged as a parallel track). This is the fifth column of Annex Table 3.1 in the template. |
 
 ---
 
@@ -107,7 +107,7 @@ One substantive row per sub-bottleneck, with the following columns:
 
 Please compile all [number] Annex Table 3.1 entries into a single complete table for [country] in the [sector] sector, following the format of Annex Step 3 Table 3.1 in the OLePFM Sector Reform Design Report Template.
 
-Organize the table by priority bottleneck, with a clearly formatted header row for each of the [number] bottlenecks — including the bottleneck number, title, and taxonomy classification — before the sub-bottleneck rows under it.
+Organize the table by priority bottleneck, with a clearly formatted header row for each of the [number] bottlenecks — including the bottleneck number and title, the change objective, and the taxonomy classification — before the sub-bottleneck rows under it.
 
 Ensure that: (i) column formatting is consistent across all bottleneck sections; (ii) sub-bottleneck codes are consistent with the codes used in Sections 3.2.1 and 3.2.2 of Chapter 3; (iii) reform result codes and titles in Table 3.1 are consistent with the summary reform results table that will appear at the end of Section 4.1 — these must match exactly; (iv) the table includes source footnotes as hyperlinked parentheticals, e.g. ([World Bank, 2010](https://…)); and (v) the raw-cause codes and the per-sub-bottleneck working five-whys are retained as a working annex to Table 3.1 (even if not printed in the main body), so the cause-to-reform audit trail is traceable for the quality checks and the consistency audit (Prompt C-01).
 
@@ -137,7 +137,7 @@ Use Prompt 3-04 once for each priority bottleneck. Repeat for all [number] bottl
 
 **Reform results section, per bottleneck (Prompt 3-04)** — the most analytically important review in Step 3. Check after each bottleneck, before the next.
 
-- [ ] The change objective sub-section title uses the positive change objective name from Annex Table 2.3 — not the bottleneck problem description
+- [ ] The change objective sub-section title uses the positive change objective name from Annex Table 3.1 (as stated in Section 3.2.2) — not the bottleneck problem description
 - [ ] The opening paragraph restates the change objective and names the specific Section 2.2 challenges, with the causal mechanism explained
 - [ ] Each reform result sub-section is titled using the reform result name and number from Annex Table 3.1 — not a sub-bottleneck label
 - [ ] Each Reform Diagnosis paragraph opens with **Reform Diagnosis:** and covers (a) the sub-bottleneck and the gap it creates, (b) the root causes with citations, and (c) the key actors who must change
@@ -162,7 +162,7 @@ Structure the entry as follows:
 - Open with a bold sub-section title: **Reform Result [number.sub-number]: [reform result name from Annex Table 3.1]**
 - On the next line: (see Annex Table 3.1, Bottleneck [number])
 - Then open with **Reform Diagnosis:** in bold, followed by approximately 100–140 words covering: (i) the specific nature of the sub-bottleneck and the gap it creates; (ii) the underlying root causes with hyperlinked parenthetical citations, e.g. ([World Bank, 2010](https://…)); and (iii) the key actors — named by organization — whose behaviour or systems need to change.
-- Then state the reform strategy as an indented block quote opening with **Reform Strategy:** in bold, followed by approximately 100–120 words describing the concrete, measurable end-state. End with: Feasibility: [H/M/L].
+- Then state the reform strategy as an indented block quote opening with **Reform Strategy:** in bold, followed by approximately 100–120 words describing the concrete, measurable end-state (the reform result) and the reforms required to achieve it, as in Annex Table 3.1. End with: Feasibility: [H/M/L].
 
 ---
 
@@ -180,7 +180,7 @@ Make any adjustments before proceeding.
 
 ### Prompt 3-05 — Compile Section 4.1
 
-Please compile the Section 4.1 — Change Objectives and Reform Results — entries for all [number] priority bottlenecks into a single, coherent section for [country] in the [sector] sector, strictly following the OLePFM Sector Reform Design Report Template.
+Please compile the Section 4.1 — Reforms to Deliver Change Objectives — entries for all [number] priority bottlenecks into a single, coherent section for [country] in the [sector] sector, strictly following the OLePFM Sector Reform Design Report Template.
 
 Ensure formatting is consistent across all entries, in particular:
 (i) Each change objective sub-section heading uses the format **Change Objective [number]: [change objective name]** — the positive outcome statement.

@@ -83,7 +83,7 @@ Upload these at the start of each session:
 
 The skill files (`00-source-prep.md` through `04c-cross-document-qa.md`) are in the knowledge base's skills folder, accessible by default — no upload required. In this repository they are the files in the `references/` folder beside this SKILL.md.
 
-**Prompt numbering.** Prompts are numbered by stage and run in order: S-1 to S-4 (Sources), 1-01 to 1-14 (Step 1), 2-01 to 2-10 (Step 2), 3-01 to 3-14 (Step 3), C-01 to C-13 (Compilation) and QA-1 to QA-5 (final cross-document checks). Optional quality checks at the end of a step are numbered 1-Q1, 2-Q1 and so on. Inside each file, prompts are grouped under the OLePFM sub-step they serve (for example Sub-step 1.4, Map the sector policy, institutional and public finance context). A sector variant of a prompt keeps the standard number with a prefix: ER-1-05 is the economic-resilience variant of Prompt 1-05.
+**Prompt numbering.** Prompts are numbered by stage and run in order: S-1 to S-4 (Sources), 1-01 to 1-15 (Step 1), 2-01 to 2-10 (Step 2), 3-01 to 3-14 (Step 3), C-01 to C-13 (Compilation) and QA-1 to QA-5 (final cross-document checks). Optional quality checks at the end of a step are numbered 1-Q1, 2-Q1 and so on. Inside each file, prompts are grouped under the OLePFM sub-step they serve (for example Sub-step 1.4, Map the sector policy, institutional and public finance context). A sector variant of a prompt keeps the standard number with a prefix: ER-1-05 is the economic-resilience variant of Prompt 1-05.
 
 ### Setup 1: Verify the Pre-loaded Documents
 
@@ -196,7 +196,7 @@ Before advancing to Step 1, confirm all of the following:
 
 **Skill files:** `01a-chapters1-2.md`, then `01b-annex1.md`
 
-Run all prompts in `01a-chapters1-2.md` in sequence (Prompts 1-01 through 1-11), then continue with `01b-annex1.md` (Prompts 1-12 to 1-14).
+Run all prompts in `01a-chapters1-2.md` in sequence (Prompts 1-01 through 1-11), then continue with `01b-annex1.md` (Prompts 1-12 to 1-15).
 
 > **Economic resilience or another cross-cutting fiscal outcome (macro-fiscal stability, fiscal or debt sustainability):** run Prompts 1-01 to 1-03 as normal, then replace Prompts 1-04 to 1-10 with ER-1-04 to ER-1-10 from `01a-variant-economic-resilience.md`, then return to Prompt 1-11 and `01b-annex1.md`. Also run the extra check ER-1-Q5. Record the variant's three template deviations (fiscal-outcome swim lanes; fiscal-cycle narrative and diagram instead of the financial-flows table and diagram; macro-fiscal charts instead of sector-spending charts) for the consistency audit (Prompt C-01).
 
@@ -228,9 +228,10 @@ Before advancing to Step 2, confirm all of the following:
 - [ ] PFM systems description covers all six dimensions (budget formulation, wage execution, non-wage execution, intergovernmental transfers, procurement, audit/accountability, digital systems) *(economic-resilience variant: the four macro-fiscal capabilities instead, and the three template deviations recorded)*
 - [ ] Feasibility assessment addresses financial affordability, institutional capability, and stakeholder commitment with specific evidence
 
-**Annex Tables 1.1 and 1.2**
+**Annex Tables 1.1 to 1.3**
 - [ ] Table 1.1 consistent with Sections 2.1 and 2.2
 - [ ] Table 1.2 covers all organizations; no significant actor omitted
+- [ ] Table 1.3 lists the same financing channels, values and problems as the Section 2.3.2 flows table
 
 ### Inter-Step Record — Step 1 → Step 2
 
@@ -268,7 +269,7 @@ Before advancing to Step 3, confirm all of the following:
 - [ ] Five-why analysis completed for each public sector challenge
 - [ ] Bottlenecks are root causes, not symptoms or restatements of the challenge
 - [ ] Type classifications (Technical / Institutional / PFM) are correct
-- [ ] Impact (VH/H/M/L) and feasibility (H/M/L) ratings are consistent across all bottlenecks
+- [ ] Impact (H/M/L) and feasibility (H/M/L) ratings are consistent across all bottlenecks
 
 **Consolidated Bottlenecks and Prioritization** *(KEY)*
 - [ ] Thematic groupings are appropriate for the country and sector context
@@ -319,7 +320,7 @@ Before advancing to Compilation and QA, confirm all of the following:
 - [ ] Every reform result is a concrete, measurable end-state with a feasibility rating
 - [ ] Table stands alone as a self-explanatory reference document
 
-**Section 4.1 — Change Objectives and Reform Results** *(KEY)*
+**Section 4.1 — Reforms to Deliver Change Objectives** *(KEY)*
 - [ ] Total number of reform results is within range (ideally 15–25)
 - [ ] Feasibility ratings consistent with Annex Tables 2.2 and 2.3
 - [ ] All cross-references to Annex Table 3.1 are correctly placed
@@ -392,7 +393,7 @@ Before treating the report as complete, confirm all of the following:
 - [ ] Bibliography complete; every in-text citation has a bibliography entry
 
 **Annex**
-- [ ] Tables 1.1 and 1.2 consistent with Chapter 2
+- [ ] Tables 1.1 to 1.3 consistent with Chapter 2
 - [ ] Tables 2.2 and 2.3 consistent with Chapter 3; every bottleneck in 2.2 accounted for in 2.3
 - [ ] Table 3.1 consistent with Section 4.1
 - [ ] Table 3.5 consistent with Sections 4.2 and 4.3; three steps per reform result throughout

@@ -40,7 +40,7 @@ For [country] in the [sector] sector, please conduct a stakeholder analysis cove
 
 (ii) For each stakeholder, briefly assess: their current level of commitment to the reform (High/Medium/Low); their power to advance or block the reform (High/Medium/Low); and the primary source of their interest or resistance.
 
-Present findings using the format of Annex Step 3 Table 3.2 from the OLePFM Sector Reform Design Report Template, with separate rows for each stakeholder per change objective.
+Present findings as a working table with one row per stakeholder per change objective. It feeds Annex Table 3.2 (one row per role type) and Annex Table 3.3 (one row per key stakeholder) in Prompt 3-08.
 
 ---
 
@@ -62,9 +62,9 @@ Using the stakeholder analysis from Prompt 3-06 and the political economy analys
 
 The section should be approximately 500–700 words organized as follows:
 
-(i) **Opening paragraph (approximately 80 words):** Introduce the three categories of stakeholder in an OLePFM reform — authorizers, conveners, and reform teams — and note that the full stakeholder mapping by reform result is in Annex Table 3.2 and the detailed management strategy is in Annex Table 3.3.
+(i) **Opening paragraph (approximately 80 words):** Introduce the roles of authorizers, conveners, reform teams and change coalitions in an OLePFM reform, and note that the full stakeholder mapping by reform result is in Annex Table 3.2 and the detailed management strategy is in Annex Table 3.3.
 
-(ii) **Political economy analysis (approximately 300–400 words):** Identify the two to four most significant political economy challenges recurring across the change objectives, and for each explain: the nature of the challenge and the stakeholders involved; the specific reform results most at risk; and the strategy embedded in the reform plan's sequencing and design to address it. Be specific — name actors, incentives, and design features.
+(ii) **Political economy analysis (approximately 300–400 words):** Identify the two to four most significant political economy challenges recurring across the change objectives, and for each explain: the nature of the challenge and the stakeholders involved; the specific reform results most at risk; and the strategy embedded in the reform plan's sequencing and design to address it, including the approaches and actions to influence stakeholder interests and behaviour and to build the required capacity. Be specific — name actors, incentives, and design features.
 
 (iii) **Development partner alignment (approximately 100 words):** Describe the specific approach to aligning development partner behaviour with the reform plan.
 
@@ -99,7 +99,7 @@ The Motivation Strategy column should be specific — for example: co-design of 
 
 Add any missing investments and correct any misattributions before proceeding.
 
-### Prompt 3-09 — Annex Table 3.4: Technical, Systems and Capacity Support
+### Prompt 3-09 — Annex Table 3.4: Technical Assistance, Digital Systems and Capacity Support
 
 Please prepare Annex Step 3 Table 3.4 for [country] in the [sector] sector, covering the technical, systems, and capacity development requirements for implementing the reform results in Section 4.1.
 
@@ -107,17 +107,17 @@ The table should cover three categories, each as a clearly labelled section:
 
 **A. Digital Systems Development** — systems investments required, including: the system or integration to be developed; the reform results it supports; the lead government organization; supporting development partners or vendors; the target completion timeframe; and a brief description of what the system needs to achieve.
 
-**B. Capacity Development** — training and institutional capacity programmes required, including: the capacity gap to be addressed; the target organization(s) and level(s); the reform results supported; the lead provider; and the target completion timeframe.
+**B. Capacity Building/Skills** — training and institutional capacity programmes required, including: the capacity gap to be addressed; the target organization(s) and level(s); the reform results supported; the lead provider; and the target completion timeframe.
 
 **C. Technical Assistance** — specific TA packages required where government lacks the analytical or technical capability to design the reform instrument internally, including: the TA deliverable; the reform results it enables; the lead government organization commissioning the TA; the likely source of TA; and the target completion timeframe.
 
-Use the format of Annex Step 3 Table 3.4 in the OLePFM Sector Reform Design Report Template.
+Use the format of Annex Step 3 Table 3.4 in the OLePFM Sector Reform Design Report Template: five columns — | Name | Description of Changes Required to Address Bottlenecks | Lead Organization | Relevant Change Objectives | Timeframe | — with the three categories as labelled group rows. Put the reform results and change objectives an item supports in the Relevant Change Objectives column, supporting partners or vendors in the Description column, and the target completion timeframe in the Timeframe column.
 
 ---
 
 ### Prompt 3-10 — Section 4.3: Systems and Capacity Narrative
 
-Using Annex Table 3.4 from Prompt 3-09, and strictly following the Chapter 4 structure in the OLePFM Sector Reform Design Report Template, please draft Section 4.3 — Systems, Capacity Development and Technical Assistance — for [country] in the [sector] sector.
+Using Annex Table 3.4 from Prompt 3-09, and strictly following the Chapter 4 structure in the OLePFM Sector Reform Design Report Template, please draft Section 4.3 — Systems, Capacity Development and TA — for [country] in the [sector] sector.
 
 The section should be approximately 300–400 words organized as follows:
 
@@ -154,7 +154,7 @@ Adjust timing, responsibilities, or step content before proceeding.
 
 Please prepare the Annex Table 3.5 entries for Priority Bottleneck [number]: [paste bottleneck title] and its reform results [list reform result numbers].
 
-For each reform result, provide exactly three key steps — no more and no fewer — following the format of Annex Step 3 Table 3.5 in the OLePFM Sector Reform Design Report Template.
+For each reform result, provide exactly three key steps — no more and no fewer — following the format of Annex Step 3 Table 3.5 in the OLePFM Sector Reform Design Report Template: four columns — | Reform Result | Key Steps to Achieve Results | Timing | Responsible | — with rows grouped under the change objective they belong to.
 
 For each step provide:
 - A concise description of the action to be taken (one to two sentences).
@@ -186,7 +186,7 @@ Make adjustments to timing or responsibilities where sequencing conflicts arise.
 
 Please compile the Annex Table 3.5 entries for all [number] priority bottlenecks and all [total number] reform results into a single table for [country] in the [sector] sector, strictly following the format of Annex Step 3 Table 3.5 in the OLePFM Sector Reform Design Report Template.
 
-Organize the table by change objective, with a clearly labelled header row for each of the [number] bottlenecks before the reform results under that bottleneck.
+Organize the table by change objective, with a clearly labelled header row (Change Objective [number]: [name]) for each of the [number] change objectives before the reform results under it, as in the template.
 
 At the end of the table, provide a one-page implementation timeline showing all reform results plotted against their key steps across the implementation horizon [start year] to [end year].
 

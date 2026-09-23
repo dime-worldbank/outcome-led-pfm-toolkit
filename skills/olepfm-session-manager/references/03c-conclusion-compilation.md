@@ -33,9 +33,7 @@ Revise any section that is too generic, too optimistic, or inconsistent with the
 
 ### Prompt 3-13 — Chapter 5: Conclusion
 
-Using the analysis from Chapters 2, 3, and 4, and strictly following the Chapter 5 structure and introductory texts in the OLePFM Sector Reform Design Report Template, please draft Chapter 5 — Conclusion — for [country] in the [sector] sector.
-
-Structure the chapter with the following sections:
+Using the analysis from Chapters 2, 3, and 4, please draft Chapter 5 — Conclusion — for [country] in the [sector] sector. The OLePFM Sector Reform Design Report Template leaves the conclusion unstructured, so structure the chapter with the following sections:
 
 **5.1 The Reform Challenge in Context (approximately 200 words):** Summarize the development gaps and their root cause in PFM failures. Name specific outcome indicators and link them back to the specific PFM bottlenecks identified in Chapter 3. Reference data from Section 2.1 and the OLePFM methodology from Chapter 1.
 
@@ -75,16 +73,13 @@ Please compile Chapters 4 and 5 and Annex Step 3 into a single document for [cou
 The document should contain:
 
 **Chapter 4: Reforms to Resolve Bottlenecks**
-- 4.1 Change Objectives and Reform Results
-  - 4.1.1 Change Objective 1: [change objective name]
-  - 4.1.2 Change Objective 2: [change objective name]
-  - 4.1.3 Change Objective 3: [change objective name]
-  - 4.1.4 Change Objective 4: [change objective name]
-  - 4.1.5 Change Objective 5: [change objective name]
-  - 4.1.6 Change Objective 6: [change objective name]
+- 4.1 Reforms to Deliver Change Objectives
+  - Change Objective 1: [change objective name]
+  - Change Objective 2: [change objective name]
+  - … one sub-section per change objective, as in the template
   - Summary of Reform Results
 - 4.2 Stakeholder Strategy
-- 4.3 Systems, Capacity Development and Technical Assistance
+- 4.3 Systems, Capacity Development and TA
 
 **Chapter 5: Conclusion**
 - 5.1 The Reform Challenge in Context
@@ -94,12 +89,12 @@ The document should contain:
 - 5.5 A Note on What This Report Does Not Cover
 - 5.6 Conclusion
 
-**Annex: Step 3 — Action Plan**
-- Annex Table 3.1: Causes of and Resolutions to Priority Bottlenecks
+**Annex: Step 3 — Reform Analysis and Action Plan**
+- Annex Table 3.1: Causal Analysis of Bottlenecks and Proposed Reforms
 - Annex Table 3.2: Key Stakeholders in Reform
 - Annex Table 3.3: Stakeholder Management Strategy
-- Annex Table 3.4: Technical, Systems and Capacity Support
-- Annex Table 3.5: Key Steps to Achieve Results ([start year]–[end year])
+- Annex Table 3.4: Technical Assistance, Digital Systems and Capacity Support
+- Annex Table 3.5: Key Steps to Achieve Results (Action Plan), [start year]–[end year]
 ---
 
 ## Quality checks for Step 3 (optional)

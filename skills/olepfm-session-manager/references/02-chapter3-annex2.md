@@ -43,7 +43,7 @@ Use the introductory text from the template for the chapter and section openings
 
 ---
 
-### Prompt 2-02 — Annex Table 2.1: Role of Public Finance Summary
+### Prompt 2-02 — Annex Table 2.1: Roles of Public Finance
 
 Summarizing the analysis from Section 3.1, please prepare Annex Step 2 Table 2.1 for [country] in the [sector] sector.
 
@@ -95,11 +95,11 @@ Take Challenge [number]: [paste challenge title and description from Section 2.2
 
 (v) Categorize each bottleneck as: Technical (relating to the sector); Institutional (relating to people, organizations, rules, systems and accountability that are not public finance related); or PFM-related (those related to the management of public funds).
 
-(vi) Rate the impact on service delivery as: Very High (VH), High (H), Medium (M), or Low (L).
+(vi) Rate the impact on service delivery as: High (H), Medium (M), or Low (L).
 
 (vii) Rate the feasibility of implementing reforms to address the bottleneck as: High (H), Medium (M), or Low (L).
 
-Present findings using the format of Annex Step 2 Table 2.2 from the OLePFM Sector Reform Design Report Template, with columns: Public Sector Challenge | Sector | Bottleneck | Type of Bottleneck | Impact on Service Delivery | Feasibility of Reform.
+Present findings using the format of Annex Step 2 Table 2.2 from the OLePFM Sector Reform Design Report Template, with its five columns: Public Sector Challenges | Bottlenecks which Contribute to Public Sector Challenges | Type of Bottleneck | Impact on Service Delivery (H/M/L) | Feasibility of Reform (H/M/L).
 
 ---
 
@@ -164,7 +164,7 @@ You can reorder the ranking, merge bottlenecks, remove an out-of-scope one, adju
 
 ### Prompt 2-06 — Priority Ranking
 
-Using the lens of feasibility and impact on service delivery, please rank the consolidated bottlenecks in terms of priority, with Very High impact and High feasibility being the highest priority.
+Using the lens of feasibility and impact on service delivery, please rank the consolidated bottlenecks in terms of priority, with High impact and High feasibility being the highest priority.
 
 Where bottlenecks share the same impact and feasibility ratings, consider which are most foundational — that is, unblocking them enables progress on others.
 
@@ -195,48 +195,50 @@ First use the template introductory text to introduce the section. Then, for eac
 
 ### ✏️ Review the output — focus on these points
 
-**Section 3.2.2 — Priority Bottlenecks and Reform Objectives (Prompt 2-08).** Review each priority bottleneck description before Annex Table 2.3.
+**Section 3.2.2 — Priority Bottlenecks and Change Objectives (Prompt 2-08).** Review each priority bottleneck description before Annex Table 2.3.
 
 - [ ] Each bottleneck description accurately reflects the consolidated analysis
 - [ ] The contribution to public sector challenges explicitly names the relevant challenges and describes the causal mechanism
-- [ ] The reform objective is written as a concrete, observable end-state rather than a process commitment
+- [ ] The change objective is written as a concrete, observable end-state rather than a process commitment
 - [ ] The feasibility assessment is realistic and consistent with the priority ranking
-- [ ] The two-paragraph structure (description / contribution) is maintained consistently
+- [ ] The structure (description / contribution / closing change objective) is maintained consistently
 
 Make any corrections before proceeding.
 
-### Prompt 2-08 — Section 3.2.2: Priority PFM Bottlenecks and Reform Objectives
+### Prompt 2-08 — Section 3.2.2: Priority PFM Bottlenecks and Change Objectives
 
-Using the consolidated priority bottlenecks and their rankings, and strictly following the section structure and introductory text in the OLePFM Sector Reform Design Report Template, please draft Section 3.2.2 — Priority PFM Bottlenecks and Reform Objectives — for [country] in the [sector] sector.
+Using the consolidated priority bottlenecks and their rankings, and strictly following the section structure and introductory text in the OLePFM Sector Reform Design Report Template, please draft Section 3.2.2 — Priority PFM Bottlenecks and Change Objectives — for [country] in the [sector] sector.
 
 First use the template introductory text to introduce the section. Then for each priority bottleneck, provide no more than 200 words organized into two sub-paragraphs (without sub-headings):
 - Paragraph 1: Describe the nature of the bottleneck.
 - Paragraph 2: Describe its contribution to the public sector challenges, naming the specific challenges affected.
+- Closing sentence: state the change objective — the resolution of the bottleneck — as a concrete, observable end-state. This change objective is carried into Annex Table 3.1 and Section 4.1.
 
 ---
 
 ### ✏️ Review the output — focus on these points
 
-**Annex Table 2.3 — Priority Bottleneck Summary (Prompt 2-09).** Review before proceeding to compilation.
+**Annex Table 2.3 — Priority Bottlenecks, Contribution and Feasibility (Prompt 2-09).** Review before proceeding to compilation.
 
 - [ ] Bottleneck descriptions are consistent with Section 3.2.2
 - [ ] The impact-on-delivery column explicitly references the named public sector challenges
-- [ ] The change objectives are written as concrete end-states
+- [ ] Feasibility is described in prose with its rating (no separate rating column), and no change objective is recorded here — that belongs in Annex Table 3.1
 - [ ] Relevant bottleneck codes from Table 2.2 are correctly cited
 - [ ] The ordering is logical (most upstream/structural first, most cross-cutting last)
 
 **Correct any inconsistencies before proceeding.**
 
-### Prompt 2-09 — Annex Table 2.3: Priority Bottleneck Summary
+### Prompt 2-09 — Annex Table 2.3: Priority Bottlenecks, their Contribution to Public Sector Challenges and Feasibility
 
 Please prepare Annex Step 2 Table 2.3 for [country] in the [sector] sector.
 
-This table summarizes the priority PFM bottlenecks. The table should have four columns with no numbering column:
-| Bottleneck | Impact on Delivery (contribution to public sector challenges) | Feasibility (the feasibility of addressing the bottleneck) | Relevant Bottlenecks (from Table 2.2) |
+This table (titled in the template "Priority Bottlenecks and their contribution to Public Sector Challenges and Feasibility to Address them") summarizes the priority PFM bottlenecks. It has four columns with no numbering column:
+| Bottleneck | Impact on Delivery (contribution to public sector challenges) | Feasibility of Change | Relevant Bottlenecks (from Table 2.2) |
 
 For each bottleneck:
 - **Bottleneck column:** State the bottleneck number and name as a bold heading, followed by a concise description of the nature of the bottleneck.
 - **Impact on Delivery:** Focus specifically on the contribution to each named public sector challenge, explicitly identifying which challenges are affected and how.
+- **Feasibility of Change:** State the rating and explain it in prose, since feasibility often differs across parts of a single reform — there is no separate rating column.
 - **Relevant Bottlenecks:** List the bottleneck codes from Table 2.2. (The change objective for each priority bottleneck is recorded in Annex Table 3.1, not in this table.)
 
 Order the bottlenecks with the most structural/upstream bottleneck first and the most cross-cutting/systems bottleneck last. Strictly use the format of the table in the OLePFM Sector Reform Design Report Template.
@@ -259,12 +261,12 @@ The document should contain:
   - 3.1.4 Productivity, Transparency, and Accountability in Delivery
 - 3.2 Priority PFM Bottlenecks
   - 3.2.1 The Bottlenecks which Contribute to Public Sector Challenges
-  - 3.2.2 Priority PFM Bottlenecks and Reform Objectives
+  - 3.2.2 Priority PFM Bottlenecks and Change Objectives
 
-**Annex: Step 2 — The Role of Public Finance and Priority Bottlenecks**
-- Annex Table 2.1: The Potential and Actual Role of Public Finance
+**Annex: Step 2 — Roles of Public Finance and Priority Bottlenecks**
+- Annex Table 2.1: Roles of Public Finance
 - Annex Table 2.2: Public Sector Challenges and Bottlenecks
-- Annex Table 2.3: Priority PFM Bottlenecks — Summary
+- Annex Table 2.3: Priority Bottlenecks and their Contribution to Public Sector Challenges and Feasibility to Address them
 
 ---
 
@@ -297,12 +299,12 @@ Please review the bottleneck descriptions in Sections 3.2.1 and 3.2.2 and Annex 
 | Prompt | Output |
 |---|---|
 | 2-01 | Section 3.1: The Role of Public Finance |
-| 2-02 | Annex Table 2.1: Role of Public Finance summary |
+| 2-02 | Annex Table 2.1: Roles of Public Finance |
 | 2-03 (×n) | Five-why analysis per challenge — individual bottleneck tables |
 | 2-04 | Combined Annex Table 2.2: Full bottleneck table |
 | 2-05 | Consolidated bottleneck list |
 | 2-06 | Priority ranking with tiers |
 | 2-07 | Section 3.2.1: Bottlenecks per challenge narrative |
 | 2-08 | Section 3.2.2: Priority bottlenecks narrative |
-| 2-09 | Annex Table 2.3: Priority bottleneck summary |
+| 2-09 | Annex Table 2.3: Priority bottlenecks, contribution to challenges and feasibility |
 | 2-10 | Full compiled Chapter 3 and Annex Step 2 |

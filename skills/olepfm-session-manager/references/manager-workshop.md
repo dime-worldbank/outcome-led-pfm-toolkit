@@ -27,9 +27,9 @@ I want to prepare the OLePFM Working Tables for an upcoming reform design worksh
 
    | Table | Columns | Generate with | Facilitation note |
    |---|---|---|---|
-   | **1.1 Outcomes, Public Sector Results and Challenges** | stacked blocks — Development Outcome · Public Sector Results · Selected Public Sector Challenges | Prompts 1-02 (Section 2.1) + 1-03 (Section 2.2) | *Pre-populated by AI. Review; agree no more than three challenges — a challenge must not mention money.* |
+   | **1.1 Outcomes, Public Sector Results and Challenges** | stacked blocks — Development Outcome · Public Sector Results · Selected Public Sector Challenges | Prompts 1-02 (Section 2.1) + 1-03 (Section 2.2) | *Pre-populated by AI. Review; agree preferably three and no more than five challenges — a challenge must not mention money.* |
    | **1.2 Organizational Functions in Policy, Delivery and PFM** | Organization · Level of Government · Policy & Delivery Functions · PFM Functions | Prompt 1-13 (with 1-05) | *Pre-populated by AI. Validate; add any missing organizations.* |
-   | **1.3 Main Financing Channels** | Financing Channel · Description & Purpose · Organizations (flow of funds) · Relative Value · Key Problems | Prompt 1-08 | *Pre-populated by AI. Review the channels, values and problems.* |
+   | **1.3 Main Financing Channels** | Financing Channel · Description & Purpose · Organizations (flow of funds) · Relative Value · Key Problems | Prompt 1-14 (from the Section 2.3.2 flows table, Prompt 1-08) | *Pre-populated by AI. Review the channels, values and problems.* |
    | **2.1 Roles of Public Finance** | Role · Potential Role · Actual Role | Prompt 2-02 (the four roles) | *Pre-populated by AI. Read before identifying challenges; validate the potential and actual roles.* |
 
    Pause here for the user to review the populated 1.1–2.1 before the blank scaffold is added.
@@ -38,13 +38,13 @@ I want to prepare the OLePFM Working Tables for an upcoming reform design worksh
 
    | Table | Columns | Workshop exercise note |
    |---|---|---|
-   | **2.2 Public Sector Challenges and Bottlenecks** | Public Sector Challenge · Bottleneck · Type · Impact · Feasibility | *For each challenge, identify the bottlenecks that cause it (five-why).* |
-   | **2.3 Priority PFM Bottlenecks** | Bottleneck · Impact on delivery (challenges affected) · Feasibility (rating + description) | *Consolidate and prioritize the bottlenecks.* |
-   | **3.1 Causal Analysis of Bottlenecks and Proposed Reforms** | Sub-Bottleneck · Underlying Causes · Stakeholders · Reform Result · Reforms Required | *For each priority bottleneck, analyse causes and propose reforms.* |
+   | **2.2 Public Sector Challenges and Bottlenecks** | Public Sector Challenges · Bottlenecks which Contribute to Public Sector Challenges · Type of Bottleneck · Impact on Service Delivery (H/M/L) · Feasibility of Reform (H/M/L) | *For each challenge, identify the bottlenecks that cause it (five-why).* |
+   | **2.3 Priority PFM Bottlenecks** | Bottleneck · Impact on Delivery (contribution to public sector challenges) · Feasibility of Change (rating + description) · Relevant Bottlenecks (from Table 2.2) | *Consolidate and prioritize the bottlenecks.* |
+   | **3.1 Causal Analysis of Bottlenecks and Proposed Reforms** | Sub-Bottlenecks (problems) · Underlying Causes · Stakeholders · Reform Result (Resolved Problem) · Reforms Required (which address causes) | *For each priority bottleneck, analyse causes and propose reforms.* |
    | **3.2 Key Stakeholders in Reform** | Type · Members · Role | *Map authorizers, team leaders, results team, coalition.* |
-   | **3.3 Stakeholder Management Strategy** | Stakeholder · Commitment · Power to block · Source of interest · Motivation Strategy | *Plan how to move each key stakeholder.* |
-   | **3.4 Technical, Systems and Capacity Support** | Name · Description of changes required · Lead Organization · Relevant Change Objectives | *List the systems, capacity and TA each reform needs.* |
-   | **3.5 Key Steps to Achieve Results** | Reform Result · Key Steps · Timing · Responsible | *Three key steps per reform result, sequenced with timing.* |
+   | **3.3 Stakeholder Management Strategy** | Stakeholder · Change Objective(s) · Commitment (H/M/L) · Power to Block (H/M/L) · Source of Interest or Resistance · Motivation Strategy | *Plan how to move each key stakeholder.* |
+   | **3.4 Technical Assistance, Digital Systems and Capacity Support** | Name · Description of Changes Required to Address Bottlenecks · Lead Organization · Relevant Change Objectives · Timeframe | *List the systems, capacity and TA each reform needs.* |
+   | **3.5 Key Steps to Achieve Results (Action Plan)** | Reform Result · Key Steps to Achieve Results · Timing · Responsible | *Three key steps per reform result, sequenced with timing.* |
 
 4. **Assemble and hand off.** Output one Working Tables document — **Step 1** (1.1, 1.2, 1.3), **Step 2** (2.1 populated; 2.2, 2.3 blank), **Step 3** (3.1–3.5 blank) — following the OLePFM Working Tables layout. This is the file the workshop fills in and returns.
 

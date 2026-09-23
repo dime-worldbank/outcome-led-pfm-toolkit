@@ -9,9 +9,9 @@ description: Drop-in replacements for Prompts 1-04 to 1-10 (Section 2.3) when th
 
 Economic resilience is a cross-cutting fiscal outcome. There is no service-delivery facility at the end of the chain; the "point of delivery" is the point at which fiscal-policy decisions are executed — where aggregate spending is either held to a sustainable path or allowed to exceed it. The relevant analysis is macro-fiscal (fiscal balance, aggregate revenue/expenditure, forecast realism, cyclicality, debt and debt service, fiscal risk), the relevant actors are the fiscal-policy centre / spending units / extra-budgetary bodies / oversight institutions, and the relevant "flows" are a self-reinforcing fiscal cycle rather than a channel-to-frontline pipeline.
 
-**How to use this file.** These prompts are drop-in replacements for Prompts 1-04 to 1-10 when the outcome is a cross-cutting fiscal or macro-fiscal one (economic resilience, macro-fiscal stability, fiscal sustainability, debt sustainability). Prompts 1-01, 1-02, 1-03 and 1-11, the Step 1 quality checks (1-Q1 to 1-Q4) and all of `01b-annex1.md` are used unchanged from the standard files. Keep all standard conventions: pause at every ✏️ point; approximately 300-word targets unless stated; cite sources as hyperlinked parentheticals; Section 2.2 challenges must not name money or PFM.
+**How to use this file.** These prompts are drop-in replacements for Prompts 1-04 to 1-10 when the outcome is a cross-cutting fiscal or macro-fiscal one (economic resilience, macro-fiscal stability, fiscal sustainability, debt sustainability). Prompts 1-01, 1-02, 1-03 and 1-11 and the Step 1 quality checks (1-Q1 to 1-Q4) are used unchanged from the standard files. In `01b-annex1.md`, Prompts 1-12, 1-13 and 1-15 are used unchanged; Prompt 1-14 (Annex Table 1.3, financing channels) does not apply and is replaced by the fiscal-cycle narrative from ER-1-08, recorded as deviation (ii). Keep all standard conventions: pause at every ✏️ point; approximately 300-word targets unless stated; cite sources as hyperlinked parentheticals; Section 2.2 challenges must not name money or PFM.
 
-**Deviation register.** This variant deliberately departs from the Report Template in three ways, which must be recorded and handed to the consistency audit (Prompt C-01) in the Compilation and QA stage: (i) swim lanes are fiscal-outcome lanes (Fiscal-Policy Centre / Spending Units / Extra-Budgetary Bodies / Oversight & Accountability) rather than Central/Local/Facility/Community; (ii) the financial-flows table and diagram are replaced by a self-reinforcing fiscal-cycle narrative and causal diagram; (iii) fiscal charts are macro-fiscal (balance, forecast realism, cyclicality, debt service, spending composition, fiscal risk) rather than sector-spending pie and column charts.
+**Deviation register.** This variant deliberately departs from the Report Template in three ways, which must be recorded and handed to the consistency audit (Prompt C-01) in the Compilation and QA stage: (i) swim lanes are fiscal-outcome lanes (Fiscal-Policy Centre / Spending Units / Extra-Budgetary Bodies / Oversight & Accountability) rather than Central/Local/Facility/Community; (ii) the financial-flows table and diagram (and Annex Table 1.3) are replaced by a self-reinforcing fiscal-cycle narrative and causal diagram; (iii) fiscal charts are macro-fiscal (balance, forecast realism, cyclicality, debt service, spending composition, fiscal risk) rather than sector-spending pie and column charts.
 
 ---
 
@@ -31,7 +31,8 @@ Economic resilience is a cross-cutting fiscal outcome. There is no service-deliv
 | 1-10 — Section 2.3.2: PFM Systems Description | 🔁 replace | ER-1-10 (macro-fiscal management lens) |
 | 1-11 — Section 2.3.3: Feasibility | ✅ as-is | — |
 | 1-Q1, 1-Q3, 1-Q4 | ✅ as-is | plus ER-1-Q5 (cross-cutting scope check) |
-| 1-12 to 1-14 (`01b-annex1.md`) | ✅ as-is | — |
+| 1-12, 1-13, 1-15 (`01b-annex1.md`) | ✅ as-is | — |
+| 1-14 — Annex Table 1.3: Main Financing Channels | 🔁 replace | fiscal-cycle narrative from ER-1-08 (deviation ii) |
 
 ---
 
@@ -184,7 +185,7 @@ State the overall PEFA score and note any deterioration since the previous asses
 
 Make corrections before proceeding.
 
-> **Return to the standard file.** Continue with Prompt 1-11 (Section 2.3.3: Feasibility Assessment) in `01a-chapters1-2.md`, then `01b-annex1.md` (Prompts 1-12 to 1-14).
+> **Return to the standard file.** Continue with Prompt 1-11 (Section 2.3.3: Feasibility Assessment) in `01a-chapters1-2.md`, then `01b-annex1.md` (Prompts 1-12, 1-13 and 1-15; skip 1-14).
 
 ---
 
@@ -212,4 +213,4 @@ Please review draft Section 2.3 to confirm it treats [fiscal outcome] as a cross
 | ER-1-10 | Section 2.3.2: PFM Systems for macro-fiscal management | this file |
 | 1-11 | Section 2.3.3: Feasibility Assessment | standard |
 | 1-Q1, 1-Q3, 1-Q4, ER-1-Q5 | Quality checks | standard + this file |
-| 1-12 to 1-14 | Annex Tables 1.1, 1.2 and compilation (`01b-annex1.md`) | standard |
+| 1-12, 1-13, 1-15 | Annex Tables 1.1, 1.2 and compilation (`01b-annex1.md`); 1-14 replaced by ER-1-08 | standard |

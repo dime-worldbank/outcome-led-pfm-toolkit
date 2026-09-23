@@ -20,7 +20,7 @@ olepfm-session-manager/
     ├── 00-source-prep.md              Sources: source preparation (Prompts S-1 to S-4)
     ├── 01a-chapters1-2.md             Step 1: Chapters 1 and 2 (Prompts 1-01 to 1-11)
     ├── 01a-variant-economic-resilience.md  Step 1 variant for cross-cutting fiscal outcomes (Prompts ER-1-04 to ER-1-10, ER-1-Q5)
-    ├── 01b-annex1.md                  Step 1: Annex Step 1 and compilation (Prompts 1-12 to 1-14)
+    ├── 01b-annex1.md                  Step 1: Annex Step 1 and compilation (Prompts 1-12 to 1-15)
     ├── 02-chapter3-annex2.md          Step 2: Chapter 3 and Annex Step 2 (Prompts 2-01 to 2-10)
     ├── 03a-reform-results.md          Step 3: Annex Table 3.1 and Section 4.1 (Prompts 3-01 to 3-05)
     ├── 03b-stakeholders-systems-steps.md  Step 3: Sections 4.2, 4.3 and Annex Table 3.5 (Prompts 3-06 to 3-12)
@@ -43,7 +43,7 @@ Every prompt has a unique ID that says which stage it belongs to and where it si
 | Stage | Prompt IDs | File(s) |
 |---|---|---|
 | Sources | S-1 to S-4 | `00-source-prep.md` |
-| Step 1 | 1-01 to 1-14 | `01a-chapters1-2.md`, `01b-annex1.md` |
+| Step 1 | 1-01 to 1-15 | `01a-chapters1-2.md`, `01b-annex1.md` |
 | Step 2 | 2-01 to 2-10 | `02-chapter3-annex2.md` |
 | Step 3 | 3-01 to 3-14 | `03a-reform-results.md`, `03b-stakeholders-systems-steps.md`, `03c-conclusion-compilation.md` |
 | Compilation | C-01 to C-13 | `04a-audit-and-part1.md`, `04b-part2-and-annex.md` |
@@ -68,7 +68,7 @@ Earlier versions of these files, and material the client may still send, use let
 | 00 | S1 to S4 | S-1 to S-4 |
 | 01a | A1; B1; B2; B3a, B3b, B3c; B4a, B4b, B4c, B4d; B5 | 1-01; 1-02; 1-03; 1-04, 1-05, 1-06; 1-07, 1-08, 1-09, 1-10; 1-11 |
 | 01a | QA1, QA3, QA4 | 1-Q1, 1-Q3, 1-Q4 |
-| 01b | C1; C2; D1; QA2 | 1-12; 1-13; 1-14; 1-Q2 |
+| 01b | C1; C2; (none); D1; QA2 | 1-12; 1-13; 1-14 (Annex Table 1.3, added to match the template); 1-15; 1-Q2 |
 | 02 | B1 to B9; C1; QA1 to QA5 | 2-01 to 2-09; 2-10; 2-Q1 to 2-Q5 |
 | 03a | B1; T1; T2; C1; C2 | 3-01; 3-02; 3-03; 3-04; 3-05 |
 | 03b | D1, D2, D3; E1, E2; F1, F2 | 3-06, 3-07, 3-08; 3-09, 3-10; 3-11, 3-12 |

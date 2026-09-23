@@ -6,6 +6,8 @@ Checks, for each skills/<name>/ folder:
   - it starts with YAML frontmatter containing non-empty `name` and `description`
   - `name` matches the folder name and is lowercase with hyphens only
   - SKILL.md is under 500 lines (warning only)
+  - SKILL.md and every references/*.md file is under 20,000 characters (platform limit)
+  - every references/*.md file starts with YAML frontmatter carrying `title` and `description` (platform requirement)
   - no unexpected top-level files or folders inside the skill
 
 No third-party dependencies. Exit code 1 on any error.
@@ -22,6 +24,7 @@ NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 ALLOWED_DIRS = {"scripts", "references", "assets", "evals"}
 ALLOWED_FILES = {"SKILL.md", "README.md", "LICENSE", "LICENSE.md", "LICENSE.txt"}
 MAX_LINES = 500
+MAX_CHARS = 20000  # platform limit for SKILL.md and references/*.md; assets/ are exempt
 
 
 def parse_frontmatter(text: str) -> dict[str, str] | None:
@@ -73,6 +76,20 @@ def validate_skill(skill_dir: Path) -> tuple[list[str], list[str]]:
             errors.append(f"{rel}/SKILL.md: frontmatter has no `description`")
         elif len(desc) < 40:
             warnings.append(f"{rel}/SKILL.md: description is very short; say what it does and when to use it")
+
+    for f in [skill_md] + sorted((skill_dir / "references").glob("*.md")):
+        ftext = f.read_text(encoding="utf-8")
+        n = len(ftext)
+        if f != skill_md:
+            rfm = parse_frontmatter(ftext)
+            if rfm is None:
+                errors.append(f"{f.relative_to(ROOT)}: must start with YAML frontmatter (--- delimiters) with `title` and `description`")
+            elif not rfm.get("title") or not rfm.get("description"):
+                errors.append(f"{f.relative_to(ROOT)}: frontmatter needs both `title` and `description`")
+        if n > MAX_CHARS:
+            errors.append(f"{f.relative_to(ROOT)}: {n} characters, over the {MAX_CHARS} platform limit; split the file")
+        elif n > MAX_CHARS - 1000:
+            warnings.append(f"{f.relative_to(ROOT)}: {n} characters, within 1,000 of the {MAX_CHARS} limit")
 
     line_count = text.count("\n") + 1
     if line_count > MAX_LINES:

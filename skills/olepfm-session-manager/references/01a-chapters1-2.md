@@ -94,7 +94,7 @@ Use the standard introductory text from the template to open the section. Ensure
 
 ## Sub-step 1.4 — Map the sector policy, institutional and public finance context (Sections 2.3.1 and 2.3.2)
 
-> **Economic resilience or another cross-cutting fiscal outcome?** Use Prompts ER-1-04 to ER-1-10 from `01a-variant-economic-resilience.md` in place of Prompts 1-04 to 1-10 below, then continue with Prompt 1-11. Everything else in this file is unchanged.
+> **Economic resilience or another cross-cutting fiscal outcome?** Use Prompts ER-1-04 to ER-1-10 from `01a-variant-economic-resilience.md` and `01a-variant-economic-resilience-2.md` in place of Prompts 1-04 to 1-10 below, then continue with Prompt 1-11. Everything else in this file is unchanged.
 
 ### Prompt 1-04 — Section 2.3.1: Policy Framework
 

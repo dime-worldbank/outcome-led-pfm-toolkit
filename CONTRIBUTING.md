@@ -43,6 +43,9 @@
 
 ## Writing guidance
 
+- Start every file in `references/` with YAML frontmatter (`---` delimiters) that has `title` and `description`; the platform the files are exported to requires it, and the validator fails without it.
+- Keep `SKILL.md` and every file in `references/` under 20,000 characters. The platform the files are exported to rejects larger files. Split at a prompt boundary rather than trimming; the validator fails on any file over the limit.
+
 - Write instructions in the imperative and explain why a step matters. Claude follows reasoning better than bare rules.
 - Keep the skill general. It should work across countries and engagements, not just the example you built it from.
 - Prefer a bundled script over prose for anything mechanical (file conversion, table formatting, numbering).

@@ -9,7 +9,9 @@ This repo is a collection of Agent Skills for outcome-led PFM (Public Financial 
 - Keep `SKILL.md` under 500 lines. Move long material into `references/` and link to it.
 - A new skill is a folder under `skills/` with a `SKILL.md` whose frontmatter has `name` and `description`. See CONTRIBUTING.md.
 - After adding or editing a skill, run `python3 scripts/validate_skills.py` and update the tables in `README.md` and `skills/README.md`.
-- The files in `skills/olepfm-session-manager/references/` (ten phase files plus `manager-workshop.md`) are exported unchanged to another platform that limits file size. Do not merge, split or rename them; the manager and the files cross-reference each other by those exact names. See the mapping in `skills/README.md`.
+- The files in `skills/olepfm-session-manager/references/` (ten prompt files plus `manager-workshop.md`) are exported unchanged to another platform that limits file size. Do not merge, split or rename them; the manager and the files cross-reference each other by those exact names. See the mapping in `skills/README.md`.
+- Sector variants of a prompt file sit beside it as `<file>-variant-<sector>.md` (for example `01a-variant-economic-resilience.md`), contain only the prompts that differ, keep the standard numbers with a prefix (`ER-1-05`), and are dispatched from SKILL.md by sector. Client material may still use the old letter codes (B1, T1, M1a); translate them with the crosswalk in `skills/README.md` instead of reverting the numbering.
+- Prompt IDs follow the scheme in `skills/README.md` (S-n, 1-nn, 2-nn, 3-nn, C-nn, QA-n, plus n-Qk for per-step checks). Keep them unique and sequential within a stage; update the sequence summary tables and the manager's run instructions when adding or removing a prompt.
 
 ## Git and data
 

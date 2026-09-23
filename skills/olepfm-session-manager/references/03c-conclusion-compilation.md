@@ -1,26 +1,26 @@
 ---
-title: OLePFM Phase 3c — Chapter 5 and Phase 3 Compilation
-description: Step 3c of the OLePFM report workflow. Generates Chapter 5 (Conclusion), compiles Chapters 4 and 5 with Annex Step 3 into a single document, and runs the Phase 3 quality assurance prompts. Run after 03b-stakeholders-systems-steps.md.
+title: OLePFM Step 3 (3c) — Chapter 5 and Step 3 Compilation
+description: Step 3 (file 3c) of the OLePFM report workflow. Generates Chapter 5 (Conclusion), compiles Chapters 4 and 5 with Annex Step 3 into a single document, and runs the Step 3 quality checks. Run after 03b-stakeholders-systems-steps.md.
 ---
 
-# Skill 03c: Chapter 5 and Phase 3 Compilation
+# Step 3 (file 3c): Chapter 5 and Step 3 Compilation
 
-**Phase 3 of 4, step 3 of 3.** Run these prompts after Sections 4.2 and 4.3 and Annex Table 3.5 from `03b-stakeholders-systems-steps.md` are complete and confirmed. All Phase 3 drafts are already in context — begin directly with Prompt G1.
+**Step 3, file 3 of 3.** Run these prompts after Sections 4.2 and 4.3 and Annex Table 3.5 from `03b-stakeholders-systems-steps.md` are complete and confirmed. All Step 3 drafts are already in context — begin directly with Prompt G1.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
 **Prerequisites in context:**
 - Confirmed Annex Table 3.1 and Section 4.1 from step 3a
 - Confirmed Sections 4.2 and 4.3 and Annex Tables 3.2–3.5 from step 3b
-- Draft Chapters 1–3 and Annex Steps 1–2 from Phases 1–2
+- Draft Chapters 1–3 and Annex Steps 1–2 from Steps 1–2
 
 ---
 
-## PART G: CHAPTER 5 — CONCLUSION
+## Sub-step 3.3 — Compile and refine: Chapter 5 (Conclusion)
 
 ### ✏️ Review the output — focus on these points
 
-**Chapter 5 — Conclusion draft (G1).** Review before proceeding to compilation.
+**Chapter 5 — Conclusion draft (Prompt 3-13).** Review before proceeding to compilation.
 
 - [ ] Section 5.1 characterises the reform challenge, citing specific evidence
 - [ ] Section 5.2 describes the logic and sequencing of the change objectives as an interconnected system
@@ -31,7 +31,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 
 Revise any section that is too generic, too optimistic, or inconsistent with the body of the report.
 
-### Prompt G1 — Chapter 5: Conclusion
+### Prompt 3-13 — Chapter 5: Conclusion
 
 Using the analysis from Chapters 2, 3, and 4, and strictly following the Chapter 5 structure and introductory texts in the OLePFM Sector Reform Design Report Template, please draft Chapter 5 — Conclusion — for [country] in the [sector] sector.
 
@@ -53,11 +53,11 @@ Cite all sources as hyperlinked parentheticals, e.g. ([World Bank, 2010](https:/
 
 ---
 
-## PART H: FINAL COMPILATION
+## Sub-step 3.3 — Compile and refine: Step 3 compilation (Chapters 4–5 and Annex Step 3)
 
 ### ✏️ Review the output — focus on these points
 
-**Full compilation (H1).** Run a full consistency check across the compiled Chapters 4 and 5 and Annex Step 3.
+**Full compilation (Prompt 3-14).** Run a full consistency check across the compiled Chapters 4 and 5 and Annex Step 3.
 
 - [ ] Every reform result number cited in Chapter 4 appears in Annex Tables 3.1 and 3.5 with the same title and feasibility rating
 - [ ] Every bottleneck cross-reference cited in Chapter 4 matches the correct bottleneck in Annex Table 2.2
@@ -68,7 +68,7 @@ Cite all sources as hyperlinked parentheticals, e.g. ([World Bank, 2010](https:/
 
 Resolve any inconsistencies before finalizing.
 
-### Prompt H1 — Full Compilation
+### Prompt 3-14 — Full Compilation
 
 Please compile Chapters 4 and 5 and Annex Step 3 into a single document for [country] in the [sector] sector, strictly following the heading and subheading structure of the OLePFM Sector Reform Design Report Template.
 
@@ -102,41 +102,41 @@ The document should contain:
 - Annex Table 3.5: Key Steps to Achieve Results ([start year]–[end year])
 ---
 
-## QUALITY ASSURANCE PROMPTS
+## Quality checks for Step 3 (optional)
 
-**QA1 — Template Compliance Check**
+**3-Q1 — Template Compliance Check**
 
 Please check that the section headings, subheadings, and introductory texts in the draft Chapters 4 and 5 strictly follow the OLePFM Sector Reform Design Report Template. Identify any deviations from the template structure and correct them.
 
-**QA2 — Reform Result Consistency Check**
+**3-Q2 — Reform Result Consistency Check**
 
 Please check that every reform result code, title, and feasibility rating is identical in: Section 4.1 narrative; the Section 4.1 summary table; Annex Table 3.1; and Chapter 5 Section 5.3. List any discrepancies.
 
-**QA3 — Stakeholder Completeness Check**
+**3-Q3 — Stakeholder Completeness Check**
 
 Please check that every organization named as a key stakeholder in Section 4.2 also appears in Annex Tables 3.2 and 3.3. List any stakeholders missing from either table.
 
-**QA4 — Sequencing Coherence Check**
+**3-Q4 — Sequencing Coherence Check**
 
 Please review Annex Table 3.5 and identify: (i) any reform result whose Step 1 timeframe is later than a reform result that depends on it; (ii) any single organization with more than four lead assignments in the same year; and (iii) any Low-feasibility reform whose Step 3 falls within the first two years of the implementation horizon without adequate preparation steps.
 
 ---
 
-## Phase 3 Prompt Sequence Summary (all three steps)
+## Step 3 Prompt Sequence Summary (all three files)
 
 | Prompt | Skill file | Output |
 |---|---|---|
-| B1 | 03a | Chapter 4 introduction |
-| T1 (×n) | 03a | Annex Table 3.1 entry per bottleneck |
-| T2 | 03a | Full compiled Annex Table 3.1 |
-| C1 (×n) | 03a | Section 4.1 entry per bottleneck |
-| C2 | 03a | Compiled Section 4.1 |
-| D1 | 03b | Stakeholder mapping |
-| D2 | 03b | Section 4.2 narrative |
-| D3 | 03b | Annex Tables 3.2 and 3.3 |
-| E1 | 03b | Annex Table 3.4 |
-| E2 | 03b | Section 4.3 narrative |
-| F1 (×n) | 03b | Annex Table 3.5 entries per bottleneck |
-| F2 | 03b | Compiled Annex Table 3.5 |
-| G1 | 03c | Chapter 5: Conclusion |
-| H1 | 03c | Full compiled Chapters 4–5 and Annex Step 3 |
+| 3-01 | 03a | Chapter 4 introduction |
+| 3-02 (×n) | 03a | Annex Table 3.1 entry per bottleneck |
+| 3-03 | 03a | Full compiled Annex Table 3.1 |
+| 3-04 (×n) | 03a | Section 4.1 entry per bottleneck |
+| 3-05 | 03a | Compiled Section 4.1 |
+| 3-06 | 03b | Stakeholder mapping |
+| 3-07 | 03b | Section 4.2 narrative |
+| 3-08 | 03b | Annex Tables 3.2 and 3.3 |
+| 3-09 | 03b | Annex Table 3.4 |
+| 3-10 | 03b | Section 4.3 narrative |
+| 3-11 (×n) | 03b | Annex Table 3.5 entries per bottleneck |
+| 3-12 | 03b | Compiled Annex Table 3.5 |
+| 3-13 | 03c | Chapter 5: Conclusion |
+| 3-14 | 03c | Full compiled Chapters 4–5 and Annex Step 3 |

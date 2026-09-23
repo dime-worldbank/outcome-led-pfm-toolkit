@@ -1,0 +1,19 @@
+{
+  "name": "outcome-led-pfm-toolkit",
+  "owner": {
+    "name": "DIME, World Bank",
+    "url": "https://github.com/dime-worldbank"
+  },
+  "metadata": {
+    "description": "Agent Skills for outcome-led Public Financial Management (PFM) reform diagnosis and design, from DIME at the World Bank.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "outcome-led-pfm-toolkit",
+      "source": "./",
+      "description": "Agent Skills for outcome-led Public Financial Management (PFM): prepare diagnostic workshops and generate structured, outcome-focused reports.",
+      "version": "0.1.0"
+    }
+  ]
+}

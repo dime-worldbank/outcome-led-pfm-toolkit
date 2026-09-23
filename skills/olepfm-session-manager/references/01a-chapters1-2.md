@@ -1,23 +1,23 @@
 ---
-title: OLePFM Phase 1a — Chapters 1 & 2
-description: Step 1a of the OLePFM report workflow. Generates Chapter 1 (Introduction) and Chapter 2 (Outcome and Public Sector Context), including the public sector challenges that drive the entire bottleneck analysis in Phase 2. Continue with 01b-annex1.md.
+title: OLePFM Step 1 (1a) — Chapters 1 & 2
+description: Step 1 (file 1a) of the OLePFM report workflow. Generates Chapter 1 (Introduction) and Chapter 2 (Outcome and Public Sector Context), including the public sector challenges that drive the entire bottleneck analysis in Step 2. Continue with 01b-annex1.md.
 ---
 
-# Skill 01a: Chapters 1 & 2
+# Step 1 (file 1a): Chapters 1 & 2
 
-**Phase 1 of 4, step 1 of 2.** Run these prompts in sequence after Phase 0 (source preparation) is complete. Source identification and session context have already been established — begin directly with Prompt A1.
+**Step 1, file 1 of 2.** Run these prompts in sequence after the Sources stage is complete. Source identification and session context have already been established — begin directly with Prompt A1.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
-> When Prompt B5 is complete and confirmed, continue with `01b-annex1.md` (Prompts C1, C2 and D1).
+> When Prompt 1-11 is complete and confirmed, continue with `01b-annex1.md` (Prompts 1-12, 1-13 and 1-14).
 
 ---
 
-## PART A: CHAPTER 1 — INTRODUCTION
+## Sub-step 1.1 — Select the policy area and define the scope (Chapter 1: Introduction)
 
 ### ✏️ Review the output — focus on these points
 
-**Chapter 1 — Introduction (A1).** Review before proceeding to Chapter 2.
+**Chapter 1 — Introduction (Prompt 1-01).** Review before proceeding to Chapter 2.
 
 - [ ] The outcome is framed at the right level of specificity for the country context
 - [ ] The purpose statement correctly describes the process and intended use of the report
@@ -25,7 +25,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 
 Make any corrections before proceeding.
 
-### Prompt A1 — Chapter 1: Introduction
+### Prompt 1-01 — Chapter 1: Introduction
 
 Using the OLePFM Sector Reform Design Report Template, please provide a four-paragraph introduction to an Outcome-Led PFM Reform Diagnosis for [country] in the [sector] sector of no more than 350 words.
 
@@ -41,11 +41,11 @@ The introduction should:
 
 ---
 
-## PART B: CHAPTER 2 — OUTCOME AND PUBLIC SECTOR CONTEXT
+## Sub-step 1.2 — Select development outcomes and public sector results (Section 2.1)
 
 ### ✏️ Review the output — focus on these points
 
-**Section 2.1 — Outcomes and Public Sector Results (B1).** A critical review point: the challenges in Section 2.2 must be grounded in the results picture established here.
+**Section 2.1 — Outcomes and Public Sector Results (Prompt 1-02).** A critical review point: the challenges in Section 2.2 must be grounded in the results picture established here.
 
 - [ ] The headline development outcome indicators are accurate and sourced from the most authoritative available data
 - [ ] The public sector results (access, quality, efficiency measures) reflect the actual performance of the delivery system in [country]
@@ -54,7 +54,7 @@ The introduction should:
 
 Correct any inaccuracies and add any missing indicators before proceeding.
 
-### Prompt B1 — Section 2.1: Outcomes and Public Sector Results
+### Prompt 1-02 — Section 2.1: Outcomes and Public Sector Results
 
 Using the sources identified and the OLePFM Synthesis and relevant Sector Outcome Note as a guide, please provide an overview for [country] in the [sector] sector covering:
 
@@ -66,9 +66,11 @@ Use the standard introductory text from the template to open the section. Keep t
 
 ---
 
+## Sub-step 1.3 — Identify public sector challenges (Section 2.2)
+
 ### ✏️ Review the output — focus on these points
 
-**Public Sector Challenges (Section 2.2, B2)** — the most important review in Chapter 2; these challenges drive the entire bottleneck analysis in Phase 2.
+**Public Sector Challenges (Section 2.2, Prompt 1-03)** — the most important review in Chapter 2; these challenges drive the entire bottleneck analysis in Step 2.
 
 - [ ] They're the most structurally important constraints on sector delivery in [country] — not just the most visible or politically salient
 - [ ] Each challenge is distinct and covers a different dimension of the delivery problem
@@ -78,7 +80,7 @@ Use the standard introductory text from the template to open the section. Keep t
 
 You can rename, merge, add, or reorder as needed. **Confirm the final list of challenge titles before proceeding to Section 2.3.**
 
-### Prompt B2 — Section 2.2: Key Public Sector Challenges
+### Prompt 1-03 — Section 2.2: Key Public Sector Challenges
 
 Using the service delivery challenge categories in the [sector] OLePFM Outcome Note or the categorization in the OLePFM Synthesis as your organizing framework, please identify and describe preferably three and no more than five of the most important public sector service delivery challenges constraining [sector] development outcomes in [country].
 
@@ -90,7 +92,11 @@ Use the standard introductory text from the template to open the section. Ensure
 
 ---
 
-### Prompt B3a — Section 2.3.1: Policy Framework
+## Sub-step 1.4 — Map the sector policy, institutional and public finance context (Sections 2.3.1 and 2.3.2)
+
+> **Economic resilience or another cross-cutting fiscal outcome?** Use Prompts ER-1-04 to ER-1-10 from `01a-variant-economic-resilience.md` in place of Prompts 1-04 to 1-10 below, then continue with Prompt 1-11. Everything else in this file is unchanged.
+
+### Prompt 1-04 — Section 2.3.1: Policy Framework
 
 Please set out the relevant public sector policies for [sector] in [country], covering: the overarching policy framework and legislation; sector strategy documents and their key commitments; and any specific policies governing service delivery standards, decentralization, and regulation.
 
@@ -98,7 +104,7 @@ Keep the description to approximately 300 words.
 
 ---
 
-### Prompt B3b — Section 2.3.1: Institutional Architecture
+### Prompt 1-05 — Section 2.3.1: Institutional Architecture
 
 Please describe the institutions for [sector] in [country], including: (i) public and private sector delivery modalities (direct provision, funding and regulation, decentralization arrangements, digital systems); (ii) organizations involved at all levels of government and outside it; and (iii) the links and hierarchical relationships between organizations.
 
@@ -108,7 +114,7 @@ Keep the description to approximately 300 words.
 
 ### ✏️ Review the output — focus on these points
 
-**Section 2.3.1 — Institutional Architecture and Diagram (B3b, B3c).** Review the description and diagram carefully before the financial flows analysis.
+**Section 2.3.1 — Institutional Architecture and Diagram (Prompts 1-05, 1-06).** Review the description and diagram carefully before the financial flows analysis.
 
 - [ ] All significant organizations are included at the correct level of government
 - [ ] Hierarchical relationships between organizations are correctly described and drawn
@@ -118,7 +124,7 @@ Keep the description to approximately 300 words.
 
 You can add missing nodes, correct level assignments, adjust relationship lines, or change colour coding. **Confirm the organizational map is accurate before proceeding, as it forms the basis for the financial flows analysis.**
 
-### Prompt B3c — Section 2.3.1: Institutional Diagram (draw.io)
+### Prompt 1-06 — Section 2.3.1: Institutional Diagram (draw.io)
 
 Please prepare an editable diagram using draw.io / diagrams.net showing the organizations involved in [sector] service delivery in [country] and the hierarchical relationships between them, from national level down to the point of service delivery.
 
@@ -132,7 +138,7 @@ Include external actors such as development partners, faith-based providers, and
 
 ### ✏️ Review the output — focus on these points
 
-**Financial Flows Description and Diagram (B4a–B4c)** — a critical review point for the financial analysis, before the PFM systems description.
+**Financial Flows Description and Diagram (Prompts 1-07 to 1-09)** — a critical review point for the financial analysis, before the PFM systems description.
 
 - [ ] All significant financing channels are identified — common omissions include intergovernmental transfers, facility-retained revenues, off-budget donor flows, and social insurance mechanisms
 - [ ] Data on flow sizes is accurate and from authoritative sources
@@ -142,7 +148,7 @@ Include external actors such as development partners, faith-based providers, and
 
 You can add a missing channel, correct flow-size data, adjust bottleneck descriptions, or ask for the diagram to be revised. **Confirm the financing channel analysis is accurate and complete before proceeding to the PFM systems description.**
 
-### Prompt B4a — Section 2.3.2: Fiscal Policy Context
+### Prompt 1-07 — Section 2.3.2: Fiscal Policy Context
 
 Using the sources identified, please provide an analysis of the overall revenues and expenditures for [sector] in [country]. Tell a story from the data which includes:
 
@@ -156,7 +162,7 @@ Where data is available, also generate: (a) pie charts for the most recent year;
 
 ---
 
-### Prompt B4b — Section 2.3.2: Financial Flows Table and Description
+### Prompt 1-08 — Section 2.3.2: Financial Flows Table and Description
 
 Please provide a table detailing the main financial flows from central government through intermediate organizations to the point of [sector] service delivery in [country], covering:
 
@@ -170,7 +176,7 @@ There should be no more than 250 words per channel/row. Provide a summary narrat
 
 ---
 
-### Prompt B4c — Section 2.3.2: Financial Flows Diagram (draw.io)
+### Prompt 1-09 — Section 2.3.2: Financial Flows Diagram (draw.io)
 
 Please prepare a diagram using draw.io / diagrams.net of the main financial flows from central government through intermediate organizations to the point of [sector] service delivery in [country], showing: (i) each distinct financing channel using a distinct colour; (ii) the organizations through which funds flow at each stage; and (iii) the relative size of each flow encoded in line thickness, with thicker lines representing larger flows.
 
@@ -178,7 +184,7 @@ Include bottleneck indicators (amber diamond nodes) showing the key failure poin
 
 ---
 
-### Prompt B4d — Section 2.3.2: PFM Systems Description
+### Prompt 1-10 — Section 2.3.2: PFM Systems Description
 
 Please provide a description of the PFM rules and systems in [sector] in [country] and the roles of different organizations in managing funds for service delivery, covering: budget formulation; budget execution for wage and non-wage expenditure; intergovernmental fiscal transfers; procurement; audit and accountability; and digital financial management systems.
 
@@ -188,7 +194,7 @@ Use available diagnostics including PEFA and other reports. Highlight both areas
 
 ### ✏️ Review the output — focus on these points
 
-**PFM Systems Description (B4d).** Review before proceeding to the feasibility assessment.
+**PFM Systems Description (Prompt 1-10).** Review before proceeding to the feasibility assessment.
 
 - [ ] All six PFM dimensions are covered (budget formulation, wage execution, non-wage execution, intergovernmental transfers, procurement, audit and accountability, digital systems)
 - [ ] The PEFA and other diagnostic findings are correctly cited and interpreted
@@ -199,7 +205,9 @@ Make corrections before proceeding.
 
 ---
 
-### Prompt B5 — Section 2.3.3: Feasibility Assessment
+## Sub-step 1.5 — Assess institutional capability and policy feasibility (Section 2.3.3)
+
+### Prompt 1-11 — Section 2.3.3: Feasibility Assessment
 
 Please provide a short assessment of approximately 300 words on the feasibility of achieving [sector] policy objectives in [country] from a technical, political, and financial perspective.
 
@@ -211,7 +219,7 @@ Assess: (i) whether policy commitments are fiscally affordable given the availab
 
 ### ✏️ Review the output — focus on these points
 
-**Feasibility Assessment (B5).** Review before proceeding to the Annex.
+**Feasibility Assessment (Prompt 1-11).** Review before proceeding to the Annex.
 
 - [ ] The financial affordability assessment reflects the actual fiscal envelope and neither overstates nor understates the financing gap
 - [ ] The institutional capability assessment is grounded in the organizational and PFM analysis in Section 2.3
@@ -221,19 +229,19 @@ Adjust any dimension that is too optimistic or pessimistic.
 
 ---
 
-## QUALITY ASSURANCE PROMPTS
+## Quality checks for Step 1 (optional)
 
 Use these prompts at any stage to check and improve draft outputs.
 
-**QA1 — Template Compliance Check**
+**1-Q1 — Template Compliance Check**
 
 Please check that the section headings, subheadings, and introductory texts in the draft Chapters 1 and 2 strictly follow the OLePFM Sector Reform Design Report Template. Identify any deviations and correct them.
 
-**QA3 — Evidence Check**
+**1-Q3 — Evidence Check**
 
 Please check that all factual claims in Chapters 1 and 2 are supported by a hyperlinked parenthetical citation, e.g. ([World Bank, 2010](https://…)). Flag any unsupported claims and either add a citation or qualify the claim appropriately.
 
-**QA4 — PFM Exclusion Check**
+**1-Q4 — PFM Exclusion Check**
 
 Please review the public sector challenge descriptions in Section 2.2 to confirm that no challenge mentions money, public finance, or PFM. Flag any challenges that violate this rule and suggest a revision.
 
@@ -243,16 +251,16 @@ Please review the public sector challenge descriptions in Section 2.2 to confirm
 
 | Prompt | Output |
 |---|---|
-| A1 | Chapter 1: Introduction |
-| B1 | Section 2.1: Outcomes and Public Sector Results |
-| B2 | Section 2.2: Key Public Sector Challenges |
-| B3a | Section 2.3.1: Policy Framework |
-| B3b | Section 2.3.1: Institutional Architecture |
-| B3c | Section 2.3.1: Institutional Diagram |
-| B4a | Section 2.3.2: Fiscal Policy Context and Charts |
-| B4b | Section 2.3.2: Financial Flows Table and Description |
-| B4c | Section 2.3.2: Financial Flows Diagram |
-| B4d | Section 2.3.2: PFM Systems Description |
-| B5 | Section 2.3.3: Feasibility Assessment |
+| 1-01 | Chapter 1: Introduction |
+| 1-02 | Section 2.1: Outcomes and Public Sector Results |
+| 1-03 | Section 2.2: Key Public Sector Challenges |
+| 1-04 | Section 2.3.1: Policy Framework |
+| 1-05 | Section 2.3.1: Institutional Architecture |
+| 1-06 | Section 2.3.1: Institutional Diagram |
+| 1-07 | Section 2.3.2: Fiscal Policy Context and Charts |
+| 1-08 | Section 2.3.2: Financial Flows Table and Description |
+| 1-09 | Section 2.3.2: Financial Flows Diagram |
+| 1-10 | Section 2.3.2: PFM Systems Description |
+| 1-11 | Section 2.3.3: Feasibility Assessment |
 
 Continue with `01b-annex1.md`.

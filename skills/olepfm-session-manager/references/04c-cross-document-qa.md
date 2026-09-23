@@ -1,11 +1,11 @@
 ---
-title: OLePFM Phase 4c — Cross-Document Quality Assurance
-description: Step 4c of the OLePFM report workflow. Runs the five cross-document quality assurance checks (QA1–QA5) over Main Report Parts 1 and 2 and the Annex before the report is released. Run after 04b-part2-and-annex.md.
+title: OLePFM Compilation and QA (4c) — Cross-Document Quality Assurance
+description: Compilation and QA (file 4c) of the OLePFM report workflow. Runs the five cross-document quality assurance checks (Prompts QA-1 to QA-5) over Main Report Parts 1 and 2 and the Annex before the report is released. Run after 04b-part2-and-annex.md.
 ---
 
-# Skill 04c: Cross-Document Quality Assurance
+# Compilation and QA (file 4c): Cross-Document Quality Assurance
 
-**Phase 4 of 4, step 3 of 3.** Run these prompts after all three final documents have been compiled in `04a-audit-and-part1.md` and `04b-part2-and-annex.md`.
+**Compilation and QA, file 3 of 3.** Run these prompts after all three final documents have been compiled in `04a-audit-and-part1.md` and `04b-part2-and-annex.md`.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
@@ -15,22 +15,22 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 
 ---
 
-## PART E: CROSS-DOCUMENT QUALITY ASSURANCE
+## Cross-document quality assurance
 
-Run QA1 through QA5 in sequence after all three documents are compiled. Resolve all identified issues before releasing the final report.
+Run QA-1 through QA-5 in sequence after all three documents are compiled. Resolve all identified issues before releasing the final report.
 
 ### ✏️ Review the output — focus on these points
 
-**Cross-document QA (QA1–QA5)** — these catch issues that only appear when the three documents are read as a whole.
+**Cross-document QA (Prompts QA-1 to QA-5)** — these catch issues that only appear when the three documents are read as a whole.
 
-- [ ] A final correction list has been compiled from QA1 through QA5
+- [ ] A final correction list has been compiled from QA-1 through QA-5
 - [ ] The AI has applied every correction to the relevant document(s)
 
 **Do not release any document for external review until all QA findings have been resolved.**
 
 ---
 
-### Prompt QA1 — Cross-Document Consistency: Reform Results
+### Prompt QA-1 — Cross-Document Consistency: Reform Results
 
 Please check for consistency across Main Report Part 1, Main Report Part 2, and the Annex with respect to reform result codes, titles, and feasibility ratings.
 
@@ -38,7 +38,7 @@ Specifically: (i) list every reform result code that appears in any of the three
 
 ---
 
-### Prompt QA2 — Cross-Document Consistency: Public Sector Challenges
+### Prompt QA-2 — Cross-Document Consistency: Public Sector Challenges
 
 Please check that the public sector challenges are referred to by exactly the same title or shorthand in every location across the three compiled documents: the executive summary; Section 2.2; Section 3.2.1; Section 3.2.2; Section 4.1 (in each change objective opening paragraph); Section 5.2; Annex Table 1.1; Annex Table 2.2; and Annex Table 2.3.
 
@@ -46,7 +46,7 @@ List any inconsistencies in challenge title, numbering, or characterisation acro
 
 ---
 
-### Prompt QA3 — Cross-Document Consistency: Outcome and Spending Data
+### Prompt QA-3 — Cross-Document Consistency: Outcome and Spending Data
 
 Please check that all quantitative outcome and spending data cited across the three compiled documents are internally consistent.
 
@@ -56,7 +56,7 @@ List any inconsistencies with the recommended correction and the most reliable s
 
 ---
 
-### Prompt QA4 — Annex Completeness Check
+### Prompt QA-4 — Annex Completeness Check
 
 Please confirm that: (i) every Annex table referenced in the main report chapters exists in the Annex document with the correct title and number — list any missing tables; (ii) every organization named in any Annex table is also named in the main report (either in Section 2.3.2 or Section 4.2) — list any organizations that appear in the Annex but not in the main report; and (iii) the Annex Table of Contents is complete and accurate.
 
@@ -64,7 +64,7 @@ List all gaps or inconsistencies.
 
 ---
 
-### Prompt QA5 — Plain Language and Accessibility Check
+### Prompt QA-5 — Plain Language and Accessibility Check
 
 Please review the executive summary and Chapter 5 conclusion and identify:
 
@@ -78,21 +78,21 @@ Flag and suggest revisions for each.
 
 ---
 
-## Phase 4 Prompt Sequence Summary (all three steps)
+## Compilation and QA Prompt Sequence Summary (all three files)
 
 | Prompt | Skill file | Output | Document |
 |---|---|---|---|
-| A1 | 04a | Cross-chapter consistency audit with correction list | — |
-| M1a | 04a | Cover, ToC, executive summary, acronym list | Part 1 |
-| M1b | 04a | Final compiled Chapter 1 | Part 1 |
-| M1c | 04a | Final compiled Chapter 2 | Part 1 |
-| M1d | 04a | Full Main Report Part 1 | Part 1 |
-| M2a | 04b | Final compiled Chapter 3 | Part 2 |
-| M2b | 04b | Final compiled Chapter 4 | Part 2 |
-| M2c | 04b | Final compiled Chapter 5 | Part 2 |
-| M2d | 04b | Full Main Report Part 2 + bibliography | Part 2 |
-| AN1 | 04b | Annex Step 1 (Tables 1.1, 1.2) | Annex |
-| AN2 | 04b | Annex Step 2 (Tables 2.1, 2.2, 2.3) | Annex |
-| AN3 | 04b | Annex Step 3 (Tables 3.1–3.5) | Annex |
-| AN4 | 04b | Full Annex document | Annex |
-| QA1–QA5 | 04c | Cross-document QA findings and corrections | All |
+| C-01 | 04a | Cross-chapter consistency audit with correction list | — |
+| C-02 | 04a | Cover, ToC, executive summary, acronym list | Part 1 |
+| C-03 | 04a | Final compiled Chapter 1 | Part 1 |
+| C-04 | 04a | Final compiled Chapter 2 | Part 1 |
+| C-05 | 04a | Full Main Report Part 1 | Part 1 |
+| C-06 | 04b | Final compiled Chapter 3 | Part 2 |
+| C-07 | 04b | Final compiled Chapter 4 | Part 2 |
+| C-08 | 04b | Final compiled Chapter 5 | Part 2 |
+| C-09 | 04b | Full Main Report Part 2 + bibliography | Part 2 |
+| C-10 | 04b | Annex Step 1 (Tables 1.1, 1.2) | Annex |
+| C-11 | 04b | Annex Step 2 (Tables 2.1, 2.2, 2.3) | Annex |
+| C-12 | 04b | Annex Step 3 (Tables 3.1–3.5) | Annex |
+| C-13 | 04b | Full Annex document | Annex |
+| QA-1 to QA-5 | 04c | Cross-document QA findings and corrections | All |

@@ -1,30 +1,30 @@
 ---
-title: OLePFM Phase 4b — Main Report Part 2 and Annex Document
-description: Step 4b of the OLePFM report workflow. Compiles Main Report Part 2 (Chapters 3–5 and bibliography) and the full Annex document (Steps 1–3, Tables 1.1 to 3.5). Run after 04a-audit-and-part1.md.
+title: OLePFM Compilation and QA (4b) — Main Report Part 2 and Annex Document
+description: Compilation and QA (file 4b) of the OLePFM report workflow. Compiles Main Report Part 2 (Chapters 3–5 and bibliography) and the full Annex document (Steps 1–3, Tables 1.1 to 3.5). Run after 04a-audit-and-part1.md.
 ---
 
-# Skill 04b: Main Report Part 2 and Annex Document
+# Compilation and QA (file 4b): Main Report Part 2 and Annex Document
 
-**Phase 4 of 4, step 2 of 3.** Run these prompts after the consistency audit and Main Report Part 1 from `04a-audit-and-part1.md` are complete and confirmed. Begin directly with Prompt M2a.
+**Compilation and QA, file 2 of 3.** Run these prompts after the consistency audit and Main Report Part 1 from `04a-audit-and-part1.md` are complete and confirmed. Begin directly with Prompt M2a.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
 **Prerequisites in context:**
-- Corrections from the Prompt A1 consistency audit already applied
+- Corrections from the Prompt C-01 consistency audit already applied
 - Compiled Main Report Part 1 from step 4a
-- Draft Chapters 3–5 and all Annex Step drafts from Phases 1–3
+- Draft Chapters 3–5 and all Annex Step drafts from Steps 1–3
 
-> When Prompt AN4 is complete and confirmed, continue with `04c-cross-document-qa.md`.
+> When Prompt C-13 is complete and confirmed, continue with `04c-cross-document-qa.md`.
 
 ---
 
-## PART M2: MAIN REPORT PART 2 — CHAPTERS 3–5 AND BIBLIOGRAPHY
+## Main Report Part 2 — Chapters 3–5 and bibliography
 
-Compile Part 2 in four sequential steps (M2a through M2d).
+Compile Part 2 in four sequential prompts (Prompts C-06 through C-09).
 
-### Prompt M2a — Chapter 3: The Role of Public Finance and PFM Bottlenecks
+### Prompt C-06 — Chapter 3: The Role of Public Finance and PFM Bottlenecks
 
-Please compile the final version of Chapter 3 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 3 document and applying the corrections identified in the consistency audit (Prompt A1).
+Please compile the final version of Chapter 3 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 3 document and applying the corrections identified in the consistency audit (Prompt C-01).
 
 Apply the following editorial instructions:
 (i) Confirm the chapter opening cross-references Annex Tables 2.1, 2.2, and 2.3 using the standard OLePFM template language.
@@ -36,9 +36,9 @@ Present the final compiled Chapter 3 in full.
 
 ---
 
-### Prompt M2b — Chapter 4: Reforms to Resolve Bottlenecks
+### Prompt C-07 — Chapter 4: Reforms to Resolve Bottlenecks
 
-Please compile the final version of Chapter 4 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 4 document and applying the corrections identified in the consistency audit (Prompt A1).
+Please compile the final version of Chapter 4 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 4 document and applying the corrections identified in the consistency audit (Prompt C-01).
 
 Apply the following editorial instructions:
 (i) Confirm the Chapter 4 opening correctly describes the three-section structure and cross-references Annex Tables 3.1, 3.2, 3.3, 3.4, and 3.5 by their exact titles.
@@ -52,7 +52,7 @@ Present the final compiled Chapter 4 in full.
 
 ### ✏️ Review the output — focus on these points
 
-**Main Report Part 2 (M2b).** Read Chapters 3 and 4 consecutively.
+**Main Report Part 2 (Prompt C-07).** Read Chapters 3 and 4 consecutively.
 
 - [ ] The transition from Chapter 3 to Chapter 4 is analytically smooth — the reform results flow logically from the bottleneck analysis
 - [ ] The change objective restated at the start of each Section 4.1 sub-section matches exactly the one in the corresponding Section 3.2.2 bottleneck description
@@ -63,9 +63,9 @@ Make any adjustments before compiling Chapter 5.
 
 ---
 
-### Prompt M2c — Chapter 5: Conclusion
+### Prompt C-08 — Chapter 5: Conclusion
 
-Please compile the final version of Chapter 5 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 5 document and applying the corrections identified in the consistency audit (Prompt A1).
+Please compile the final version of Chapter 5 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 5 document and applying the corrections identified in the consistency audit (Prompt C-01).
 
 Apply the following editorial instructions:
 (i) Confirm every outcome indicator cited has a corresponding citation and is consistent with Section 2.1 and the executive summary.
@@ -78,9 +78,9 @@ Present the final compiled Chapter 5 in full.
 
 ---
 
-### Prompt M2d — Compile Main Report Part 2
+### Prompt C-09 — Compile Main Report Part 2
 
-Please compile the final Main Report Part 2 document, combining in order: (i) a Part 2 cover note; (ii) Chapter 3 from Prompt M2a; (iii) Chapter 4 from Prompt M2b; (iv) Chapter 5 from Prompt M2c; and (v) the bibliography.
+Please compile the final Main Report Part 2 document, combining in order: (i) a Part 2 cover note; (ii) Chapter 3 from Prompt C-06; (iii) Chapter 4 from Prompt C-07; (iv) Chapter 5 from Prompt C-08; and (v) the bibliography.
 
 Apply the following final formatting instructions:
 - The Part 2 cover note should read: "This document is Part 2 of a two-part main report for the [Country] [Sector] OLePFM Reform Diagnosis and Design. It should be read together with Main Report Part 1 (Front Matter and Chapters 1–2) and the companion Annex volume (Annex Steps 1–3)."
@@ -91,11 +91,11 @@ Apply the following final formatting instructions:
 
 ---
 
-## PART AN: ANNEX DOCUMENT — STEPS 1, 2, AND 3
+## Annex document — Steps 1, 2 and 3
 
-Compile the Annex in four sequential steps (AN1 through AN4). The Annex is designed to stand alone as a reference document — all tables should be self-explanatory without requiring the reader to refer to the main report.
+Compile the Annex in four sequential prompts (Prompts C-10 through C-13). The Annex is designed to stand alone as a reference document — all tables should be self-explanatory without requiring the reader to refer to the main report.
 
-### Prompt AN1 — Annex Step 1: Tables 1.1 and 1.2
+### Prompt C-10 — Annex Step 1: Tables 1.1 and 1.2
 
 Please compile the final Annex Step 1 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, including Tables 1.1 and 1.2.
 
@@ -110,7 +110,7 @@ Present the final Annex Step 1 in full.
 
 ### ✏️ Review the output — focus on these points
 
-**Annex Step 1 — Table 1.2 (AN1).** Check the table is complete.
+**Annex Step 1 — Table 1.2 (Prompt C-10).** Check the table is complete.
 
 - [ ] Every organization named as a key stakeholder in Chapter 4 (Section 4.2) also appears in Table 1.2 — a common omission is actors introduced in Section 4.2 but not in Section 2.3.2
 - [ ] Any organization added here carries its correct functions
@@ -119,7 +119,7 @@ Add any missing organizations before proceeding.
 
 ---
 
-### Prompt AN2 — Annex Step 2: Tables 2.1, 2.2, and 2.3
+### Prompt C-11 — Annex Step 2: Tables 2.1, 2.2, and 2.3
 
 Please compile the final Annex Step 2 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, including Tables 2.1, 2.2, and 2.3.
 
@@ -135,7 +135,7 @@ Present the final Annex Step 2 in full.
 
 ### ✏️ Review the output — focus on these points
 
-**Annex Step 2 — Table 2.2 (AN2)** — the most analytically complex table in the report.
+**Annex Step 2 — Table 2.2 (Prompt C-11)** — the most analytically complex table in the report.
 
 - [ ] The total number of individual bottlenecks in Table 2.2 matches the number cited in Section 3.2.1
 - [ ] Every priority bottleneck in Table 2.3 consolidates at least one Table 2.2 bottleneck, with the constituent codes listed
@@ -145,7 +145,7 @@ Resolve any gaps before proceeding.
 
 ---
 
-### Prompt AN3 — Annex Step 3: Tables 3.1, 3.2, 3.3, 3.4, and 3.5
+### Prompt C-12 — Annex Step 3: Tables 3.1, 3.2, 3.3, 3.4, and 3.5
 
 Please compile the final Annex Step 3 for the [country] [sector] OLePFM Reform Diagnosis and Design Report, including Tables 3.1, 3.2, 3.3, 3.4, and 3.5.
 
@@ -163,7 +163,7 @@ Present the final Annex Step 3 in full.
 
 ### ✏️ Review the output — focus on these points
 
-**Annex Step 3 — Table 3.5 (AN3)** — the implementation commitment partners will return to most often, so it must be realistic.
+**Annex Step 3 — Table 3.5 (Prompt C-12)** — the implementation commitment partners will return to most often, so it must be realistic.
 
 - [ ] No single organization has more than three to four lead assignments in [start year] or [start year + 1] — count them, and spread the sequencing if it's overloaded
 - [ ] No key step requires Parliamentary legislation without an explicit prior step for stakeholder consultation and Bill drafting
@@ -174,9 +174,9 @@ Adjust before producing the final Annex document.
 
 ---
 
-### Prompt AN4 — Compile Final Annex Document
+### Prompt C-13 — Compile Final Annex Document
 
-Please compile the final Annex document, combining in order: (i) an Annex cover note; (ii) Annex Step 1 (Tables 1.1 and 1.2) from Prompt AN1; (iii) Annex Step 2 (Tables 2.1, 2.2, 2.3) from Prompt AN2; and (iv) Annex Step 3 (Tables 3.1, 3.2, 3.3, 3.4, 3.5) from Prompt AN3.
+Please compile the final Annex document, combining in order: (i) an Annex cover note; (ii) Annex Step 1 (Tables 1.1 and 1.2) from Prompt C-10; (iii) Annex Step 2 (Tables 2.1, 2.2, 2.3) from Prompt C-11; and (iv) Annex Step 3 (Tables 3.1, 3.2, 3.3, 3.4, 3.5) from Prompt AN3.
 
 Apply the following final formatting instructions:
 - The Annex cover note should read: "This document is the companion Annex volume for the [Country] [Sector] OLePFM Reform Diagnosis and Design Main Report. It contains all Annex Step tables and should be read together with Main Report Part 1 (Chapters 1–2) and Main Report Part 2 (Chapters 3–5). The Annex is organised in three steps: Step 1 supports Chapter 2; Step 2 supports Chapter 3; Step 3 supports Chapter 4."
@@ -192,13 +192,13 @@ Apply the following final formatting instructions:
 
 | Prompt | Output | Document |
 |---|---|---|
-| M2a | Final compiled Chapter 3 | Part 2 |
-| M2b | Final compiled Chapter 4 | Part 2 |
-| M2c | Final compiled Chapter 5 | Part 2 |
-| M2d | Full Main Report Part 2 + bibliography | Part 2 |
-| AN1 | Annex Step 1 (Tables 1.1, 1.2) | Annex |
-| AN2 | Annex Step 2 (Tables 2.1, 2.2, 2.3) | Annex |
-| AN3 | Annex Step 3 (Tables 3.1–3.5) | Annex |
-| AN4 | Full Annex document | Annex |
+| C-06 | Final compiled Chapter 3 | Part 2 |
+| C-07 | Final compiled Chapter 4 | Part 2 |
+| C-08 | Final compiled Chapter 5 | Part 2 |
+| C-09 | Full Main Report Part 2 + bibliography | Part 2 |
+| C-10 | Annex Step 1 (Tables 1.1, 1.2) | Annex |
+| C-11 | Annex Step 2 (Tables 2.1, 2.2, 2.3) | Annex |
+| C-12 | Annex Step 3 (Tables 3.1–3.5) | Annex |
+| C-13 | Full Annex document | Annex |
 
 Continue with `04c-cross-document-qa.md`.

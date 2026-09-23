@@ -1,29 +1,29 @@
 ---
-title: OLePFM Phase 3a — Annex Table 3.1 and Section 4.1
-description: Step 3a of the OLePFM report workflow. Generates the Chapter 4 introduction, Annex Table 3.1 (causes of and resolutions to priority bottlenecks), and Section 4.1 (change objectives and reform results). Continue with 03b-stakeholders-systems-steps.md.
+title: OLePFM Step 3 (3a) — Annex Table 3.1 and Section 4.1
+description: Step 3 (file 3a) of the OLePFM report workflow. Generates the Chapter 4 introduction, Annex Table 3.1 (causes of and resolutions to priority bottlenecks), and Section 4.1 (change objectives and reform results). Continue with 03b-stakeholders-systems-steps.md.
 ---
 
-# Skill 03a: Annex Table 3.1 and Section 4.1
+# Step 3 (file 3a): Annex Table 3.1 and Section 4.1
 
-**Phase 3 of 4, step 1 of 3.** Run these prompts after Phase 2 (Chapter 3) is complete and confirmed. The session context, source list, confirmed challenge titles, and confirmed priority bottlenecks from Phases 1–2 are already in context — begin directly with Prompt B1.
+**Step 3, file 1 of 3.** Run these prompts after Step 2 (Chapter 3) is complete and confirmed. The session context, source list, confirmed challenge titles, and confirmed priority bottlenecks from Steps 1–2 are already in context — begin directly with Prompt B1.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
 **Prerequisites in context:**
-- Confirmed challenge titles from Phase 1 (recorded in manager)
-- Confirmed priority bottlenecks and change objectives from Phase 2 (recorded in manager)
-- Source list from Phase 0
-- Draft Chapters 1–3 and Annex Steps 1–2 from Phases 1–2
+- Confirmed challenge titles from Step 1 (recorded in manager)
+- Confirmed priority bottlenecks and change objectives from Step 2 (recorded in manager)
+- Source list from the Sources stage
+- Draft Chapters 1–3 and Annex Steps 1–2 from Steps 1–2
 
-> **Critical sequencing:** Complete and confirm Annex Table 3.1 in full (Prompts T1 × n and T2) **before** beginning Section 4.1 drafts (Prompts C1 × n and C2). The reform results in Table 3.1 are the authoritative source for all Section 4.1 content.
+> **Critical sequencing:** Complete and confirm Annex Table 3.1 in full (Prompts 3-02 × n and 3-03) **before** beginning Section 4.1 drafts (Prompts 3-04 × n and 3-05). The reform results in Table 3.1 are the authoritative source for all Section 4.1 content.
 
-> When Prompt C2 is complete and confirmed, continue with `03b-stakeholders-systems-steps.md`.
+> When Prompt 3-05 is complete and confirmed, continue with `03b-stakeholders-systems-steps.md`.
 
 ---
 
-## PART B: CHAPTER 4 INTRODUCTION
+## Chapter 4 introduction
 
-### Prompt B1 — Chapter 4: Introduction
+### Prompt 3-01 — Chapter 4: Introduction
 
 Using the standard introductory text from the OLePFM Sector Reform Design Report Template, please draft the opening paragraph for Chapter 4 — Reforms to Resolve Bottlenecks — for [country] in the [sector] sector.
 
@@ -33,13 +33,13 @@ Keep to approximately 150 words.
 
 ---
 
-## PART C0: ANNEX TABLE 3.1 — CAUSES OF AND RESOLUTIONS TO PRIORITY BOTTLENECKS
+## Sub-step 3.1 — Explore the causes of priority bottlenecks (Annex Table 3.1)
 
-Annex Table 3.1 is the analytical foundation for Chapter 4. It must be prepared and confirmed before drafting Section 4.1. Run Prompt T1 once for each priority bottleneck, then compile with Prompt T2, before beginning Part C.
+Annex Table 3.1 is the analytical foundation for Chapter 4. It must be prepared and confirmed before drafting Section 4.1. Run Prompt 3-02 once for each priority bottleneck, then compile with Prompt 3-03, before beginning the Section 4.1 prompts.
 
 ### ✏️ Review the output — focus on these points
 
-**Annex Table 3.1 entry, per bottleneck (T1).** Check each entry after it's produced, before the next bottleneck.
+**Annex Table 3.1 entry, per bottleneck (Prompt 3-02).** Check each entry after it's produced, before the next bottleneck.
 
 - [ ] The taxonomy classification references the correct OLePFM Synthesis Annex 4 category (check the category number and label against the Synthesis Handbook)
 - [ ] The underlying causes are specific, evidence-based, and drawn from country sources — not generic statements such as "weak institutions" or "limited capacity"
@@ -49,7 +49,7 @@ Annex Table 3.1 is the analytical foundation for Chapter 4. It must be prepared 
 
 **Make corrections before proceeding to the next bottleneck.**
 
-### Prompt T1 — Annex Table 3.1 Entry per Bottleneck (repeat for each bottleneck)
+### Prompt 3-02 — Annex Table 3.1 Entry per Bottleneck (repeat for each bottleneck)
 
 Please prepare the Annex Step 3 Table 3.1 entry for Priority Bottleneck [number]: [paste bottleneck title from Section 3.2.2], for [country] in the [sector] sector.
 
@@ -71,17 +71,17 @@ One substantive row per sub-bottleneck, with the following columns:
 
 ### ✏️ Review the output — focus on these points
 
-**Full Annex Table 3.1, compiled (T2).** Read it as a stand-alone document — as a government counterpart or development partner reviewer would — before Part C.
+**Full Annex Table 3.1, compiled (Prompt 3-03).** Read it as a stand-alone document — as a government counterpart or development partner reviewer would — before the Section 4.1 prompts.
 
 - [ ] Every sub-bottleneck identified in Section 3.2.1 has a corresponding row, with no omissions
 - [ ] Taxonomy classifications are applied consistently — the same type of failure carries the same or adjacent codes across bottlenecks
 - [ ] The underlying causes column explains why each problem exists, rather than repeating what it is
 - [ ] Each row's stakeholder column is complete enough to serve as an initial mapping without further research
-- [ ] The reform results are the authoritative version — they will be transcribed into Section 4.1 in Part C
+- [ ] The reform results are the authoritative version — they will be transcribed into Section 4.1 by Prompt 3-04
 
-**Do not proceed to Part C until Table 3.1 is confirmed.**
+**Do not proceed to the Section 4.1 prompts until Table 3.1 is confirmed.**
 
-### Prompt T2 — Compile Full Annex Table 3.1
+### Prompt 3-03 — Compile Full Annex Table 3.1
 
 Please compile all [number] Annex Table 3.1 entries into a single complete table for [country] in the [sector] sector, following the format of Annex Step 3 Table 3.1 in the OLePFM Sector Reform Design Report Template.
 
@@ -89,19 +89,19 @@ Organize the table by priority bottleneck, with a clearly formatted header row f
 
 Ensure that: (i) column formatting is consistent across all bottleneck sections; (ii) sub-bottleneck codes are consistent with the codes used in Sections 3.2.1 and 3.2.2 of Chapter 3; (iii) reform result codes and titles in Table 3.1 are consistent with the summary reform results table that will appear at the end of Section 4.1 — these must match exactly; and (iv) the table includes source footnotes as hyperlinked parentheticals, e.g. ([World Bank, 2010](https://…)).
 
-If any discrepancy exists between the Table 3.1 entries from Prompt T1 and the reform results listed in Section 3.2.2 or Annex Table 2.3, flag it for resolution before proceeding.
+If any discrepancy exists between the Table 3.1 entries from Prompt 3-02 and the reform results listed in Section 3.2.2 or Annex Table 2.3, flag it for resolution before proceeding.
 
 ---
 
-## PART C: SECTION 4.1 — CHANGE OBJECTIVES AND REFORM RESULTS
+## Sub-step 3.2 — Develop plans to resolve each bottleneck: reform results (Section 4.1)
 
-*Note: Annex Table 3.1 must be completed and confirmed (T1 and T2) before beginning Part C.*
+*Note: Annex Table 3.1 must be completed and confirmed (Prompts 3-02 and 3-03) before beginning the Section 4.1 prompts.*
 
-Use Prompt C1 once for each priority bottleneck. Repeat for all [number] bottlenecks before compiling Section 4.1.
+Use Prompt 3-04 once for each priority bottleneck. Repeat for all [number] bottlenecks before compiling Section 4.1.
 
 ### ✏️ Review the output — focus on these points
 
-**Reform results section, per bottleneck (C1)** — the most analytically important review in Phase 3. Check after each bottleneck, before the next.
+**Reform results section, per bottleneck (Prompt 3-04)** — the most analytically important review in Step 3. Check after each bottleneck, before the next.
 
 - [ ] The change objective sub-section title uses the positive change objective name from Annex Table 2.3 — not the bottleneck problem description
 - [ ] The opening paragraph restates the change objective and names the specific Section 2.2 challenges, with the causal mechanism explained
@@ -112,9 +112,9 @@ Use Prompt C1 once for each priority bottleneck. Repeat for all [number] bottlen
 
 **Confirm the reform results for each bottleneck before proceeding to the next.**
 
-### Prompt C1 — Reform Results per Bottleneck (repeat for each bottleneck)
+### Prompt 3-04 — Reform Results per Bottleneck (repeat for each bottleneck)
 
-Using the confirmed Annex Table 3.1 entry for this bottleneck (from Prompt T1) and the OLePFM Sector Reform Design Report Template as your structural guide, please draft the Section 4.1 entry for Change Objective [number]: [paste the change objective from the Change Objective header row for this bottleneck in Annex Table 3.1 — not the bottleneck title].
+Using the confirmed Annex Table 3.1 entry for this bottleneck (from Prompt 3-02) and the OLePFM Sector Reform Design Report Template as your structural guide, please draft the Section 4.1 entry for Change Objective [number]: [paste the change objective from the Change Objective header row for this bottleneck in Annex Table 3.1 — not the bottleneck title].
 
 The reform results and sub-bottleneck structure should be drawn directly from Table 3.1 — do not introduce new sub-bottlenecks or reform results that are not already in the confirmed table.
 
@@ -134,7 +134,7 @@ Structure the entry as follows:
 
 ### ✏️ Review the output — focus on these points
 
-**Section 4.1, compiled (C2).** Review the full section before proceeding to Section 4.2.
+**Section 4.1, compiled (Prompt 3-05).** Review the full section before proceeding to Section 4.2.
 
 - [ ] All [number] bottlenecks are covered in logical sequence — from most upstream/structural to most cross-cutting/enabling
 - [ ] Reform results across all bottlenecks are consistently formatted and written at the same level of specificity
@@ -144,7 +144,7 @@ Structure the entry as follows:
 
 Make any adjustments before proceeding.
 
-### Prompt C2 — Compile Section 4.1
+### Prompt 3-05 — Compile Section 4.1
 
 Please compile the Section 4.1 — Change Objectives and Reform Results — entries for all [number] priority bottlenecks into a single, coherent section for [country] in the [sector] sector, strictly following the OLePFM Sector Reform Design Report Template.
 
@@ -164,10 +164,10 @@ Open the section with the standard template introductory text.
 
 | Prompt | Output |
 |---|---|
-| B1 | Chapter 4 introduction |
-| T1 (×n) | Annex Table 3.1 entry per bottleneck |
-| T2 | Full compiled Annex Table 3.1 |
-| C1 (×n) | Section 4.1 entry per bottleneck |
-| C2 | Compiled Section 4.1 |
+| 3-01 | Chapter 4 introduction |
+| 3-02 (×n) | Annex Table 3.1 entry per bottleneck |
+| 3-03 | Full compiled Annex Table 3.1 |
+| 3-04 (×n) | Section 4.1 entry per bottleneck |
+| 3-05 | Compiled Section 4.1 |
 
 Continue with `03b-stakeholders-systems-steps.md`.

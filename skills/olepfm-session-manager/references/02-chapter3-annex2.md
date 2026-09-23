@@ -1,26 +1,26 @@
 ---
-title: OLePFM Phase 2 — Chapter 3 and Annex Step 2
-description: Phase 2 of the OLePFM report workflow. Generates Chapter 3 (Role of Public Finance and PFM Bottlenecks) and Annex Step 2 (Tables 2.1, 2.2, 2.3). Conducts five-why bottleneck analysis per challenge, consolidates and prioritizes bottlenecks, and establishes the change objectives that drive Phase 3.
+title: OLePFM Step 2 — Chapter 3 and Annex Step 2
+description: Step 2 of the OLePFM report workflow. Generates Chapter 3 (Role of Public Finance and PFM Bottlenecks) and Annex Step 2 (Tables 2.1, 2.2, 2.3). Conducts five-why bottleneck analysis per challenge, consolidates and prioritizes bottlenecks, and establishes the change objectives that drive Step 3.
 ---
 
-# Skill 02: Chapter 3 and Annex Step 2
+# Step 2: Chapter 3 and Annex Step 2
 
-**Phase 2 of 4.** Run these prompts after Phase 1 (Chapters 1 & 2) is complete and confirmed. The session context, source list, and confirmed challenge titles from Phase 1 are already in context — begin directly with Prompt B1.
+**Step 2.** Run these prompts after Step 1 (Chapters 1 & 2) is complete and confirmed. The session context, source list, and confirmed challenge titles from Step 1 are already in context — begin directly with Prompt B1.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
 **Prerequisites in context:**
-- Confirmed challenge titles from Phase 1 (recorded in manager)
-- Source list from Phase 0
-- Draft Chapters 1 and 2 from Phase 1
+- Confirmed challenge titles from Step 1 (recorded in manager)
+- Source list from the Sources stage
+- Draft Chapters 1 and 2 from Step 1
 
 ---
 
-## PART B: CHAPTER 3 — THE ROLE OF PUBLIC FINANCE AND PFM BOTTLENECKS
+## Sub-step 2.1 — Assess the potential and actual roles of public finance (Section 3.1 and Annex Table 2.1)
 
 ### ✏️ Review the output — focus on these points
 
-**Section 3.1 — The Role of Public Finance (B1).** Review the four-role assessment before the bottleneck analysis; it should directly foreshadow the bottlenecks in Section 3.2.
+**Section 3.1 — The Role of Public Finance (Prompt 2-01).** Review the four-role assessment before the bottleneck analysis; it should directly foreshadow the bottlenecks in Section 3.2.
 
 - [ ] The potential role descriptions are specific to [country]'s sector delivery model and institutional architecture — not generic
 - [ ] The actual role descriptions are analytically honest about gaps and supported by specific evidence
@@ -29,7 +29,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 
 Adjust the framing of any role before proceeding.
 
-### Prompt B1 — Section 3.1: The Role of Public Finance
+### Prompt 2-01 — Section 3.1: The Role of Public Finance
 
 Using the sources identified and the OLePFM Synthesis and relevant Sector Outcome Note as a guide, and strictly following the Chapter 3 structure in the OLePFM Sector Reform Design Report Template, please draft Section 3.1 — The Role of Public Finance — for [country] in the [sector] sector.
 
@@ -43,7 +43,7 @@ Use the introductory text from the template for the chapter and section openings
 
 ---
 
-### Prompt B2 — Annex Table 2.1: Role of Public Finance Summary
+### Prompt 2-02 — Annex Table 2.1: Role of Public Finance Summary
 
 Summarizing the analysis from Section 3.1, please prepare Annex Step 2 Table 2.1 for [country] in the [sector] sector.
 
@@ -64,9 +64,11 @@ Rows are grouped under the four roles; a role may have more than one row where p
 
 ---
 
+## Sub-step 2.2 — Identify and prioritize PFM bottlenecks (Section 3.2 and Annex Tables 2.2 and 2.3)
+
 ### ✏️ Review the output — focus on these points
 
-**Five-Why Analysis, per challenge (B3)** — the most analytically intensive review in Phase 2. Do this after each challenge, before the next.
+**Five-Why Analysis, per challenge (Prompt 2-03)** — the most analytically intensive review in Step 2. Do this after each challenge, before the next.
 
 - [ ] The bottlenecks are the most important structural causes of the challenge — not symptoms or restatements of it
 - [ ] The causal chain (why → why → why) is logically consistent and supported by evidence
@@ -77,7 +79,7 @@ Rows are grouped under the four roles; a role may have more than one row where p
 
 You can rename a bottleneck, merge two closely related ones, challenge a causal link, adjust an impact or feasibility rating, or add one that was missed. **Confirm the bottleneck list for each challenge before proceeding to the next.**
 
-### Prompt B3 — Five-Why Bottleneck Analysis (repeat for each challenge)
+### Prompt 2-03 — Five-Why Bottleneck Analysis (repeat for each challenge)
 
 *Use this prompt once for each public sector challenge identified in Section 2.2. Repeat for each challenge before moving to Prompt B4.*
 
@@ -103,7 +105,7 @@ Present findings using the format of Annex Step 2 Table 2.2 from the OLePFM Sect
 
 ### ✏️ Review the output — focus on these points
 
-**Combined Annex Table 2.2 (B4).** Review the full bottleneck table across all challenges before consolidation.
+**Combined Annex Table 2.2 (Prompt 2-04).** Review the full bottleneck table across all challenges before consolidation.
 
 - [ ] Bottleneck descriptions are consistent in style and specificity across all challenges
 - [ ] Type, impact, and feasibility ratings are consistently applied across all bottlenecks
@@ -112,7 +114,7 @@ Present findings using the format of Annex Step 2 Table 2.2 from the OLePFM Sect
 
 Make any corrections to individual bottlenecks before proceeding.
 
-### Prompt B4 — Combined Annex Table 2.2
+### Prompt 2-04 — Combined Annex Table 2.2
 
 Please prepare a combined Annex Table 2.2 bringing together the bottleneck analysis for all [number] public sector challenges into a single table, using the format of the OLePFM Sector Reform Design Report Template.
 
@@ -122,7 +124,7 @@ Include a summary reference table at the end listing all bottlenecks with their 
 
 ### ✏️ Review the output — focus on these points
 
-**Consolidated Bottleneck List (B5)** — a critical analytical judgement. Review the thematic groupings and consolidated descriptions carefully.
+**Consolidated Bottleneck List (Prompt 2-05)** — a critical analytical judgement. Review the thematic groupings and consolidated descriptions carefully.
 
 - [ ] The four thematic groupings (Financing / Human Resources / Operational Inputs / Data and Accountability) are appropriate for the country and sector context (adjust them if not)
 - [ ] No bottlenecks have been over-merged (losing important distinctions) or under-merged (remaining too fragmented)
@@ -132,7 +134,7 @@ Include a summary reference table at the end listing all bottlenecks with their 
 
 You can rename, merge, or split consolidated bottlenecks, remove an out-of-scope one, or adjust the thematic groupings. **Confirm the final consolidated list before proceeding to prioritization.**
 
-### Prompt B5 — Consolidated Bottleneck List
+### Prompt 2-05 — Consolidated Bottleneck List
 
 Looking across all the challenges, please identify bottlenecks that cut across multiple challenges and prepare a consolidated list of priority bottlenecks.
 
@@ -150,7 +152,7 @@ Present in a clear table format.
 
 ### ✏️ Review the output — focus on these points
 
-**Priority Ranking (B6)** — this determines the focus of the reform action plan, so the review is essential.
+**Priority Ranking (Prompt 2-06)** — this determines the focus of the reform action plan, so the review is essential.
 
 - [ ] The impact and feasibility ratings reflect the real political, fiscal, and institutional constraints in [country] — not just technical assessments
 - [ ] Each bottleneck rated "Low feasibility" is deliberately either dropped or retained as a long-term enabling condition
@@ -160,7 +162,7 @@ Present in a clear table format.
 
 You can reorder the ranking, merge bottlenecks, remove an out-of-scope one, adjust feasibility ratings, or change the tier assignments. **Confirm the final prioritized list before proceeding to draft the narrative sections.**
 
-### Prompt B6 — Priority Ranking
+### Prompt 2-06 — Priority Ranking
 
 Using the lens of feasibility and impact on service delivery, please rank the consolidated bottlenecks in terms of priority, with Very High impact and High feasibility being the highest priority.
 
@@ -174,7 +176,7 @@ Then present the bottlenecks organized into priority tiers (Immediate, High, Med
 
 ### ✏️ Review the output — focus on these points
 
-**Section 3.2.1 — Bottlenecks Contributing to Challenges (B7).** Review the narrative before proceeding to Section 3.2.2.
+**Section 3.2.1 — Bottlenecks Contributing to Challenges (Prompt 2-07).** Review the narrative before proceeding to Section 3.2.2.
 
 - [ ] Bottleneck codes (B1.1, B2.3 etc.) are correctly referenced in the narrative
 - [ ] The causal narrative for each challenge is logical and flows naturally from the Section 2.2 challenge description
@@ -183,7 +185,7 @@ Then present the bottlenecks organized into priority tiers (Immediate, High, Med
 
 Make any adjustments before proceeding.
 
-### Prompt B7 — Section 3.2.1: Bottlenecks Contributing to Public Sector Challenges
+### Prompt 2-07 — Section 3.2.1: Bottlenecks Contributing to Public Sector Challenges
 
 Using the information from Annex Table 2.2, and strictly following the section structure and introductory text in the OLePFM Sector Reform Design Report Template, please draft Section 3.2.1 — The Bottlenecks which Contribute to Public Sector Challenges — for [country] in the [sector] sector.
 
@@ -193,7 +195,7 @@ First use the template introductory text to introduce the section. Then, for eac
 
 ### ✏️ Review the output — focus on these points
 
-**Section 3.2.2 — Priority Bottlenecks and Reform Objectives (B8).** Review each priority bottleneck description before Annex Table 2.3.
+**Section 3.2.2 — Priority Bottlenecks and Reform Objectives (Prompt 2-08).** Review each priority bottleneck description before Annex Table 2.3.
 
 - [ ] Each bottleneck description accurately reflects the consolidated analysis
 - [ ] The contribution to public sector challenges explicitly names the relevant challenges and describes the causal mechanism
@@ -203,7 +205,7 @@ First use the template introductory text to introduce the section. Then, for eac
 
 Make any corrections before proceeding.
 
-### Prompt B8 — Section 3.2.2: Priority PFM Bottlenecks and Reform Objectives
+### Prompt 2-08 — Section 3.2.2: Priority PFM Bottlenecks and Reform Objectives
 
 Using the consolidated priority bottlenecks and their rankings, and strictly following the section structure and introductory text in the OLePFM Sector Reform Design Report Template, please draft Section 3.2.2 — Priority PFM Bottlenecks and Reform Objectives — for [country] in the [sector] sector.
 
@@ -215,7 +217,7 @@ First use the template introductory text to introduce the section. Then for each
 
 ### ✏️ Review the output — focus on these points
 
-**Annex Table 2.3 — Priority Bottleneck Summary (B9).** Review before proceeding to compilation.
+**Annex Table 2.3 — Priority Bottleneck Summary (Prompt 2-09).** Review before proceeding to compilation.
 
 - [ ] Bottleneck descriptions are consistent with Section 3.2.2
 - [ ] The impact-on-delivery column explicitly references the named public sector challenges
@@ -225,7 +227,7 @@ First use the template introductory text to introduce the section. Then for each
 
 **Correct any inconsistencies before proceeding.**
 
-### Prompt B9 — Annex Table 2.3: Priority Bottleneck Summary
+### Prompt 2-09 — Annex Table 2.3: Priority Bottleneck Summary
 
 Please prepare Annex Step 2 Table 2.3 for [country] in the [sector] sector.
 
@@ -241,9 +243,9 @@ Order the bottlenecks with the most structural/upstream bottleneck first and the
 
 ---
 
-## PART C: COMPILE CHAPTER 3 AND ANNEX STEP 2
+## Step 2 compilation (Chapter 3 and Annex Step 2)
 
-### Prompt C1 — Full Compilation
+### Prompt 2-10 — Full Compilation
 
 Please compile Chapter 3 and Annex Step 2 into a single document for [country] in the [sector] sector, strictly following the heading and subheading structure of the OLePFM Sector Reform Design Report Template and using the introductory texts for each section where available.
 
@@ -266,25 +268,25 @@ The document should contain:
 
 ---
 
-## QUALITY ASSURANCE PROMPTS
+## Quality checks for Step 2 (optional)
 
-**QA1 — Template Compliance Check**
+**2-Q1 — Template Compliance Check**
 
 Please check that the section headings, subheadings, and introductory texts in the draft Chapter 3 strictly follow the OLePFM Sector Reform Design Report Template. Identify any deviations and correct them.
 
-**QA2 — Consistency Check**
+**2-Q2 — Consistency Check**
 
 Please check that the bottleneck names, codes, and descriptions in Sections 3.2.1 and 3.2.2 are fully consistent with those in Annex Tables 2.2 and 2.3. Identify and correct any inconsistencies.
 
-**QA3 — Evidence Check**
+**2-Q3 — Evidence Check**
 
 Please check that all factual claims in Chapter 3 are supported by a hyperlinked parenthetical citation, e.g. ([World Bank, 2010](https://…)). Flag any unsupported claims and either add a citation or qualify the claim appropriately.
 
-**QA4 — Word Count Check**
+**2-Q4 — Word Count Check**
 
 Please check that: (i) each role description in Section 3.1 does not exceed 200 words; (ii) each challenge description in Section 3.2.1 does not exceed 300 words; (iii) each bottleneck description in Section 3.2.2 does not exceed 200 words; and (iv) Annex Table 2.1 does not exceed 500 words in total. Identify and shorten any sections that exceed their word limit.
 
-**QA5 — PFM Focus Check**
+**2-Q5 — PFM Focus Check**
 
 Please review the bottleneck descriptions in Sections 3.2.1 and 3.2.2 and Annex Tables 2.2 and 2.3 to ensure that: (i) bottlenecks classified as PFM-related genuinely relate to the management of public funds; (ii) bottlenecks classified as Institutional do not overlap with PFM bottlenecks; and (iii) no bottleneck is so broad as to be beyond the scope of a PFM reform programme. Flag any bottlenecks that require reclassification or rescoping and suggest revisions.
 
@@ -294,13 +296,13 @@ Please review the bottleneck descriptions in Sections 3.2.1 and 3.2.2 and Annex 
 
 | Prompt | Output |
 |---|---|
-| B1 | Section 3.1: The Role of Public Finance |
-| B2 | Annex Table 2.1: Role of Public Finance summary |
-| B3 (×n) | Five-why analysis per challenge — individual bottleneck tables |
-| B4 | Combined Annex Table 2.2: Full bottleneck table |
-| B5 | Consolidated bottleneck list |
-| B6 | Priority ranking with tiers |
-| B7 | Section 3.2.1: Bottlenecks per challenge narrative |
-| B8 | Section 3.2.2: Priority bottlenecks narrative |
-| B9 | Annex Table 2.3: Priority bottleneck summary |
-| C1 | Full compiled Chapter 3 and Annex Step 2 |
+| 2-01 | Section 3.1: The Role of Public Finance |
+| 2-02 | Annex Table 2.1: Role of Public Finance summary |
+| 2-03 (×n) | Five-why analysis per challenge — individual bottleneck tables |
+| 2-04 | Combined Annex Table 2.2: Full bottleneck table |
+| 2-05 | Consolidated bottleneck list |
+| 2-06 | Priority ranking with tiers |
+| 2-07 | Section 3.2.1: Bottlenecks per challenge narrative |
+| 2-08 | Section 3.2.2: Priority bottlenecks narrative |
+| 2-09 | Annex Table 2.3: Priority bottleneck summary |
+| 2-10 | Full compiled Chapter 3 and Annex Step 2 |

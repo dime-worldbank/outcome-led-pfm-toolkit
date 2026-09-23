@@ -1,19 +1,19 @@
 ---
-title: OLePFM Phase 1b — Annex Step 1 and Compilation
-description: Step 1b of the OLePFM report workflow. Generates Annex Step 1 (Tables 1.1 and 1.2) and compiles Chapters 1 and 2 with Annex Step 1 into a single document. Run after 01a-chapters1-2.md.
+title: OLePFM Step 1 (1b) — Annex Step 1 and Compilation
+description: Step 1 (file 1b) of the OLePFM report workflow. Generates Annex Step 1 (Tables 1.1 and 1.2) and compiles Chapters 1 and 2 with Annex Step 1 into a single document. Run after 01a-chapters1-2.md.
 ---
 
-# Skill 01b: Annex Step 1 and Compilation
+# Step 1 (file 1b): Annex Step 1 and Compilation
 
-**Phase 1 of 4, step 2 of 2.** Run these prompts after the Chapter 1 and Chapter 2 drafts from `01a-chapters1-2.md` are complete and confirmed. Those drafts are already in context — begin directly with Prompt C1.
+**Step 1, file 2 of 2.** Run these prompts after the Chapter 1 and Chapter 2 drafts from `01a-chapters1-2.md` are complete and confirmed. Those drafts are already in context — begin directly with Prompt C1.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
 ---
 
-## PART C: ANNEX STEP 1
+## Step 1 working tables (Annex Tables 1.1 and 1.2)
 
-### Prompt C1 — Annex Table 1.1: Outcomes, Results and Challenges
+### Prompt 1-12 — Annex Table 1.1: Outcomes, Results and Challenges
 
 Strictly using the format of the table in the OLePFM Sector Reform Design Report Template, please populate Annex Table 1.1 with a summary of no more than 300 words in total, listing:
 - The development outcome and outcome indicators.
@@ -28,7 +28,7 @@ Ensure consistency with the content generated for Sections 2.1 and 2.2 of the re
 
 ### ✏️ Review the output — focus on these points
 
-**Annex Table 1.1 (C1).** Check consistency with Sections 2.1 and 2.2.
+**Annex Table 1.1 (Prompt 1-12).** Check consistency with Sections 2.1 and 2.2.
 
 - [ ] All outcome indicators in the table exactly match those in the main text
 - [ ] All results indicators in the table exactly match those in the main text
@@ -38,7 +38,7 @@ Correct any inconsistencies before proceeding.
 
 ---
 
-### Prompt C2 — Annex Table 1.2: Organizational Functions
+### Prompt 1-13 — Annex Table 1.2: Organizational Functions
 
 Please prepare Annex Table 1.2 for [country] in the [sector] sector, consistent with the organizational landscape and diagram and PFM analysis in Chapter 2.
 
@@ -58,7 +58,7 @@ Rules for populating the table:
 
 ### ✏️ Review the output — focus on these points
 
-**Annex Table 1.2 (C2).** Review the organizational functions table carefully.
+**Annex Table 1.2 (Prompt 1-13).** Review the organizational functions table carefully.
 
 - [ ] No significant actor has been omitted
 - [ ] The PFM functions column is specific to each organization rather than generic
@@ -69,9 +69,9 @@ Make any additions or corrections before proceeding to compilation.
 
 ---
 
-## PART D: COMPILE CHAPTERS 1 AND 2 AND ANNEX STEP 1
+## Step 1 compilation (Chapters 1–2 and Annex Step 1)
 
-### Prompt D1 — Full Compilation
+### Prompt 1-14 — Full Compilation
 
 Please compile Chapters 1 and 2 and Annex Step 1 into a single document for [country] in the [sector] sector, strictly following the heading and subheading structure of the OLePFM Sector Reform Design Report Template and using the introductory texts for each section where available.
 
@@ -93,11 +93,11 @@ The document should contain:
 
 ---
 
-## QUALITY ASSURANCE PROMPTS
+## Quality checks for Step 1 (optional, continued)
 
 Use these prompts at any stage to check and improve draft outputs.
 
-**QA2 — Consistency Check**
+**1-Q2 — Consistency Check**
 
 Please check that the challenge titles and descriptions in Section 2.2 are fully consistent with those in Annex Table 1.1. Identify and correct any inconsistencies.
 
@@ -107,6 +107,6 @@ Please check that the challenge titles and descriptions in Section 2.2 are fully
 
 | Prompt | Output |
 |---|---|
-| C1 | Annex Table 1.1 |
-| C2 | Annex Table 1.2 |
-| D1 | Full compiled Chapters 1–2 and Annex Step 1 |
+| 1-12 | Annex Table 1.1 |
+| 1-13 | Annex Table 1.2 |
+| 1-14 | Full compiled Chapters 1–2 and Annex Step 1 |

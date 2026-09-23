@@ -1,21 +1,21 @@
 ---
-title: OLePFM Phase 4a — Consistency Audit and Main Report Part 1
-description: Step 4a of the OLePFM report workflow. Runs the pre-compilation consistency audit across all chapters and annexes, then compiles Main Report Part 1 (front matter, Chapter 1, Chapter 2). Continue with 04b-part2-and-annex.md.
+title: OLePFM Compilation and QA (4a) — Consistency Audit and Main Report Part 1
+description: Compilation and QA (file 4a) of the OLePFM report workflow. Runs the pre-compilation consistency audit across all chapters and annexes, then compiles Main Report Part 1 (front matter, Chapter 1, Chapter 2). Continue with 04b-part2-and-annex.md.
 ---
 
-# Skill 04a: Consistency Audit and Main Report Part 1
+# Compilation and QA (file 4a): Consistency Audit and Main Report Part 1
 
-**Phase 4 of 4, step 1 of 3.** Run these prompts after Phase 3 (Chapters 4 & 5) is complete and confirmed. The session context and all prior chapter drafts are already in context.
+**Compilation and QA, file 1 of 3.** Run these prompts after Step 3 (Chapters 4 & 5) is complete and confirmed. The session context and all prior chapter drafts are already in context.
 
-> **Start with Prompt A1 (consistency audit) before any compilation step.** Resolve all identified discrepancies before proceeding to M1a. Do not skip this step.
+> **Start with Prompt C-01 (consistency audit) before any compilation step.** Resolve all identified discrepancies before proceeding to M1a. Do not skip this step.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
 **Prerequisites in context:**
 - All values recorded in manager (reform result counts, feasibility breakdown, implementation horizon, authors, date)
-- Draft Chapters 1–5 and all Annex Step drafts from Phases 1–3
+- Draft Chapters 1–5 and all Annex Step drafts from Steps 1–3
 
-> When Prompt M1d is complete and confirmed, continue with `04b-part2-and-annex.md`.
+> When Prompt C-05 is complete and confirmed, continue with `04b-part2-and-annex.md`.
 
 ---
 
@@ -23,7 +23,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 
 ### ✏️ Review the output — focus on these points
 
-**Pre-compilation consistency audit (A1)** — the most important step in compilation. Complete the audit and make all corrections to the draft chapters before compiling.
+**Pre-compilation consistency audit (Prompt C-01)** — the most important step in compilation. Complete the audit and make all corrections to the draft chapters before compiling.
 
 - [ ] Reform result numbers and titles — the connective tissue of the report — are identical wherever they appear
 - [ ] Bottleneck codes (e.g. B2.3) match between Chapter 3 and Annex Table 2.2 (a mismatch is a substantive analytical error)
@@ -32,7 +32,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 
 **Do not proceed to Main Report Part 1 until you have reviewed the audit findings and instructed the AI on how to resolve each inconsistency.**
 
-### Prompt A1 — Pre-Compilation Consistency Audit
+### Prompt C-01 — Pre-Compilation Consistency Audit
 
 Before beginning compilation, please conduct a systematic consistency audit across all draft chapter and annex documents for the [country] [sector] OLePFM report.
 
@@ -54,11 +54,11 @@ Present findings as a numbered list of discrepancies with: the location (documen
 
 ---
 
-## PART M1: MAIN REPORT PART 1 — FRONT MATTER AND CHAPTERS 1–2
+## Main Report Part 1 — Front matter and Chapters 1–2
 
-Compile Part 1 in four sequential steps (M1a through M1d), reviewing the output at each intervention point before proceeding.
+Compile Part 1 in four sequential prompts (Prompts C-02 through C-05), reviewing the output at each intervention point before proceeding.
 
-### Prompt M1a — Front Matter: Cover, Table of Contents, Executive Summary, and List of Acronyms
+### Prompt C-02 — Front Matter: Cover, Table of Contents, Executive Summary, and List of Acronyms
 
 Please compile the front matter for Main Report Part 1 of the [country] [sector] OLePFM Reform Diagnosis and Design Report. Produce the following elements in order:
 
@@ -82,7 +82,7 @@ The executive summary should be written for a senior government official or deve
 
 ### ✏️ Review the output — focus on these points
 
-**Executive summary (M1a)** — the most widely read section; review it with particular care.
+**Executive summary (Prompt C-02)** — the most widely read section; review it with particular care.
 
 - [ ] The challenges are described as frontline service delivery failures — not in PFM or financial terms
 - [ ] The bottleneck descriptions are concise but analytically precise — the specific nature of each failure, not a generic "weak PFM"
@@ -94,9 +94,9 @@ Revise before proceeding.
 
 ---
 
-### Prompt M1b — Chapter 1: Introduction
+### Prompt C-03 — Chapter 1: Introduction
 
-Please compile the final version of Chapter 1 — Introduction — for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 1 document and applying the corrections identified in the consistency audit (Prompt A1).
+Please compile the final version of Chapter 1 — Introduction — for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 1 document and applying the corrections identified in the consistency audit (Prompt C-01).
 
 Apply the following editorial instructions:
 (i) Confirm the opening paragraph situates [country]'s [sector] performance in its development context with specific, current data.
@@ -108,9 +108,9 @@ Present the final compiled Chapter 1 in full.
 
 ---
 
-### Prompt M1c — Chapter 2: Outcome and Public Sector Context
+### Prompt C-04 — Chapter 2: Outcome and Public Sector Context
 
-Please compile the final version of Chapter 2 — Outcome and Public Sector Context — for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 2 document and applying the corrections identified in the consistency audit (Prompt A1).
+Please compile the final version of Chapter 2 — Outcome and Public Sector Context — for the [country] [sector] OLePFM Reform Diagnosis and Design Report, using the draft Chapter 2 document and applying the corrections identified in the consistency audit (Prompt C-01).
 
 Apply the following editorial instructions:
 (i) **Section 2.1:** Confirm that outcome data cited is consistent with the executive summary and Chapter 5. Standardize any figures that appear with different values in different locations.
@@ -125,7 +125,7 @@ Present the final compiled Chapter 2 in full.
 
 ### ✏️ Review the output — focus on these points
 
-**Main Report Part 1 (M1c).** Read Chapters 1 and 2 consecutively before finalizing Part 1.
+**Main Report Part 1 (Prompt C-04).** Read Chapters 1 and 2 consecutively before finalizing Part 1.
 
 - [ ] The opening of Chapter 2 flows naturally from the end of Chapter 1
 - [ ] The four public sector challenges in Section 2.2 are specific and vivid — a reader unfamiliar with [country]'s [sector] understands what is actually going wrong at the frontline
@@ -136,9 +136,9 @@ Make any editorial adjustments before producing the final Part 1 document.
 
 ---
 
-### Prompt M1d — Compile Main Report Part 1
+### Prompt C-05 — Compile Main Report Part 1
 
-Please compile the final Main Report Part 1 document for the [country] [sector] OLePFM Reform Diagnosis and Design Report, combining in order: (i) the front matter from Prompt M1a; (ii) Chapter 1 from Prompt M1b; and (iii) Chapter 2 from Prompt M1c.
+Please compile the final Main Report Part 1 document for the [country] [sector] OLePFM Reform Diagnosis and Design Report, combining in order: (i) the front matter from Prompt C-02; (ii) Chapter 1 from Prompt C-03; and (iii) Chapter 2 from Prompt M1c.
 
 Apply the following final formatting instructions:
 - All section and sub-section headings must be consistently formatted and numbered.
@@ -154,10 +154,10 @@ Apply the following final formatting instructions:
 
 | Prompt | Output | Document |
 |---|---|---|
-| A1 | Cross-chapter consistency audit with correction list | — |
-| M1a | Cover, ToC, executive summary, acronym list | Part 1 |
-| M1b | Final compiled Chapter 1 | Part 1 |
-| M1c | Final compiled Chapter 2 | Part 1 |
-| M1d | Full Main Report Part 1 | Part 1 |
+| C-01 | Cross-chapter consistency audit with correction list | — |
+| C-02 | Cover, ToC, executive summary, acronym list | Part 1 |
+| C-03 | Final compiled Chapter 1 | Part 1 |
+| C-04 | Final compiled Chapter 2 | Part 1 |
+| C-05 | Full Main Report Part 1 | Part 1 |
 
 Continue with `04b-part2-and-annex.md`.

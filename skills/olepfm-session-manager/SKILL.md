@@ -1,12 +1,12 @@
 ---
 name: olepfm-session-manager
 title: OLePFM Session Manager
-description: Orchestration guide for producing a complete OLePFM Sector Reform Design Report in a single AI session. Upload first. Controls phase sequencing, intervention points, inter-phase data recording, and AI behavior rules across all four phases. Also prepares the Working Tables for a reform design workshop when the user says "start OLePFM workshop preparation" or asks for workshop tables. Use for any OLePFM, outcome-led PFM or sector reform design report or workshop request.
+description: Orchestration guide for producing a complete OLePFM Sector Reform Design Report in a single AI session. Upload first. Controls stage sequencing (Sources, Steps 1 to 3, Compilation and QA), intervention points, inter-step data recording, and AI behavior rules. Also prepares the Working Tables for a reform design workshop when the user says "start OLePFM workshop preparation" or asks for workshop tables. Use for any OLePFM, outcome-led PFM or sector reform design report or workshop request.
 ---
 
 # OLePFM Sector Reform Design: Session Manager
 
-This document is the orchestration guide for producing a complete OLePFM Sector Reform Design Report in a single AI session. Upload it together with the nine skill files and the reference documents at the start of the session.
+This document is the orchestration guide for producing a complete OLePFM Sector Reform Design Report in a single AI session. Upload it together with the ten prompt files and the reference documents at the start of the session.
 
 ---
 
@@ -14,8 +14,8 @@ This document is the orchestration guide for producing a complete OLePFM Sector 
 
 | Mode | When | Follow |
 |---|---|---|
-| **Full report** | The user wants an OLePFM Sector Reform Design Report | This document, from Session Setup through Phase 4 |
-| **Workshop table preparation** | The user says "start OLePFM workshop preparation" or wants the Working Tables for a reform design workshop | `manager-workshop.md` (in `references/`). It reuses Session Setup Step 2 and Phase 0 from this document and a subset of the Phase 1 and 2 prompts, then stops after Table 2.1 and scaffolds the rest blank |
+| **Full report** | The user wants an OLePFM Sector Reform Design Report | This document, from Session Setup through Compilation and QA |
+| **Workshop table preparation** | The user says "start OLePFM workshop preparation" or wants the Working Tables for a reform design workshop | `manager-workshop.md` (in `references/`). It reuses Setup 2 and the Sources stage from this document and a subset of the Step 1 and Step 2 prompts, then stops after Table 2.1 and scaffolds the rest blank |
 
 Workshop mode is an overlay on the report workflow, not a separate process: the instructions to the AI below (sequential execution, one prompt at a time, pause at every ✏️ point, never invent placeholder values) apply in both modes.
 
@@ -25,7 +25,7 @@ Workshop mode is an overlay on the report workflow, not a separate process: the 
 
 You are assisting with the production of an OLePFM Sector Reform Design Report. Follow these rules throughout the session:
 
-1. **Sequential execution only.** Work through Phases 0–4 in strict order. Do not begin a new phase until the user explicitly says "proceed to Phase [n+1]" or equivalent.
+1. **Sequential execution only.** Work through the five stages — Sources, Step 1, Step 2, Step 3, Compilation and QA — in strict order. Do not begin a new stage until the user explicitly says "proceed to Step [n]" (or "proceed to Compilation") or equivalent.
 
 2. **One prompt at a time.** Run each numbered prompt individually; after each output, wait for the user before the next. Do not chain prompts.
 
@@ -43,12 +43,12 @@ You are assisting with the production of an OLePFM Sector Reform Design Report. 
 
    Show all checks as one checklist, from the skill's ✏️ block.
 
-4. **Declare phase completion.** At the end of each phase, output:
+4. **Declare stage completion.** At the end of each stage, output:
 
-   > **PHASE [n] COMPLETE**
-   > Please review the Phase [n] completion gate below before I proceed to Phase [n+1].
+   > **STEP [n] COMPLETE** (or **SOURCES COMPLETE**, **COMPILATION AND QA COMPLETE**)
+   > Please review the completion gate below before I proceed to [next stage].
 
-5. **Record inter-phase data.** At the specified points, ask the user to confirm the recorded values before proceeding. These values carry forward across phases.
+5. **Record inter-step data.** At the specified points, ask the user to confirm the recorded values before proceeding. These values carry forward across stages.
 
 6. **Do not invent or skip.** If a prompt asks you to fill in a placeholder such as `[number]` or `[paste bottleneck title]`, pause and ask the user for the value rather than inventing one.
 
@@ -83,7 +83,9 @@ Upload these at the start of each session:
 
 The skill files (`00-source-prep.md` through `04c-cross-document-qa.md`) are in the knowledge base's skills folder, accessible by default — no upload required. In this repository they are the files in the `references/` folder beside this SKILL.md.
 
-### Step 1: Setup Verification
+**Prompt numbering.** Prompts are numbered by stage and run in order: S-1 to S-4 (Sources), 1-01 to 1-14 (Step 1), 2-01 to 2-10 (Step 2), 3-01 to 3-14 (Step 3), C-01 to C-13 (Compilation) and QA-1 to QA-5 (final cross-document checks). Optional quality checks at the end of a step are numbered 1-Q1, 2-Q1 and so on. Inside each file, prompts are grouped under the OLePFM sub-step they serve (for example Sub-step 1.4, Map the sector policy, institutional and public finance context). A sector variant of a prompt keeps the standard number with a prefix: ER-1-05 is the economic-resilience variant of Prompt 1-05.
+
+### Setup 1: Verify the Pre-loaded Documents
 
 Paste the following to confirm the pre-loaded documents are accessible:
 
@@ -98,11 +100,11 @@ If either does not appear at first, search the root again on title keywords alon
 
 ---
 
-> **Do not proceed to Step 2 until the AI confirms both documents are accessible.**
+> **Do not proceed to Setup 2 until the AI confirms both documents are accessible.**
 
-### Step 2: Establish Session Context (two steps)
+### Setup 2: Establish Session Context (two parts)
 
-The AI collects session context in **two short steps — first country and sector, then the development outcome.**
+The AI collects session context in **two short parts — first country and sector, then the development outcome.**
 
 Once setup is verified, paste the following as your **next message**:
 
@@ -110,11 +112,11 @@ Once setup is verified, paste the following as your **next message**:
 
 I am ready to establish the session context for an Outcome-Led PFM Reform Diagnosis and Design Report. Run the two-step setup: ask my **country** and **sector** — a standard sector from the Sector Outcome Reference below, or another — then establish and confirm its **development outcome** and **public sector result**. The Report Template, Synthesis Handbook, and the sector notes and prior reports are pre-loaded on the backend.
 
-Do not proceed to Phase 0 until I have confirmed the country, sector and outcome.
+Do not proceed to the Sources stage until I have confirmed the country, sector and outcome.
 
 ---
 
-**AI behavior for this step:**
+**AI behavior for this setup:**
 
 1. **Ask for country and sector first — nothing else.** Present the standard sectors from the Sector Outcome Reference below as the options, and note the user may instead name a **sector not listed there**. **Revenue Mobilization** is a cross-cutting enabler, not a standalone sector — offer it only alongside one of the other five, never on its own. Wait for the user's answer.
 
@@ -125,7 +127,7 @@ Do not proceed to Phase 0 until I have confirmed the country, sector and outcome
 
    If none exists — the sector is not in the Synthesis and nothing matches on the backend — ask the user to **upload a sector note if they have one**; if not, **proceed without a guide, following the OLePFM framework as closely as possible**. Then ask the user to confirm the framing, or narrow it to what matters most for their country.
 
-3. **Lock the context.** Once the user confirms, restate it in this form (plain Markdown, no blockquote), then confirm readiness for Phase 0:
+3. **Lock the context.** Once the user confirms, restate it in this form (plain Markdown, no blockquote), then confirm readiness for the Sources stage:
 
    **Session context confirmed:**
 
@@ -134,11 +136,11 @@ Do not proceed to Phase 0 until I have confirmed the country, sector and outcome
    - **Development outcome:** [outcome]
    - **Public sector result:** [public sector result]
 
-   Referred to as [country], [sector] and the development outcome in all prompts from here on. Ready to begin **Phase 0: Source Preparation**.
+   Referred to as [country], [sector] and the development outcome in all prompts from here on. Ready to begin **Sources: Source Preparation**.
 
 ### Sector Outcome Reference
 
-For a listed sector, use its entry below; for a sector not listed, build the outcome as in Step 2.
+For a listed sector, use its entry below; for a sector not listed, build the outcome as in Setup 2.
 
 **Health — "Ensuring Healthy Lives"**
 - **Development outcome:** Healthy lives and well-being for all at all ages, delivered through universal health coverage (UHC).
@@ -151,6 +153,7 @@ For a listed sector, use its entry below; for a sector not listed, build the out
 **Economic Resilience — "Building Economic Resilience"**
 - **Development outcome:** A resilient economy (growth in output per capita over the business cycle) that sustains growth while reducing vulnerability to shocks.
 - **Public sector result:** Building and preserving fiscal space through sound management of the fiscal balance, revenues, expenditure, and debt — enabling counter-cyclical responses to shocks.
+- **Prompt variant:** cross-cutting fiscal outcome. In Step 1, Prompts 1-04 to 1-10 are replaced by ER-1-04 to ER-1-10 from `01a-variant-economic-resilience.md` (see the Step 1 instructions below). The same applies to any other macro-fiscal outcome, such as fiscal or debt sustainability.
 
 **Gender — "Eliminating Gender-Based Violence (GBV)"**
 - **Development outcome:** Eliminate all forms of GBV, particularly intimate partner violence (IPV).
@@ -166,37 +169,40 @@ For a listed sector, use its entry below; for a sector not listed, build the out
 
 ---
 
-## PHASE 0: Source Preparation
+## SOURCES: Source Preparation
 
 **Skill file:** `00-source-prep.md`
 
-Run prompts S1 through S4 from `00-source-prep.md` in sequence.
+Run Prompts S-1 through S-4 from `00-source-prep.md` in sequence.
 
-### Phase 0 Completion Gate
+### Sources Completion Gate
 
-Before advancing to Phase 1, confirm all of the following:
+Before advancing to Step 1, confirm all of the following:
 
 - [ ] The most important recent analytical reports for [country] and [sector] are included
 - [ ] Official government budget documents and sector strategy documents are identified
 - [ ] International data sources (WHO, World Bank, IMF) are included
 - [ ] Budget and expenditure data — including subnational data — are identified
-- [ ] Political economy and reform history sources are identified (relevant to Phase 3)
-- [ ] Capacity and digital systems sources are identified (relevant to Phase 3)
-- [ ] Every source sits in a single running table, numbered sequentially and unbroken across S1–S4
+- [ ] Political economy and reform history sources are identified (relevant to Step 3)
+- [ ] Capacity and digital systems sources are identified (relevant to Step 3)
+- [ ] Every source sits in a single running table, numbered sequentially and unbroken across S-1 to S-4
 - [ ] Any significant source gaps are flagged before proceeding
 
-> **PHASE 0 COMPLETE — confirm sources before proceeding to Phase 1.**
+> **SOURCES COMPLETE — confirm sources before proceeding to Step 1.**
 
 ---
 
-## PHASE 1: Chapters 1 & 2 and Annex Step 1
+## STEP 1: Chapters 1 & 2 and Annex Step 1
 
 **Skill files:** `01a-chapters1-2.md`, then `01b-annex1.md`
 
-Run all prompts in `01a-chapters1-2.md` in sequence (A1 through B5), then continue with `01b-annex1.md` (C1, C2 and D1).
-### Phase 1 Completion Gate
+Run all prompts in `01a-chapters1-2.md` in sequence (Prompts 1-01 through 1-11), then continue with `01b-annex1.md` (Prompts 1-12 to 1-14).
 
-Before advancing to Phase 2, confirm all of the following:
+> **Economic resilience or another cross-cutting fiscal outcome (macro-fiscal stability, fiscal or debt sustainability):** run Prompts 1-01 to 1-03 as normal, then replace Prompts 1-04 to 1-10 with ER-1-04 to ER-1-10 from `01a-variant-economic-resilience.md`, then return to Prompt 1-11 and `01b-annex1.md`. Also run the extra check ER-1-Q5. Record the variant's three template deviations (fiscal-outcome swim lanes; fiscal-cycle narrative and diagram instead of the financial-flows table and diagram; macro-fiscal charts instead of sector-spending charts) for the consistency audit (Prompt C-01).
+
+### Step 1 Completion Gate
+
+Before advancing to Step 2, confirm all of the following:
 
 **Chapter 1**
 - [ ] Outcome is framed at the right level of specificity for the country context
@@ -208,7 +214,7 @@ Before advancing to Phase 2, confirm all of the following:
 - [ ] Public sector results reflect actual delivery system performance in [country]
 - [ ] Framing is consistent with government's stated policy objectives
 
-**Section 2.2 — Public Sector Challenges** *(MOST CRITICAL in Phase 1)*
+**Section 2.2 — Public Sector Challenges** *(MOST CRITICAL in Step 1)*
 - [ ] Challenges are the most structurally important constraints — not symptoms
 - [ ] Each challenge is distinct and covers a different dimension of the delivery problem
 - [ ] Challenges progress from the point of delivery upward through the system
@@ -218,15 +224,15 @@ Before advancing to Phase 2, confirm all of the following:
 
 **Section 2.3 — Context**
 - [ ] All significant organizations are included at correct levels; diagram reviewed
-- [ ] All significant financing channels are identified; data is accurate; diagram reviewed
-- [ ] PFM systems description covers all six dimensions (budget formulation, wage execution, non-wage execution, intergovernmental transfers, procurement, audit/accountability, digital systems)
+- [ ] All significant financing channels are identified; data is accurate; diagram reviewed *(economic-resilience variant: fiscal-cycle narrative and diagram reviewed instead)*
+- [ ] PFM systems description covers all six dimensions (budget formulation, wage execution, non-wage execution, intergovernmental transfers, procurement, audit/accountability, digital systems) *(economic-resilience variant: the four macro-fiscal capabilities instead, and the three template deviations recorded)*
 - [ ] Feasibility assessment addresses financial affordability, institutional capability, and stakeholder commitment with specific evidence
 
 **Annex Tables 1.1 and 1.2**
 - [ ] Table 1.1 consistent with Sections 2.1 and 2.2
 - [ ] Table 1.2 covers all organizations; no significant actor omitted
 
-### Inter-Phase Record — Phase 1 → Phase 2
+### Inter-Step Record — Step 1 → Step 2
 
 Record the confirmed challenge titles before proceeding:
 
@@ -238,20 +244,20 @@ Challenge 4:
 Challenge 5 (if applicable): 
 ```
 
-> **PHASE 1 COMPLETE — confirm challenges recorded before proceeding to Phase 2.**
+> **STEP 1 COMPLETE — confirm challenges recorded before proceeding to Step 2.**
 
 ---
 
-## PHASE 2: Chapter 3 and Annex Step 2
+## STEP 2: Chapter 3 and Annex Step 2
 
 **Skill file:** `02-chapter3-annex2.md`
 
 Run all prompts in `02-chapter3-annex2.md` in sequence.
-> Note: The session context and source list are already in context — begin directly with Prompt B1.
+> Note: The session context and source list are already in context — begin directly with Prompt 2-01.
 
-### Phase 2 Completion Gate
+### Step 2 Completion Gate
 
-Before advancing to Phase 3, confirm all of the following:
+Before advancing to Step 3, confirm all of the following:
 
 **Section 3.1 — Role of Public Finance**
 - [ ] Four-role assessment is specific to [country]'s delivery model — not generic
@@ -275,7 +281,7 @@ Before advancing to Phase 3, confirm all of the following:
 - [ ] Each priority bottleneck has a concrete, observable change objective
 - [ ] Annex Table 2.3 consistent with Section 3.2.2
 
-### Inter-Phase Record — Phase 2 → Phase 3
+### Inter-Step Record — Step 2 → Step 3
 
 Record the confirmed priority bottlenecks before proceeding:
 
@@ -289,22 +295,22 @@ Bottleneck 5: [title] | Change objective:
 Bottleneck 6: [title] | Change objective: 
 ```
 
-> **PHASE 2 COMPLETE — confirm bottlenecks recorded before proceeding to Phase 3.**
+> **STEP 2 COMPLETE — confirm bottlenecks recorded before proceeding to Step 3.**
 
 ---
 
-## PHASE 3: Chapters 4 & 5 and Annex Step 3
+## STEP 3: Chapters 4 & 5 and Annex Step 3
 
 **Skill files:** `03a-reform-results.md`, then `03b-stakeholders-systems-steps.md`, then `03c-conclusion-compilation.md`
 
-Run all prompts in `03a-reform-results.md` in sequence (B1, T1 × n, T2, C1 × n, C2), then `03b-stakeholders-systems-steps.md` (D1–D3, E1, E2, F1 × n, F2), then `03c-conclusion-compilation.md` (G1 and H1).
-> Note: The session context and source list are already in context — begin directly with Prompt B1.
+Run all prompts in `03a-reform-results.md` in sequence (Prompts 3-01, 3-02 × n, 3-03, 3-04 × n, 3-05), then `03b-stakeholders-systems-steps.md` (Prompts 3-06 to 3-10, 3-11 × n, 3-12), then `03c-conclusion-compilation.md` (Prompts 3-13 and 3-14).
+> Note: The session context and source list are already in context — begin directly with Prompt 3-01.
 
-> **Critical sequencing:** Complete and confirm Annex Table 3.1 (Prompts T1 × n and T2) **before** beginning Section 4.1 drafts (Prompts C1 × n and C2). The reform results in Table 3.1 are the authoritative source for all Section 4.1 content.
+> **Critical sequencing:** Complete and confirm Annex Table 3.1 (Prompts 3-02 × n and 3-03) **before** beginning Section 4.1 drafts (Prompts 3-04 × n and 3-05). The reform results in Table 3.1 are the authoritative source for all Section 4.1 content.
 
-### Phase 3 Completion Gate
+### Step 3 Completion Gate
 
-Before advancing to Phase 4, confirm all of the following:
+Before advancing to Compilation and QA, confirm all of the following:
 
 **Annex Table 3.1** *(must be confirmed before Section 4.1)*
 - [ ] Every sub-bottleneck has a row with specific, evidence-based underlying causes
@@ -335,7 +341,7 @@ Before advancing to Phase 4, confirm all of the following:
 - [ ] Scope boundary correctly and completely stated
 - [ ] Concluding paragraph connects reform objectives back to the development outcome
 
-### Inter-Phase Record — Phase 3 → Phase 4
+### Inter-Step Record — Step 3 → Compilation and QA
 
 Record the following before proceeding:
 
@@ -349,18 +355,20 @@ Authors:
 Report date: 
 ```
 
-> **PHASE 3 COMPLETE — confirm values recorded before proceeding to Phase 4.**
+> **STEP 3 COMPLETE — confirm values recorded before proceeding to Compilation and QA.**
 
 ---
 
-## PHASE 4: Final Compilation and Quality Assurance
+## COMPILATION AND QA: Final Compilation and Quality Assurance
 
 **Skill files:** `04a-audit-and-part1.md`, then `04b-part2-and-annex.md`, then `04c-cross-document-qa.md`
 
-> **Start with the consistency audit (Prompt A1) before any compilation step.** Resolve all identified discrepancies before proceeding to M1a.
+> **Start with the consistency audit (Prompt C-01) before any compilation step.** Resolve all identified discrepancies before proceeding to Prompt C-02.
 
-Run all prompts in `04a-audit-and-part1.md` in sequence (A1, M1a–M1d), then `04b-part2-and-annex.md` (M2a–M2d, AN1–AN4), then `04c-cross-document-qa.md` (QA1–QA5).
-### Phase 4 Completion Gate
+> **Economic-resilience variant:** if the Section 2.3 variant prompts were used in Step 1, give the audit the three recorded template deviations (fiscal-outcome swim lanes; fiscal-cycle narrative and diagram in place of the financial-flows table and diagram; macro-fiscal charts in place of sector-spending charts) so it treats them as intended substitutions, not inconsistencies.
+
+Run all prompts in `04a-audit-and-part1.md` in sequence (Prompts C-01 to C-05), then `04b-part2-and-annex.md` (Prompts C-06 to C-13), then `04c-cross-document-qa.md` (Prompts QA-1 to QA-5).
+### Compilation and QA Completion Gate
 
 Before treating the report as complete, confirm all of the following:
 
@@ -388,7 +396,7 @@ Before treating the report as complete, confirm all of the following:
 - [ ] Table 3.1 consistent with Section 4.1
 - [ ] Table 3.5 consistent with Sections 4.2 and 4.3; three steps per reform result throughout
 
-**Cross-Document QA (QA1–QA5)**
+**Cross-Document QA (Prompts QA-1 to QA-5)**
 - [ ] Reform result codes consistent across all three documents
 - [ ] Challenge titles consistent across all three documents
 - [ ] Outcome and spending data internally consistent
@@ -401,4 +409,4 @@ Before treating the report as complete, confirm all of the following:
 
 ## Context Length Advisory
 
-If the AI loses track (wrong codes, inconsistent challenge titles), ask it to list the Section 2.2 challenges verbatim. If drift is severe, save the Phase 1–3 outputs, restart the session, re-upload, and jump to Phase 4.
+If the AI loses track (wrong codes, inconsistent challenge titles), ask it to list the Section 2.2 challenges verbatim. If drift is severe, save the Step 1–3 outputs, restart the session, re-upload, and jump to Compilation and QA.

@@ -1,28 +1,28 @@
 ---
-title: OLePFM Phase 3b — Sections 4.2 and 4.3 and Annex Table 3.5
-description: Step 3b of the OLePFM report workflow. Generates Section 4.2 (stakeholder strategy, Annex Tables 3.2 and 3.3), Section 4.3 (systems, capacity development and technical assistance, Annex Table 3.4), and Annex Table 3.5 (key steps to achieve results). Run after 03a-reform-results.md.
+title: OLePFM Step 3 (3b) — Sections 4.2 and 4.3 and Annex Table 3.5
+description: Step 3 (file 3b) of the OLePFM report workflow. Generates Section 4.2 (stakeholder strategy, Annex Tables 3.2 and 3.3), Section 4.3 (systems, capacity development and technical assistance, Annex Table 3.4), and Annex Table 3.5 (key steps to achieve results). Run after 03a-reform-results.md.
 ---
 
-# Skill 03b: Sections 4.2 and 4.3 and Annex Table 3.5
+# Step 3 (file 3b): Sections 4.2 and 4.3 and Annex Table 3.5
 
-**Phase 3 of 4, step 2 of 3.** Run these prompts after Annex Table 3.1 and Section 4.1 from `03a-reform-results.md` are complete and confirmed. Those outputs are already in context — begin directly with Prompt D1.
+**Step 3, file 2 of 3.** Run these prompts after Annex Table 3.1 and Section 4.1 from `03a-reform-results.md` are complete and confirmed. Those outputs are already in context — begin directly with Prompt D1.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
 **Prerequisites in context:**
 - Confirmed Annex Table 3.1 and Section 4.1 from step 3a (the authoritative source of all reform results)
-- Confirmed priority bottlenecks and change objectives from Phase 2
-- Draft Chapters 1–3 and Annex Steps 1–2 from Phases 1–2
+- Confirmed priority bottlenecks and change objectives from Step 2
+- Draft Chapters 1–3 and Annex Steps 1–2 from Steps 1–2
 
-> When Prompt F2 is complete and confirmed, continue with `03c-conclusion-compilation.md`.
+> When Prompt 3-12 is complete and confirmed, continue with `03c-conclusion-compilation.md`.
 
 ---
 
-## PART D: SECTION 4.2 — STAKEHOLDER STRATEGY
+## Sub-step 3.2 (continued) — Stakeholder strategy (Section 4.2 and Annex Tables 3.2 and 3.3)
 
 ### ✏️ Review the output — focus on these points
 
-**Stakeholder Mapping (D1).** Review before drafting the Section 4.2 narrative.
+**Stakeholder Mapping (Prompt 3-06).** Review before drafting the Section 4.2 narrative.
 
 - [ ] All actors who must authorize, implement, or comply with the Section 4.1 reform results are included — particularly those whose resistance or non-compliance could block reform
 - [ ] The power/interest assignments are accurate
@@ -32,7 +32,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 
 Add any missing stakeholders and correct any misclassifications before proceeding.
 
-### Prompt D1 — Stakeholder Mapping
+### Prompt 3-06 — Stakeholder Mapping
 
 For [country] in the [sector] sector, please conduct a stakeholder analysis covering the [number] priority PFM bottlenecks and their reform results identified in Section 4.1.
 
@@ -46,7 +46,7 @@ Present findings using the format of Annex Step 3 Table 3.2 from the OLePFM Sect
 
 ### ✏️ Review the output — focus on these points
 
-**Section 4.2 — Stakeholder Strategy narrative (D2).** Review before proceeding to Annex Tables 3.2 and 3.3.
+**Section 4.2 — Stakeholder Strategy narrative (Prompt 3-07).** Review before proceeding to Annex Tables 3.2 and 3.3.
 
 - [ ] The narrative identifies the two or three most significant political economy challenges — not simply repeating the stakeholder list
 - [ ] The sequencing argument is clearly made
@@ -56,9 +56,9 @@ Present findings using the format of Annex Step 3 Table 3.2 from the OLePFM Sect
 
 Make revisions before proceeding.
 
-### Prompt D2 — Section 4.2: Stakeholder Strategy Narrative
+### Prompt 3-07 — Section 4.2: Stakeholder Strategy Narrative
 
-Using the stakeholder analysis from Prompt D1 and the political economy analysis from Chapters 2 and 3, and strictly following the Chapter 4 structure in the OLePFM Sector Reform Design Report Template, please draft Section 4.2 — Stakeholder Strategy — for [country] in the [sector] sector.
+Using the stakeholder analysis from Prompt 3-06 and the political economy analysis from Chapters 2 and 3, and strictly following the Chapter 4 structure in the OLePFM Sector Reform Design Report Template, please draft Section 4.2 — Stakeholder Strategy — for [country] in the [sector] sector.
 
 The section should be approximately 500–700 words organized as follows:
 
@@ -72,9 +72,9 @@ Cross-reference Annex Tables 3.2 and 3.3 throughout.
 
 ---
 
-### Prompt D3 — Annex Tables 3.2 and 3.3: Stakeholder Management
+### Prompt 3-08 — Annex Tables 3.2 and 3.3: Stakeholder Management
 
-Please prepare Annex Step 3 Tables 3.2 and 3.3 for [country] in the [sector] sector, consistent with the stakeholder analysis in Prompt D1 and the narrative in Section 4.2.
+Please prepare Annex Step 3 Tables 3.2 and 3.3 for [country] in the [sector] sector, consistent with the stakeholder analysis in Prompt 3-06 and the narrative in Section 4.2.
 
 **Annex Table 3.2 — Key Stakeholders in Reform:** Using the format of the OLePFM Sector Reform Design Report Template, provide a table with columns: | Type | Members | Role |
 Provide one row for each of the four types: Authorizers, Team Leaders, Results Team, and Coalition Members. Be specific about which organization holds each role.
@@ -85,11 +85,11 @@ The Motivation Strategy column should be specific — for example: co-design of 
 
 ---
 
-## PART E: SECTION 4.3 — SYSTEMS, CAPACITY DEVELOPMENT AND TECHNICAL ASSISTANCE
+## Sub-step 3.2 (continued) — Systems, capacity development and technical assistance (Section 4.3 and Annex Table 3.4)
 
 ### ✏️ Review the output — focus on these points
 
-**Annex Table 3.4 — Systems, Capacity and TA (E1).** Review before drafting the Section 4.3 narrative.
+**Annex Table 3.4 — Systems, Capacity and TA (Prompt 3-09).** Review before drafting the Section 4.3 narrative.
 
 - [ ] All digital systems investments identified in the reform results are covered, specifying the systems to integrate, the technical standard to achieve, and the responsible organization
 - [ ] Capacity development programmes target the right organizational levels — not only central ministries
@@ -99,7 +99,7 @@ The Motivation Strategy column should be specific — for example: co-design of 
 
 Add any missing investments and correct any misattributions before proceeding.
 
-### Prompt E1 — Annex Table 3.4: Technical, Systems and Capacity Support
+### Prompt 3-09 — Annex Table 3.4: Technical, Systems and Capacity Support
 
 Please prepare Annex Step 3 Table 3.4 for [country] in the [sector] sector, covering the technical, systems, and capacity development requirements for implementing the reform results in Section 4.1.
 
@@ -115,9 +115,9 @@ Use the format of Annex Step 3 Table 3.4 in the OLePFM Sector Reform Design Repo
 
 ---
 
-### Prompt E2 — Section 4.3: Systems and Capacity Narrative
+### Prompt 3-10 — Section 4.3: Systems and Capacity Narrative
 
-Using Annex Table 3.4 from Prompt E1, and strictly following the Chapter 4 structure in the OLePFM Sector Reform Design Report Template, please draft Section 4.3 — Systems, Capacity Development and Technical Assistance — for [country] in the [sector] sector.
+Using Annex Table 3.4 from Prompt 3-09, and strictly following the Chapter 4 structure in the OLePFM Sector Reform Design Report Template, please draft Section 4.3 — Systems, Capacity Development and Technical Assistance — for [country] in the [sector] sector.
 
 The section should be approximately 300–400 words organized as follows:
 
@@ -133,13 +133,13 @@ Cross-reference Annex Table 3.4 throughout.
 
 ---
 
-## PART F: ANNEX TABLE 3.5 — KEY STEPS TO ACHIEVE RESULTS
+## Sub-step 3.2 (continued) — Key steps to achieve results (Annex Table 3.5)
 
-Use Prompt F1 once for each priority bottleneck. Repeat for all [number] bottlenecks before compiling Annex Table 3.5.
+Use Prompt 3-11 once for each priority bottleneck. Repeat for all [number] bottlenecks before compiling Annex Table 3.5.
 
 ### ✏️ Review the output — focus on these points
 
-**Key steps, per bottleneck (F1).** Check after each bottleneck, before the next.
+**Key steps, per bottleneck (Prompt 3-11).** Check after each bottleneck, before the next.
 
 - [ ] Exactly three steps per reform result — no more, no fewer
 - [ ] The steps are genuinely sequenced — each builds on the previous one
@@ -150,7 +150,7 @@ Use Prompt F1 once for each priority bottleneck. Repeat for all [number] bottlen
 
 Adjust timing, responsibilities, or step content before proceeding.
 
-### Prompt F1 — Key Steps per Bottleneck (repeat for each bottleneck)
+### Prompt 3-11 — Key Steps per Bottleneck (repeat for each bottleneck)
 
 Please prepare the Annex Table 3.5 entries for Priority Bottleneck [number]: [paste bottleneck title] and its reform results [list reform result numbers].
 
@@ -172,7 +172,7 @@ For Low-feasibility reform results, Steps 1 and 2 should build the political and
 
 ### ✏️ Review the output — focus on these points
 
-**Full Annex Table 3.5 (F2).** Review across all reform results before proceeding to Chapter 5.
+**Full Annex Table 3.5 (Prompt 3-12).** Review across all reform results before proceeding to Chapter 5.
 
 - [ ] The sequencing across all reform results is coherent — reforms that are prerequisites for others have earlier completion dates
 - [ ] No single organization has an unrealistic number of simultaneous lead responsibilities in the same year
@@ -182,7 +182,7 @@ For Low-feasibility reform results, Steps 1 and 2 should build the political and
 
 Make adjustments to timing or responsibilities where sequencing conflicts arise.
 
-### Prompt F2 — Compile Annex Table 3.5
+### Prompt 3-12 — Compile Annex Table 3.5
 
 Please compile the Annex Table 3.5 entries for all [number] priority bottlenecks and all [total number] reform results into a single table for [country] in the [sector] sector, strictly following the format of Annex Step 3 Table 3.5 in the OLePFM Sector Reform Design Report Template.
 
@@ -196,12 +196,12 @@ At the end of the table, provide a one-page implementation timeline showing all 
 
 | Prompt | Output |
 |---|---|
-| D1 | Stakeholder mapping |
-| D2 | Section 4.2 narrative |
-| D3 | Annex Tables 3.2 and 3.3 |
-| E1 | Annex Table 3.4 |
-| E2 | Section 4.3 narrative |
-| F1 (×n) | Annex Table 3.5 entries per bottleneck |
-| F2 | Compiled Annex Table 3.5 |
+| 3-06 | Stakeholder mapping |
+| 3-07 | Section 4.2 narrative |
+| 3-08 | Annex Tables 3.2 and 3.3 |
+| 3-09 | Annex Table 3.4 |
+| 3-10 | Section 4.3 narrative |
+| 3-11 (×n) | Annex Table 3.5 entries per bottleneck |
+| 3-12 | Compiled Annex Table 3.5 |
 
 Continue with `03c-conclusion-compilation.md`.

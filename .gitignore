@@ -124,3 +124,17 @@ token.*
 tokens.*
 token/
 tokens/
+
+#######################
+# Agent skills toolkit
+# Skill bundles live in skills/<name>/ (SKILL.md + scripts/ references/ assets/).
+# Markdown, .py and .sh are already un-ignored above. The rules below add the
+# remaining files a skill bundle, plugin manifest or CI workflow needs.
+# Keep real project data (country datasets, workshop outputs, reports) out of
+# skills/. assets/ is for templates only, and everything in it is committed.
+!/**/*.json
+!/skills/**/*.txt
+!/skills/**/assets/**
+!/.claude-plugin/**
+!/.github/**/*.yml
+!/.github/**/*.yaml

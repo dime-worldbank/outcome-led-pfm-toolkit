@@ -160,9 +160,32 @@ Using the sources identified, please provide an analysis of the overall revenues
 
 Use the table "Figures: Fiscal Analysis" from the template for further guidance on this analysis.
 
-Where data is available, also generate: (a) pie charts for the most recent year; and (b) column charts for trends. Prepare a data table for each chart generated, including the data source. Present the charts under the template heading **Figures: Fiscal Analysis**, within the Fiscal Policy Context part of Section 2.3.2.
+Where data is available, also generate the charts that tell this story: pie / composition charts for the most recent year and line or column charts for trends. Present the charts under the template heading **Figures: Fiscal Analysis**, within the Fiscal Policy Context part of Section 2.3.2, following the **chart interaction workflow** below.
+
+#### Chart interaction workflow (applies to every chart in this prompt)
+
+1. **Pull the data from a cited source, not from memory.** Take every value from the Data360 API (or another identified source in the running table). Never hand-type an estimate. Each value a tool returns carries a verifiable **claim tag** — keep it with the value.
+2. **Show BOTH the table and the chart, together.** For each figure output, in this order: (a) the **interactive chart**, then (b) its **underlying data table** directly beneath, showing every value with its year/category label, units and source. The table is the verifiable record; the chart is the visual. Never show a chart without its table.
+3. **Render the chart interactively.** Use a fenced ` ```chart ` block containing a **Chart.js schema**: `{ "type": …, "data": { "labels": [...], "datasets": [{ "label", "data", … }] }, "options": {…} }`. Supported types: line, bar, pie, scatter. Do **not** use Recharts-style keys (`xKey`, `yKey`, `series`, `dataKey`) and do **not** use a ` ```recharts ` fence — those render empty. Use quoted string labels on the x-axis. (Mermaid is for diagrams, not data charts.) When the user asks for a report-ready artifact, additionally produce a data-exact matplotlib PNG saved to the file area; the inline chart is the preview, the PNG is the document figure.
+4. **In the data table, each figure carries its Data360 claim tag**, so the platform can verify it against the source.
+5. **Cite the source under each table:** indicator name + indicator code + source database (for example, *Government expenditure on education, total (% of government expenditure)* — WDI, `WB_WDI_SE_XPD_TOTL_GB_ZS`), plus the Data360 explorer link (`https://data360.worldbank.org`) when the site is reachable. When the explorer is down, give the indicator name/code/database and keep the API query URL as a machine-verifiable backup; do a single link-upgrade pass once the explorer is back rather than pasting a guessed deep-link that may 404.
+6. **Never auto-lock a chart.** Present every chart as a **draft for review**. After the chart + table + source, ask the user to confirm it or to change type, series, years, titles or colours, and **wait**. Do not treat any chart as final, and do not move to the next figure, until the user explicitly locks it in. This is a ✏️ pause: the chart review below is the intervention point.
+
+Prepare a data table for each chart generated, including the data source.
 
 ---
+
+### ✏️ Review the output — focus on these points
+
+**Fiscal charts (Prompt 1-07).** Each chart is a draft until you lock it in — review before moving on.
+
+- [ ] Each figure shows **both** an interactive chart and its underlying data table
+- [ ] Every value comes from Data360 (or a cited source) and carries its claim tag; chart numbers match the table exactly
+- [ ] Charts render interactively (```chart + Chart.js schema), not as a static spec or empty block
+- [ ] Each table has a source line: indicator name + code + database (+ explorer link when reachable)
+- [ ] The story the charts tell matches the Section 2.3.2 narrative
+
+Confirm each chart to lock it in, or ask for changes (type, series, years, titles, colours). No chart is final until you lock it.
 
 ### Prompt 1-08 — Section 2.3.2: Financial Flows Table and Description
 

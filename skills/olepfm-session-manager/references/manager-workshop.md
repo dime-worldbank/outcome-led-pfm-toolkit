@@ -21,7 +21,7 @@ I want to prepare the OLePFM Working Tables for an upcoming reform design worksh
 
 ## Steps
 
-1. **Set up.** Establish country, sector and development outcome as in `manager-setup.md` Setup 2 (including the off-list sourcing order), then run source preparation (`00-source-prep.md`, Prompts S-1 to S-4). Cite sources as hyperlinked parentheticals.
+1. **Set up.** Establish country, sector and development outcome as in `manager-setup.md` Setup 2 (including the off-list sourcing order), then run source preparation (`00-source-prep.md`, Prompts S-1 to S-4). On the institutional platform, also run Prompt S-5 from `manager-platform.md` and apply its citation rules. Cite sources as hyperlinked parentheticals.
 
 2. **Populate 1.1–2.1.** Generate each table with the existing prompt, then lay it out in the Working Tables format with a short **facilitation note** for the workshop:
 

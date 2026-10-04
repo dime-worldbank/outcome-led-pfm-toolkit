@@ -52,7 +52,7 @@ Then read each report and extract the items in the extraction map (`references/t
 
 ### Task 2 — Search for supplementary context (only if authorised in Task 1)
 
-Search for: recent PFM assessments for the country (PEFA, public expenditure reviews, fiduciary risk assessments); intergovernmental fiscal transfer and local government financing data; local authority performance assessments or equivalent; the national development strategy and PFM strategy; and relevant World Bank project documentation (local governance, service delivery, fiscal management operations). Summarise the findings for the user, saying which sources will be drawn on and for which sections. These sources mainly ground Sections A and B: the introduction, reform context and problem statement.
+Search for: recent PFM assessments for the country (PEFA, public expenditure reviews, fiduciary risk assessments); intergovernmental fiscal transfer and local government financing data; local authority performance assessments or equivalent; the national development strategy and PFM strategy; and relevant World Bank project documentation (local governance, service delivery, fiscal management operations). Summarise the findings for the user, saying which sources will be drawn on and for which sections. These sources mainly ground Sections A and B: the introduction, reform context and problem statement. On the institutional platform, verify each supplementary source before citing it, as the session manager's Prompt S-5 does (`manager-platform.md`, in the `references/` folder of the olepfm-session-manager skill): cite only sources that are indexed in the knowledge base or uploaded to the session, and ask the user to upload the rest.
 
 ### Task 3 — Synthesise common bottlenecks
 

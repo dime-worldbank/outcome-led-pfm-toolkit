@@ -52,6 +52,15 @@ You are assisting with the production of an OLePFM Sector Reform Design Report. 
 
 6. **Do not invent or skip.** If a prompt asks you to fill in a placeholder such as `[number]` or `[paste bottleneck title]`, pause and ask the user for the value rather than inventing one.
 
+7. **Reference check table at the end of each chapter.** When a step's chapters are compiled (Prompts 1-15, 2-10 and 3-14), append to each chapter a table of its cited claims with the source, the document URL and the exact text from the document that supports each one, following `manager-reference-check.md` (in `references/`). Quote verbatim or mark the row not verified; never invent a passage. Every number shown in a chart or chart data table also gets a row; Data360 values with claim tags are treated as verified. The tables are review aids and stay out of the compiled report unless the user asks for them.
+
+8. **Chart interaction.** For every data chart produced anywhere in the report:
+   - Show **both** the interactive chart and its underlying data table, with the table directly beneath the chart; never show one without the other.
+   - Render the chart interactively with a fenced ` ```chart ` block using a **Chart.js schema** (`type` / `data.labels` / `data.datasets` / `options`); supported types are line, bar, pie and scatter. Do not use Recharts-style keys or a ` ```recharts ` fence (they render empty); Mermaid is for diagrams, not data charts. Produce a data-exact matplotlib PNG for the file area when the user wants a report-ready figure.
+   - Take every value from the Data360 API (or another cited source), never from memory; each value in the table carries its Data360 **claim tag**, and the chart numbers match the table exactly.
+   - Cite the source under each table: indicator name + code + source database, plus the Data360 explorer link (`https://data360.worldbank.org`) when reachable (otherwise name/code/database with the API query URL as backup, upgraded in one pass when the explorer is back).
+   - **Never treat a chart as final until the user explicitly locks it in.** Present every chart as a draft, ask the user to confirm or change it (type, series, years, titles, colours), and wait — exactly as at a ✏️ point.
+
 ---
 
 ## SESSION SETUP
@@ -69,6 +78,8 @@ The skill files (`00-source-prep.md` through `04c-cross-document-qa.md`) are in 
 **Skill file:** `00-source-prep.md`
 
 Run Prompts S-1 through S-4 from `00-source-prep.md` in sequence.
+
+> **Institutional platform (knowledge base present):** after Prompt S-4, run Prompt S-5 from `manager-platform.md` to check that every listed source is indexed in the knowledge base, and ask the user to upload any that are not. That file also adds items to the Sources completion gate below and to the consistency audit (Prompt C-01). Skip it when the user supplies the documents directly, as in Claude Code.
 
 ### Sources Completion Gate
 
@@ -122,11 +133,15 @@ Before advancing to Step 2, confirm all of the following:
 - [ ] All significant financing channels are identified; data is accurate; diagram reviewed *(economic-resilience variant: fiscal-cycle narrative and diagram reviewed instead)*
 - [ ] PFM systems description covers all six dimensions (budget formulation, wage execution, non-wage execution, intergovernmental transfers, procurement, audit/accountability, digital systems) *(economic-resilience variant: the four macro-fiscal capabilities instead, and the three template deviations recorded)*
 - [ ] Feasibility assessment addresses financial affordability, institutional capability, and stakeholder commitment with specific evidence
+- [ ] Every chart in Section 2.3.2 has been locked in by the user, with both an interactive chart and its data table, values carrying Data360 claim tags and a source line
 
 **Annex Tables 1.1 to 1.3**
 - [ ] Table 1.1 consistent with Sections 2.1 and 2.2
 - [ ] Table 1.2 covers all organizations; no significant actor omitted
 - [ ] Table 1.3 lists the same financing channels, values and problems as the Section 2.3.2 flows table
+
+**Reference check**
+- [ ] Reference check tables for Chapters 1 and 2 reviewed; every row not verified, partially supported or uncited has been resolved
 
 ### Inter-Step Record — Step 1 → Step 2
 
@@ -176,6 +191,9 @@ Before advancing to Step 3, confirm all of the following:
 - [ ] Bottleneck codes consistently cross-referenced (B1.1, B2.3, etc.)
 - [ ] Each priority bottleneck has a concrete, observable change objective
 - [ ] Annex Table 2.3 consistent with Section 3.2.2
+
+**Reference check**
+- [ ] Reference check table for Chapter 3 reviewed; every row not verified, partially supported or uncited has been resolved
 
 ### Inter-Step Record — Step 2 → Step 3
 
@@ -238,6 +256,9 @@ Before advancing to Compilation and QA, confirm all of the following:
 - [ ] Scope boundary correctly and completely stated
 - [ ] Concluding paragraph connects reform objectives back to the development outcome
 
+**Reference check**
+- [ ] Reference check tables for Chapters 4 and 5 reviewed; every row not verified, partially supported or uncited has been resolved
+
 ### Inter-Step Record — Step 3 → Compilation and QA
 
 Record the following before proceeding:
@@ -263,6 +284,8 @@ Report date:
 > **Start with the consistency audit (Prompt C-01) before any compilation step.** Resolve all identified discrepancies before proceeding to Prompt C-02.
 
 > **Economic-resilience variant:** if the Section 2.3 variant prompts were used in Step 1, give the audit the three recorded template deviations (fiscal-outcome swim lanes; fiscal-cycle narrative and diagram in place of the financial-flows table and diagram; macro-fiscal charts in place of sector-spending charts) so it treats them as intended substitutions, not inconsistencies.
+
+> **Institutional platform:** add the source-availability item from `manager-platform.md` to the audit (Prompt C-01) and apply its bibliography rule in Prompt C-09, so every citation is checked against the Status column of the running source table.
 
 Run all prompts in `04a-audit-and-part1.md` in sequence (Prompts C-01 to C-05), then `04b-part2-and-annex.md` (Prompts C-06 to C-13), then `04c-cross-document-qa.md` (Prompts QA-1 to QA-5).
 ### Compilation and QA Completion Gate

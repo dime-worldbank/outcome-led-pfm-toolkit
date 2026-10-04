@@ -7,7 +7,7 @@ description: Sources stage of the OLePFM report workflow. Identifies all sources
 
 This skill is run once at the start of the session (the Sources stage, before Step 1). It identifies all sources needed across the full report — analytical, fiscal, political economy, and systems. Complete and confirm all four prompts before proceeding to Step 1.
 
-Every source is entered into a **single running numbered table** — columns **No. | Author | Year | Title | Relevance | Link**. Numbering starts at 1 in S-1 and continues unbroken through S-2, S-3 and S-4 — never restarted per prompt — so each source keeps one stable number for the rest of the session. Record a link for every source wherever one exists; in-text citations hyperlink to it (see S-1).
+Every source is entered into a **single running numbered table** — columns **No. | Author | Year | Title | Relevance | Link | Download**. **Link** is the URL the in-text citation points to (the page where the source is published). **Download** is a direct link to the document file itself (usually a PDF) so the reader can obtain a copy; it is often the same URL as Link, and it stays blank for a web page or online database that has no file. Numbering starts at 1 in S-1 and continues unbroken through S-2, S-3 and S-4 — never restarted per prompt — so each source keeps one stable number for the rest of the session. Record a link for every source wherever one exists; in-text citations hyperlink to it (see S-1). Record only links you have actually seen in the search results; never construct or guess a file URL.
 
 ---
 
@@ -17,7 +17,7 @@ Search for and identify the most relevant and recent sources from the intranet a
 
 This should include analytical reports as well as official government websites, including those which provide sector and fiscal information.
 
-Present the sources as a **numbered table** with columns **No. | Author | Year | Title | Relevance | Link**, numbered sequentially from 1. Put each source's URL in the Link column (as a Markdown link) where one exists — in-text citations hyperlink to it. Keep one running table; S-2–S-4 add rows and continue the same numbering rather than starting over.
+Present the sources as a **numbered table** with columns **No. | Author | Year | Title | Relevance | Link | Download**, numbered sequentially from 1. Put each source's URL in the Link column (as a Markdown link) where one exists — in-text citations hyperlink to it. In the Download column put a direct link to the document file (usually the PDF), also as a Markdown link, where one exists; leave it blank for a web page or online database with no file. Record only links you have seen; never guess a file URL. Keep one running table; S-2–S-4 add rows and continue the same numbering rather than starting over.
 
 When generating every section of the report, cite each source as a Markdown hyperlink to its link — e.g. ([World Bank, 2010](https://example.org/report)) — so the reader can open and verify it. Where a source has no link, cite it in plain text as ([author], [year]).
 
@@ -40,7 +40,7 @@ Add any missing sources with an additional search, giving each the next number i
 
 Search for any recent sources of information on the overall budget and [sector] spending in [country], including: official budget documents from the finance ministry website; IMF program documents covering fiscal policy and social spending; civil society and think tank budget analysis; and international databases covering health/education/sector expenditure per capita.
 
-Add the new sources as rows in the running table from S-1 (same columns: **No. | Author | Year | Title | Relevance | Link**), numbering each from the last row used.
+Add the new sources as rows in the running table from S-1 (same columns: **No. | Author | Year | Title | Relevance | Link | Download**), numbering each from the last row used.
 
 Include subnational government budget, revenue and expenditure data in your search.
 

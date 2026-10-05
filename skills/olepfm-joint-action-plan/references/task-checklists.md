@@ -60,6 +60,8 @@ Present the gap analysis as a structured section with a recommendation on which 
 | Lead agencies | Named consistently, using the agreed abbreviations throughout |
 | Cover | Title, version number and date correct |
 | Terminology | Objective for top-level groupings; Reform Result for the changes within each; Action for table entries; no residual Pillar, Sub-Pillar or MPA |
-| Systems, capacity and TA | Section E.II content explicitly linked to named reform results in Section D |
+| Bottleneck groups | The group headings in Section 1.3 are the objective titles of Section 2.2, in the same order and number |
+| Systems, capacity and TA | Section 3.2 content explicitly linked to named reform results in Section 2.2 |
+| Word document | Follows the Word template as set out under Output in SKILL.md: headings, footer, tables, Box 1, table of contents; no annotation or Quick Reference text left |
 | Annexes | None; the document ends at the bibliography |
 | Bibliography | Every source cited in the document is listed |

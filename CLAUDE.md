@@ -21,3 +21,4 @@ This repo is a collection of Agent Skills for outcome-led PFM (Public Financial 
 
 - `.gitignore` ignores everything by default and whitelists by extension. If a new file in a skill does not show up in `git status`, add a rule to the "Agent skills toolkit" section at the bottom of `.gitignore` rather than forcing it with `git add -f`.
 - Never commit country data, workshop outputs, reports or credentials. Skill `assets/` are for templates only.
+- Word templates (`.docx`) are not committed. The client uploads them to the platform's backend knowledge base; skills refer to them by document title, and the Markdown twin in `assets/` is the committed text version.

@@ -1,11 +1,11 @@
 ---
 title: OLePFM Joint Action Plan — Task Checklists
-description: Working formats for the OLePFM Joint Action Plan Compiler — the extraction map keyed to the Sector Reform Design Report's sections and annex tables (Task 1), the cross-cutting bottleneck synthesis table (Task 3), the gap-analysis formats (Task 6) and the finalisation checklist (Task 8). The JAP's structure itself is governed by the skeleton template in assets/.
+description: Working formats for the OLePFM Joint Action Plan Compiler — the extraction map keyed to the Sector Reform Design Report's sections and annex tables (Task 1), the cross-cutting bottleneck synthesis table (Task 3), the gap-analysis formats (Task 6) and the finalisation checklist (Task 8). The JAP's structure itself is governed by the skeleton template, joint-action-plan-template.md.
 ---
 
 # Task checklists and formats
 
-Working formats for Tasks 1, 3, 6 and 8. The structure of the JAP itself is governed by `assets/joint-action-plan-template.md`.
+Working formats for Tasks 1, 3, 6 and 8. The structure of the JAP itself is governed by `joint-action-plan-template.md`.
 
 ## 1. Extraction map (Task 1)
 
@@ -62,6 +62,6 @@ Present the gap analysis as a structured section with a recommendation on which 
 | Terminology | Objective for top-level groupings; Reform Result for the changes within each; Action for table entries; no residual Pillar, Sub-Pillar or MPA |
 | Bottleneck groups | The group headings in Section 1.3 are the objective titles of Section 2.2, in the same order and number |
 | Systems, capacity and TA | Section 3.2 content explicitly linked to named reform results in Section 2.2 |
-| Word document | Follows the Word template as set out under Output in SKILL.md: headings, footer, tables, Box 1, table of contents; no annotation or Quick Reference text left |
+| Word document | Follows the Word template as set out under Output in `joint-action-plan.md` (this skill's SKILL.md): headings, footer, tables, Box 1, table of contents; no annotation or Quick Reference text left |
 | Annexes | None; the document ends at the bibliography |
 | Bibliography | Every source cited in the document is listed |

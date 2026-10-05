@@ -1,11 +1,11 @@
 ---
 title: OLePFM Step 3 (3b) — Sections 4.2 and 4.3 and Annex Table 3.5
-description: Step 3 (file 3b) of the OLePFM report workflow. Generates Section 4.2 (stakeholder strategy, Annex Tables 3.2 and 3.3), Section 4.3 (systems, capacity development and technical assistance, Annex Table 3.4), and Annex Table 3.5 (key steps to achieve results). Run after 03a-reform-results.md.
+description: Step 3 (file 3b) of the OLePFM report workflow. Generates Section 4.2 (stakeholder strategy, Annex Tables 3.2 and 3.3), Section 4.3 (systems, capacity development and technical assistance, Annex Table 3.4), and Annex Table 3.5 (key steps to achieve results). Run after manager-03a-reform-results.md.
 ---
 
 # Step 3 (file 3b): Sections 4.2 and 4.3 and Annex Table 3.5
 
-**Step 3, file 2 of 3.** Run these prompts after Annex Table 3.1 and Section 4.1 from `03a-reform-results.md` are complete and confirmed. Those outputs are already in context — begin directly with Prompt 3-06.
+**Step 3, file 2 of 3.** Run these prompts after Annex Table 3.1 and Section 4.1 from `manager-03a-reform-results.md` are complete and confirmed. Those outputs are already in context — begin directly with Prompt 3-06.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
@@ -14,7 +14,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 - Confirmed priority bottlenecks and change objectives from Step 2
 - Draft Chapters 1–3 and Annex Steps 1–2 from Steps 1–2
 
-> When Prompt 3-12 is complete and confirmed, continue with `03c-conclusion-compilation.md`.
+> When Prompt 3-12 is complete and confirmed, continue with `manager-03c-conclusion-compilation.md`.
 
 ---
 
@@ -204,4 +204,4 @@ At the end of the table, provide a one-page implementation timeline showing all 
 | 3-11 (×n) | Annex Table 3.5 entries per bottleneck |
 | 3-12 | Compiled Annex Table 3.5 |
 
-Continue with `03c-conclusion-compilation.md`.
+Continue with `manager-03c-conclusion-compilation.md`.

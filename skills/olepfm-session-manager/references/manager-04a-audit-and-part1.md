@@ -1,6 +1,6 @@
 ---
 title: OLePFM Compilation and QA (4a) — Consistency Audit and Main Report Part 1
-description: Compilation and QA (file 4a) of the OLePFM report workflow. Runs the pre-compilation consistency audit across all chapters and annexes, then compiles Main Report Part 1 (front matter, Chapter 1, Chapter 2). Continue with 04b-part2-and-annex.md.
+description: Compilation and QA (file 4a) of the OLePFM report workflow. Runs the pre-compilation consistency audit across all chapters and annexes, then compiles Main Report Part 1 (front matter, Chapter 1, Chapter 2). Continue with manager-04b-part2-and-annex.md.
 ---
 
 # Compilation and QA (file 4a): Consistency Audit and Main Report Part 1
@@ -15,7 +15,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 - All values recorded in manager (reform result counts, feasibility breakdown, implementation horizon, authors, date)
 - Draft Chapters 1–5 and all Annex Step drafts from Steps 1–3
 
-> When Prompt C-05 is complete and confirmed, continue with `04b-part2-and-annex.md`.
+> When Prompt C-05 is complete and confirmed, continue with `manager-04b-part2-and-annex.md`.
 
 ---
 
@@ -160,4 +160,4 @@ Apply the following final formatting instructions:
 | C-04 | Final compiled Chapter 2 | Part 1 |
 | C-05 | Full Main Report Part 1 | Part 1 |
 
-Continue with `04b-part2-and-annex.md`.
+Continue with `manager-04b-part2-and-annex.md`.

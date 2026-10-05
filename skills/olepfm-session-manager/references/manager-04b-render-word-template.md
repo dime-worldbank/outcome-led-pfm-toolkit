@@ -1,21 +1,21 @@
 ---
 title: OLePFM Compilation and QA (4b, continued) — Rendering to the Word Template
-description: Compilation and QA (file 4b, second of two) of the OLePFM report workflow. Prompt C-14 pours the confirmed content of Main Report Parts 1 and 2 and the Annex into the branded OLePFM Sector Reform Design Report Word template, so the delivered .docx carries the template's cover, table of contents, styles, landscape annex tables and footers with no placeholder text. Run after 04b-part2-and-annex.md (as a draft render if QA has not yet run); re-run after the QA corrections from 04c-cross-document-qa.md.
+description: Compilation and QA (file 4b, second of two) of the OLePFM report workflow. Prompt C-14 pours the confirmed content of Main Report Parts 1 and 2 and the Annex into the branded OLePFM Sector Reform Design Report Word template, so the delivered .docx carries the template's cover, table of contents, styles, landscape annex tables and footers with no placeholder text. Run after manager-04b-part2-and-annex.md (as a draft render if QA has not yet run); re-run after the QA corrections from manager-04c-cross-document-qa.md.
 ---
 
 # Compilation and QA (file 4b, continued): Rendering to the Word Template
 
-**Compilation and QA, file 3 of 4.** Run this prompt after Prompts C-06 to C-13 in `04b-part2-and-annex.md` are complete and confirmed. The compiled Main Report Part 1 (step 4a), Part 2 and Annex are already in context.
+**Compilation and QA, file 3 of 4.** Run this prompt after Prompts C-06 to C-13 in `manager-04b-part2-and-annex.md` are complete and confirmed. The compiled Main Report Part 1 (step 4a), Part 2 and Annex are already in context.
 
 Pause at the ✏️ intervention point and wait for user confirmation before proceeding.
 
-> When Prompt C-14 is complete and confirmed, continue with `04c-cross-document-qa.md` (Prompts QA-1 to QA-5). If QA then changes any content, re-run Prompt C-14 so the delivered `.docx` carries the corrections.
+> When Prompt C-14 is complete and confirmed, continue with `manager-04c-cross-document-qa.md` (Prompts QA-1 to QA-5). If QA then changes any content, re-run Prompt C-14 so the delivered `.docx` carries the corrections.
 
 ---
 
 ## Rendering to the Word template
 
-After Prompts C-06 to C-13 (`04b-part2-and-annex.md`) have produced and the user has confirmed the final *content* of the three documents (Main Report Part 1 from step 4a, Main Report Part 2, and the Annex), the report is delivered as a single Word document that follows the official OLePFM template. This is Prompt C-14.
+After Prompts C-06 to C-13 (`manager-04b-part2-and-annex.md`) have produced and the user has confirmed the final *content* of the three documents (Main Report Part 1 from step 4a, Main Report Part 2, and the Annex), the report is delivered as a single Word document that follows the official OLePFM template. This is Prompt C-14.
 
 ### The template
 
@@ -94,4 +94,4 @@ Say "proceed" when satisfied, or provide corrections to re-render.
 |---|---|---|
 | **C-14** | **Report rendered into the OLePFM Word template (single `.docx`)** | **All** |
 
-Continue with `04c-cross-document-qa.md`.
+Continue with `manager-04c-cross-document-qa.md`.

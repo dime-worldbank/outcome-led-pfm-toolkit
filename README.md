@@ -11,7 +11,7 @@ Skills follow the [Agent Skills](https://agentskills.io) format: a folder with a
 | [olepfm-session-manager](skills/olepfm-session-manager/) | Produce a complete OLePFM Sector Reform Design Report in one session (Sources, Steps 1 to 3, Compilation and QA), or, in workshop mode, the Working Tables a reform design workshop starts from | draft |
 | [olepfm-joint-action-plan](skills/olepfm-joint-action-plan/) | Compile a Joint Action Plan from two or more sector reports produced by the session manager, following the bundled JAP skeleton template and the PFM reform frameworks | draft |
 
-OLePFM stands for Outcome-Led Public Financial Management. The session manager has two modes. Report mode runs five stages, Sources, Steps 1 to 3 and Compilation and QA, loading one prompt file at a time from `references/`. Workshop mode is an overlay on the same workflow: it reuses the setup, the Sources stage and a subset of the Step 1 and Step 2 prompts, then stops after Table 2.1 and leaves the remaining tables blank for the workshop.
+OLePFM stands for Outcome-Led Public Financial Management. The session manager has two modes. Report mode runs five stages, Sources, Steps 1 to 3 and Compilation and QA, loading one prompt file at a time. Workshop mode is an overlay on the same workflow: it reuses the setup, the Sources stage and a subset of the Step 1 and Step 2 prompts, then stops after Table 2.1 and leaves the remaining tables blank for the workshop.
 
 See [skills/README.md](skills/README.md) for the full index and conventions.
 

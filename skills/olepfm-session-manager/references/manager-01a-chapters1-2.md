@@ -1,15 +1,15 @@
 ---
 title: OLePFM Step 1 (1a) — Chapter 1 and Sections 2.1–2.2
-description: Step 1 (file 1a, first of two) of the OLePFM report workflow. Generates Chapter 1 (Introduction), Section 2.1 (Outcomes and Public Sector Results) and Section 2.2 (the public sector challenges that drive the entire bottleneck analysis in Step 2), Prompts 1-01 to 1-03. Continue with 01a-section2-3.md (Section 2.3, Prompts 1-04 to 1-11), then 01b-annex1.md.
+description: Step 1 (file 1a, first of two) of the OLePFM report workflow. Generates Chapter 1 (Introduction), Section 2.1 (Outcomes and Public Sector Results) and Section 2.2 (the public sector challenges that drive the entire bottleneck analysis in Step 2), Prompts 1-01 to 1-03. Continue with manager-01a-section2-3.md (Section 2.3, Prompts 1-04 to 1-11), then manager-01b-annex1.md.
 ---
 
 # Step 1 (file 1a): Chapter 1 and Sections 2.1–2.2
 
-**Step 1, file 1 of 3.** Run these prompts in sequence after the Sources stage is complete. Source identification and session context have already been established — begin directly with Prompt 1-01. Step 1 continues in `01a-section2-3.md` (Section 2.3, Prompts 1-04 to 1-11) and `01b-annex1.md` (Annex Step 1 and compilation, Prompts 1-12 to 1-15); the three files were one and are split only for the platform's file-size limit.
+**Step 1, file 1 of 3.** Run these prompts in sequence after the Sources stage is complete. Source identification and session context have already been established — begin directly with Prompt 1-01. Step 1 continues in `manager-01a-section2-3.md` (Section 2.3, Prompts 1-04 to 1-11) and `manager-01b-annex1.md` (Annex Step 1 and compilation, Prompts 1-12 to 1-15); the three files were one and are split only for the platform's file-size limit.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
-> When Prompt 1-03 is complete and the challenge titles are confirmed, continue with `01a-section2-3.md` (Prompts 1-04 to 1-11).
+> When Prompt 1-03 is complete and the challenge titles are confirmed, continue with `manager-01a-section2-3.md` (Prompts 1-04 to 1-11).
 
 ---
 
@@ -100,4 +100,4 @@ Use the standard introductory text from the template to open the section. Ensure
 | 1-02 | Section 2.1: Outcomes and Public Sector Results |
 | 1-03 | Section 2.2: Key Public Sector Challenges |
 
-Continue with `01a-section2-3.md` (Prompts 1-04 to 1-11), then `01b-annex1.md` (Prompts 1-12 to 1-15).
+Continue with `manager-01a-section2-3.md` (Prompts 1-04 to 1-11), then `manager-01b-annex1.md` (Prompts 1-12 to 1-15).

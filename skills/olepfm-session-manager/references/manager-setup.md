@@ -19,7 +19,7 @@ These are held in the **root folder of the knowledge base** (alongside the skill
 
 > **If the AI cannot find them:** the stored file name may differ from the title — have it list the root files and match on keywords, not an exact title.
 
-> **In this repository:** the Report Template is `assets/report-template.md` beside this SKILL.md. Read it whenever a prompt says "using the OLePFM Sector Reform Design Report Template". The Synthesis Handbook and sector notes are not in the repository; ask the user to provide them.
+> **In this repository:** the Report Template is the file `manager-report-template.md` in this skill. Read it whenever a prompt says "using the OLePFM Sector Reform Design Report Template". The Synthesis Handbook and sector notes are not in the repository; ask the user to provide them.
 
 ### Documents to Upload Per Session
 
@@ -98,7 +98,7 @@ For a listed sector, use its entry below; for a sector not listed, build the out
 **Economic Resilience — "Building Economic Resilience"**
 - **Development outcome:** A resilient economy (growth in output per capita over the business cycle) that sustains growth while reducing vulnerability to shocks.
 - **Public sector result:** Building and preserving fiscal space through sound management of the fiscal balance, revenues, expenditure, and debt — enabling counter-cyclical responses to shocks.
-- **Prompt variant:** cross-cutting fiscal outcome. In Step 1, Prompts 1-04 to 1-10 are replaced by ER-1-04 to ER-1-10 from `01a-variant-economic-resilience.md` and `01a-variant-economic-resilience-2.md` (see the Step 1 instructions in `manager.md`). The same applies to any other macro-fiscal outcome, such as fiscal or debt sustainability.
+- **Prompt variant:** cross-cutting fiscal outcome. In Step 1, Prompts 1-04 to 1-10 are replaced by ER-1-04 to ER-1-10 from `manager-01a-variant-economic-resilience.md` and `manager-01a-variant-economic-resilience-2.md` (see the Step 1 instructions in `manager.md`). The same applies to any other macro-fiscal outcome, such as fiscal or debt sustainability.
 
 **Gender — "Eliminating Gender-Based Violence (GBV)"**
 - **Development outcome:** Eliminate all forms of GBV, particularly intimate partner violence (IPV).
@@ -118,4 +118,4 @@ For a listed sector, use its entry below; for a sector not listed, build the out
 
 ## Prompt numbering
 
-Prompts are numbered by stage and run in order: S-1 to S-4 (Sources), 1-01 to 1-15 (Step 1), 2-01 to 2-10 (Step 2), 3-01 to 3-14 (Step 3), C-01 to C-14 (Compilation) and QA-1 to QA-5 (final cross-document checks). Optional quality checks at the end of a step are numbered 1-Q1, 2-Q1 and so on. Inside each file, prompts are grouped under the OLePFM sub-step they serve (for example Sub-step 1.4, Map the sector policy, institutional and public finance context). A sector variant of a prompt keeps the standard number with a prefix: ER-1-05 is the economic-resilience variant of Prompt 1-05. The prompt files are listed in `manager.md` under each stage; where a stage's file was split for the platform's file-size limit (`01a-chapters1-2.md` and `01a-section2-3.md`; `04b-part2-and-annex.md` and `04b-render-word-template.md`), the manager names both and each file says which prompts it holds.
+Prompts are numbered by stage and run in order: S-1 to S-4 (Sources), 1-01 to 1-15 (Step 1), 2-01 to 2-10 (Step 2), 3-01 to 3-14 (Step 3), C-01 to C-14 (Compilation) and QA-1 to QA-5 (final cross-document checks). Optional quality checks at the end of a step are numbered 1-Q1, 2-Q1 and so on. Inside each file, prompts are grouped under the OLePFM sub-step they serve (for example Sub-step 1.4, Map the sector policy, institutional and public finance context). A sector variant of a prompt keeps the standard number with a prefix: ER-1-05 is the economic-resilience variant of Prompt 1-05. The prompt files are listed in `manager.md` under each stage; where a stage's file was split for the platform's file-size limit (`manager-01a-chapters1-2.md` and `manager-01a-section2-3.md`; `manager-04b-part2-and-annex.md` and `manager-04b-render-word-template.md`), the manager names both and each file says which prompts it holds.

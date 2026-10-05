@@ -1,12 +1,12 @@
 ---
 title: OLePFM Compilation and QA (4b) — Main Report Part 2 and Annex Document
-description: Compilation and QA (file 4b, first of two) of the OLePFM report workflow. Compiles Main Report Part 2 (Chapters 3–5 and bibliography) and the full Annex document (Steps 1–3, Tables 1.1 to 3.5), Prompts C-06 to C-13. Run after 04a-audit-and-part1.md; continue with 04b-render-word-template.md (Prompt C-14).
+description: Compilation and QA (file 4b, first of two) of the OLePFM report workflow. Compiles Main Report Part 2 (Chapters 3–5 and bibliography) and the full Annex document (Steps 1–3, Tables 1.1 to 3.5), Prompts C-06 to C-13. Run after manager-04a-audit-and-part1.md; continue with manager-04b-render-word-template.md (Prompt C-14).
 ---
 
 
 # Compilation and QA (file 4b): Main Report Part 2 and Annex Document
 
-**Compilation and QA, file 2 of 4.** Run these prompts after the consistency audit and Main Report Part 1 from `04a-audit-and-part1.md` are complete and confirmed. Begin directly with Prompt C-06.
+**Compilation and QA, file 2 of 4.** Run these prompts after the consistency audit and Main Report Part 1 from `manager-04a-audit-and-part1.md` are complete and confirmed. Begin directly with Prompt C-06.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
@@ -15,9 +15,9 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 - Compiled Main Report Part 1 from step 4a
 - Draft Chapters 3–5 and all Annex Step drafts from Steps 1–3
 
-> When Prompt C-13 is complete and confirmed, continue with `04b-render-word-template.md` (Prompt C-14), then `04c-cross-document-qa.md`.
+> When Prompt C-13 is complete and confirmed, continue with `manager-04b-render-word-template.md` (Prompt C-14), then `manager-04c-cross-document-qa.md`.
 
-> **Prompt C-14 — Render the compiled report into the OLePFM Word template** follows Prompt C-13 and sits in its own file, `04b-render-word-template.md`, because of the platform's file-size limit. Prompts C-06 to C-13 produce the final *content* of Part 2 and the Annex; C-14 pours that confirmed content into the branded Word template so the delivered `.docx` carries the template's cover, Table of Contents, styles, landscape annex tables and footers, with no placeholder text left behind.
+> **Prompt C-14 — Render the compiled report into the OLePFM Word template** follows Prompt C-13 and sits in its own file, `manager-04b-render-word-template.md`, because of the platform's file-size limit. Prompts C-06 to C-13 produce the final *content* of Part 2 and the Annex; C-14 pours that confirmed content into the branded Word template so the delivered `.docx` carries the template's cover, Table of Contents, styles, landscape annex tables and footers, with no placeholder text left behind.
 
 ---
 
@@ -205,4 +205,4 @@ Apply the following final formatting instructions:
 | C-12 | Annex Step 3 (Tables 3.1–3.5) | Annex |
 | C-13 | Full Annex document | Annex |
 
-Continue with `04b-render-word-template.md` (Prompt C-14), then `04c-cross-document-qa.md`.
+Continue with `manager-04b-render-word-template.md` (Prompt C-14), then `manager-04c-cross-document-qa.md`.

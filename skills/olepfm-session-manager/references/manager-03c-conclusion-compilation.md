@@ -1,11 +1,11 @@
 ---
 title: OLePFM Step 3 (3c) — Chapter 5 and Step 3 Compilation
-description: Step 3 (file 3c) of the OLePFM report workflow. Generates Chapter 5 (Conclusion), compiles Chapters 4 and 5 with Annex Step 3 into a single document, and runs the Step 3 quality checks. Run after 03b-stakeholders-systems-steps.md.
+description: Step 3 (file 3c) of the OLePFM report workflow. Generates Chapter 5 (Conclusion), compiles Chapters 4 and 5 with Annex Step 3 into a single document, and runs the Step 3 quality checks. Run after manager-03b-stakeholders-systems-steps.md.
 ---
 
 # Step 3 (file 3c): Chapter 5 and Step 3 Compilation
 
-**Step 3, file 3 of 3.** Run these prompts after Sections 4.2 and 4.3 and Annex Table 3.5 from `03b-stakeholders-systems-steps.md` are complete and confirmed. All Step 3 drafts are already in context — begin directly with Prompt 3-13.
+**Step 3, file 3 of 3.** Run these prompts after Sections 4.2 and 4.3 and Annex Table 3.5 from `manager-03b-stakeholders-systems-steps.md` are complete and confirmed. All Step 3 drafts are already in context — begin directly with Prompt 3-13.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
@@ -99,7 +99,7 @@ The document should contain:
 
 ## Quality checks for Step 3 (optional)
 
-Check 3-Q5 (cause-to-reform coverage for Annex Table 3.1) is in `03a-reform-results.md`, to be run right after Prompt 3-03.
+Check 3-Q5 (cause-to-reform coverage for Annex Table 3.1) is in `manager-03a-reform-results.md`, to be run right after Prompt 3-03.
 
 **3-Q1 — Template Compliance Check**
 

@@ -1,11 +1,11 @@
 ---
 title: OLePFM Step 1 (1a) variant — Economic Resilience: Section 2.3 Prompts (file 1 of 2)
-description: Drop-in replacements for Prompts 1-04 to 1-10 (Section 2.3) when the outcome is cross-cutting and fiscal — economic resilience, macro-fiscal stability, fiscal or debt sustainability. Replaces the service-delivery institutional tiers, financial-flows table and sector-spending charts with fiscal-outcome tiers, a self-reinforcing fiscal-cycle narrative and diagram, and macro-fiscal charts. Use together with 01a-section2-3.md; every other Step 1 prompt is unchanged.
+description: Drop-in replacements for Prompts 1-04 to 1-10 (Section 2.3) when the outcome is cross-cutting and fiscal — economic resilience, macro-fiscal stability, fiscal or debt sustainability. Replaces the service-delivery institutional tiers, financial-flows table and sector-spending charts with fiscal-outcome tiers, a self-reinforcing fiscal-cycle narrative and diagram, and macro-fiscal charts. Use together with manager-01a-section2-3.md; every other Step 1 prompt is unchanged.
 ---
 
 # Step 1 (file 1a) variant: Economic Resilience — Section 2.3 prompts (file 2 of 2)
 
-Continue here after Prompts ER-1-04 to ER-1-06 in `01a-variant-economic-resilience.md`, which also holds the purpose, the deviation register and the prompt map for this variant. Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
+Continue here after Prompts ER-1-04 to ER-1-06 in `manager-01a-variant-economic-resilience.md`, which also holds the purpose, the deviation register and the prompt map for this variant. Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
 ---
 
@@ -110,7 +110,7 @@ State the overall PEFA score and note any deterioration since the previous asses
 
 Make corrections before proceeding.
 
-> **Return to the standard file.** Continue with Prompt 1-11 (Section 2.3.3: Feasibility Assessment) in `01a-section2-3.md`, then `01b-annex1.md` (Prompts 1-12, 1-13 and 1-15; skip 1-14).
+> **Return to the standard file.** Continue with Prompt 1-11 (Section 2.3.3: Feasibility Assessment) in `manager-01a-section2-3.md`, then `manager-01b-annex1.md` (Prompts 1-12, 1-13 and 1-15; skip 1-14).
 
 ---
 
@@ -138,4 +138,4 @@ Please review draft Section 2.3 to confirm it treats [fiscal outcome] as a cross
 | ER-1-10 | Section 2.3.2: PFM Systems for macro-fiscal management | this file |
 | 1-11 | Section 2.3.3: Feasibility Assessment | standard |
 | 1-Q1, 1-Q3, 1-Q4, ER-1-Q5 | Quality checks | standard + this file |
-| 1-12, 1-13, 1-15 | Annex Tables 1.1, 1.2 and compilation (`01b-annex1.md`); 1-14 replaced by ER-1-08 | standard |
+| 1-12, 1-13, 1-15 | Annex Tables 1.1, 1.2 and compilation (`manager-01b-annex1.md`); 1-14 replaced by ER-1-08 | standard |

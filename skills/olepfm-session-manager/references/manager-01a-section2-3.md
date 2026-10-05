@@ -1,21 +1,21 @@
 ---
 title: OLePFM Step 1 (1a, continued) — Section 2.3
-description: Step 1 (file 1a, second of two) of the OLePFM report workflow. Generates Section 2.3 (Policy, Institutional and Public Finance Context, and the Feasibility Assessment), Prompts 1-04 to 1-11, with the chart interaction workflow for the fiscal charts and the Step 1 quality checks. Run after 01a-chapters1-2.md; for a cross-cutting fiscal outcome, Prompts 1-04 to 1-10 are replaced by the economic-resilience variant. Continue with 01b-annex1.md.
+description: Step 1 (file 1a, second of two) of the OLePFM report workflow. Generates Section 2.3 (Policy, Institutional and Public Finance Context, and the Feasibility Assessment), Prompts 1-04 to 1-11, with the chart interaction workflow for the fiscal charts and the Step 1 quality checks. Run after manager-01a-chapters1-2.md; for a cross-cutting fiscal outcome, Prompts 1-04 to 1-10 are replaced by the economic-resilience variant. Continue with manager-01b-annex1.md.
 ---
 
 # Step 1 (file 1a, continued): Section 2.3
 
-**Step 1, file 2 of 3.** Run these prompts after Prompts 1-01 to 1-03 in `01a-chapters1-2.md` are complete and the challenge titles are confirmed. Those drafts are already in context — begin directly with Prompt 1-04.
+**Step 1, file 2 of 3.** Run these prompts after Prompts 1-01 to 1-03 in `manager-01a-chapters1-2.md` are complete and the challenge titles are confirmed. Those drafts are already in context — begin directly with Prompt 1-04.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 
-> When Prompt 1-11 is complete and confirmed, continue with `01b-annex1.md` (Prompts 1-12 to 1-15).
+> When Prompt 1-11 is complete and confirmed, continue with `manager-01b-annex1.md` (Prompts 1-12 to 1-15).
 
 ---
 
 ## Sub-step 1.4 — Map the sector policy, institutional and public finance context (Sections 2.3.1 and 2.3.2)
 
-> **Economic resilience or another cross-cutting fiscal outcome?** Use Prompts ER-1-04 to ER-1-10 from `01a-variant-economic-resilience.md` and `01a-variant-economic-resilience-2.md` in place of Prompts 1-04 to 1-10 below, then continue with Prompt 1-11. Everything else in this file is unchanged.
+> **Economic resilience or another cross-cutting fiscal outcome?** Use Prompts ER-1-04 to ER-1-10 from `manager-01a-variant-economic-resilience.md` and `manager-01a-variant-economic-resilience-2.md` in place of Prompts 1-04 to 1-10 below, then continue with Prompt 1-11. Everything else in this file is unchanged.
 
 ### Prompt 1-04 — Section 2.3.1: Policy Framework
 
@@ -197,7 +197,7 @@ Please review the public sector challenge descriptions in Section 2.2 to confirm
 
 | Prompt | Output |
 |---|---|
-| 1-01 to 1-03 | Chapter 1, Sections 2.1 and 2.2 (`01a-chapters1-2.md`) |
+| 1-01 to 1-03 | Chapter 1, Sections 2.1 and 2.2 (`manager-01a-chapters1-2.md`) |
 | 1-04 | Section 2.3.1: Policy Framework |
 | 1-05 | Section 2.3.1: Institutional Architecture |
 | 1-06 | Section 2.3.1: Institutional Diagram |
@@ -207,4 +207,4 @@ Please review the public sector challenge descriptions in Section 2.2 to confirm
 | 1-10 | Section 2.3.2: PFM Systems Description |
 | 1-11 | Section 2.3.3: Feasibility Assessment |
 
-Continue with `01b-annex1.md`.
+Continue with `manager-01b-annex1.md`.

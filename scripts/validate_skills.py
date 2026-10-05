@@ -8,6 +8,11 @@ Checks, for each skills/<name>/ folder:
   - SKILL.md is under 500 lines (warning only)
   - SKILL.md and every references/*.md file is under 20,000 characters (platform limit)
   - every references/*.md file starts with YAML frontmatter carrying `title` and `description` (platform requirement)
+  - every file in references/ and assets/ starts with the skill's prefix, a hyphen-aligned tail of the folder
+    name (`manager-` for olepfm-session-manager), and all of them use the same one; the platform keeps every
+    skill file in one flat folder, so the name is the only thing that says which skill a file belongs to
+  - SKILL.md and references/*.md contain no folder path (`references/`, `assets/`, `scripts/`, `skills/`),
+    which would not resolve on that flat platform
   - no unexpected top-level files or folders inside the skill
 
 No third-party dependencies. Exit code 1 on any error.
@@ -25,6 +30,14 @@ ALLOWED_DIRS = {"scripts", "references", "assets", "evals"}
 ALLOWED_FILES = {"SKILL.md", "README.md", "LICENSE", "LICENSE.md", "LICENSE.txt"}
 MAX_LINES = 500
 MAX_CHARS = 20000  # platform limit for SKILL.md and references/*.md; assets/ are exempt
+FOLDER_PATH_RE = re.compile(r"(?<![\w/.-])(references|assets|scripts|skills)/")
+PREFIXED_DIRS = ("references", "assets")
+
+
+def prefix_tails(folder_name: str) -> list[str]:
+    """Hyphen-aligned tails of the folder name: olepfm-session-manager -> [olepfm-session-manager, session-manager, manager]."""
+    parts = folder_name.split("-")
+    return ["-".join(parts[i:]) for i in range(len(parts))]
 
 
 def parse_frontmatter(text: str) -> dict[str, str] | None:
@@ -91,6 +104,23 @@ def validate_skill(skill_dir: Path) -> tuple[list[str], list[str]]:
             errors.append(f"{f.relative_to(ROOT)}: {n} characters, over the {MAX_CHARS} platform limit; split the file")
         elif n > MAX_CHARS - 1000:
             warnings.append(f"{f.relative_to(ROOT)}: {n} characters, within 1,000 of the {MAX_CHARS} limit")
+        hits = [i for i, line in enumerate(ftext.splitlines(), 1) if FOLDER_PATH_RE.search(line)]
+        if hits:
+            errors.append(f"{f.relative_to(ROOT)}: folder path on line(s) {', '.join(map(str, hits))}; the platform has no sub-folders, refer to files by name only")
+
+    tails = prefix_tails(skill_dir.name)
+    used: set[str] = set()
+    for sub in PREFIXED_DIRS:
+        for f in sorted((skill_dir / sub).glob("*")):
+            if not f.is_file() or f.name.startswith("."):
+                continue
+            match = next((t for t in tails if f.name.startswith(t + "-")), None)
+            if match is None:
+                errors.append(f"{f.relative_to(ROOT)}: name must start with the skill's prefix (one of {', '.join(t + '-' for t in tails)}) so a flat listing shows which skill it belongs to")
+            else:
+                used.add(match)
+    if len(used) > 1:
+        errors.append(f"{rel}: files use different prefixes ({', '.join(sorted(t + '-' for t in used))}); pick one for the whole skill")
 
     line_count = text.count("\n") + 1
     if line_count > MAX_LINES:

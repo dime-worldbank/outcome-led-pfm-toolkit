@@ -5,7 +5,7 @@ description: Produces the Working Tables document a reform design workshop start
 
 # OLePFM Workshop Table Preparation
 
-Use this to produce the **Working Tables** document a reform design workshop starts from. The AI pre-populates the framing tables **through 2.1** from desk research; **2.2 onward are left blank** — those are the workshop's own exercises. It reuses the generation prompts in the Step 1 and Step 2 prompt files (`01a`, `01b`, `02`) and changes nothing in them. In this repository, `manager.md` is the SKILL.md of the olepfm-session-manager skill, and the prompt files are the other files in this `references/` folder.
+Use this to produce the **Working Tables** document a reform design workshop starts from. The AI pre-populates the framing tables **through 2.1** from desk research; **2.2 onward are left blank** — those are the workshop's own exercises. It reuses the generation prompts in the Step 1 and Step 2 prompt files (`01a`, `01b`, `02`) and changes nothing in them. `manager.md` is the session manager's SKILL.md; the prompt files are the `manager-00` to `manager-04c` files beside it.
 
 The workshop reviews 1.1–2.1 and fills in 2.2 onward; the completed tables then inform the report drafted with the standard workflow (`manager.md`).
 
@@ -21,7 +21,7 @@ I want to prepare the OLePFM Working Tables for an upcoming reform design worksh
 
 ## Steps
 
-1. **Set up.** Establish country, sector and development outcome as in `manager-setup.md` Setup 2 (including the off-list sourcing order), then run source preparation (`00-source-prep.md`, Prompts S-1 to S-4). On the institutional platform, also run Prompt S-5 from `manager-platform.md` and apply its citation rules. Cite sources as hyperlinked parentheticals.
+1. **Set up.** Establish country, sector and development outcome as in `manager-setup.md` Setup 2 (including the off-list sourcing order), then run source preparation (`manager-00-source-prep.md`, Prompts S-1 to S-4). On the institutional platform, also run Prompt S-5 from `manager-platform.md` and apply its citation rules. Cite sources as hyperlinked parentheticals.
 
 2. **Populate 1.1–2.1.** Generate each table with the existing prompt, then lay it out in the Working Tables format with a short **facilitation note** for the workshop:
 
@@ -53,4 +53,4 @@ I want to prepare the OLePFM Working Tables for an upcoming reform design worksh
 - **Populate only through 2.1.** 2.2 is the workshop's first live exercise, so the AI stops there; do not pre-fill 2.2 onward.
 - **Keep challenges free of money/PFM.** The challenges in 1.1 must be stated as delivery failures only — no mention of money, public finance or PFM.
 - **Draft to refine.** The populated tables are a starting point for the workshop to review and change, not a final answer.
-- **Cross-cutting fiscal outcome (economic resilience, fiscal or debt sustainability).** Use the variant prompts in `01a-variant-economic-resilience.md` (ER-1-05, for Table 1.2) and `01a-variant-economic-resilience-2.md` (ER-1-08). Table 1.3 (financing channels) does not apply; replace it with the fiscal-cycle narrative from ER-1-08 and note the substitution in the Working Tables.
+- **Cross-cutting fiscal outcome (economic resilience, fiscal or debt sustainability).** Use the variant prompts in `manager-01a-variant-economic-resilience.md` (ER-1-05, for Table 1.2) and `manager-01a-variant-economic-resilience-2.md` (ER-1-08). Table 1.3 (financing channels) does not apply; replace it with the fiscal-cycle narrative from ER-1-08 and note the substitution in the Working Tables.

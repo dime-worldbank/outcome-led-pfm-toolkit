@@ -12,7 +12,7 @@ Based on the OLePFM Joint Action Plan Compiler, version 5 (September 2026).
 This skill guides the compilation of a Joint Action Plan (JAP) from multiple OLePFM (Outcome-Led PFM Reform) sector diagnostic reports. It follows an eight-task process and produces a document that:
 
 - synthesises the bottlenecks and reform actions from multiple sector diagnostics into a single, jointly-owned reform agenda;
-- follows the structure and formatting conventions set out in the **OLePFM Joint Action Plan Annotated Skeleton Template** (bundled in `assets/`);
+- follows the structure and formatting conventions set out in the **OLePFM Joint Action Plan Annotated Skeleton Template** (the file `joint-action-plan-template.md`);
 - uses one or both of two PFM reform frameworks to organise its objectives and reform results, depending on the sectors and outcomes in scope;
 - is grounded in evidence and language from the sector diagnostics, so that stakeholders who participated in those processes recognise their work in the joint document.
 
@@ -24,7 +24,7 @@ It sits downstream of the `olepfm-session-manager` skill: that skill produces on
 
 | Document | Where | Role |
 |---|---|---|
-| Annotated Skeleton Template | `assets/joint-action-plan-template.md` (bundled) | The master guide for structure, section content and length. Every section of the JAP follows it. Read the annotation for a section before drafting that section. |
+| Annotated Skeleton Template | `joint-action-plan-template.md` (bundled with this skill) | The master guide for structure, section content and length. Every section of the JAP follows it. Read the annotation for a section before drafting that section. |
 | Annotated Skeleton Template, Word file | The knowledge base on the institutional platform (document title "OLePFM Joint Action Plan Template"); not kept in this repository, so ask the user for it when working elsewhere | The formatting authority. The compiled JAP is delivered as a Word document that follows this file: its heading styles, body text, bullets, tables, page setup and footer. See Output below. |
 | Sector diagnostic reports (two or more) | Provided by the user | The evidence base. Normally OLePFM Sector Reform Design Reports produced with the `olepfm-session-manager` skill. |
 | OLePFM Synthesis Handbook (*Making Public Resources Count for Development*) | Provided by the user | The methodological backbone: outcome-led framing, theory of change concepts and reform design principles. |
@@ -35,8 +35,8 @@ If the reports or the Handbook are not in the conversation, ask for them. Do not
 
 ## Reference files
 
-- `references/reform-frameworks.md`: the two PFM reform frameworks, how to choose between them and how to combine them. Read it at Task 4.
-- `references/task-checklists.md`: the extraction map keyed to the report's sections and annex tables, the bottleneck synthesis table, the gap-analysis formats and the finalisation checklist. Read the relevant section at Tasks 1, 3, 6 and 8.
+- `joint-action-plan-reform-frameworks.md`: the two PFM reform frameworks, how to choose between them and how to combine them. Read it at Task 4.
+- `joint-action-plan-task-checklists.md`: the extraction map keyed to the report's sections and annex tables, the bottleneck synthesis table, the gap-analysis formats and the finalisation checklist. Read the relevant section at Tasks 1, 3, 6 and 8.
 
 ## Output: a Word document on the template
 
@@ -62,25 +62,25 @@ Confirm with the user before starting:
 - the country or region, and the name of the national PFM strategy or reform process the JAP should feed into;
 - whether supplementary sources should be searched (the World Bank intranet where available, and the web) or whether to work from the provided documents only.
 
-Then read each report and extract the items in the extraction map (`references/task-checklists.md`, section 1): outcomes and public sector results, the challenges, the priority bottlenecks with their causes, ratings, stakeholders and change objective, the change objectives with their reform results and reforms, the Annex Table 3.1 matrix, the Annex Table 3.5 key steps, and the systems, capacity and TA content. Produce a structured internal summary of each sector's content before proceeding. Keep it internal unless the user asks to see it.
+Then read each report and extract the items in the extraction map (`joint-action-plan-task-checklists.md`, section 1): outcomes and public sector results, the challenges, the priority bottlenecks with their causes, ratings, stakeholders and change objective, the change objectives with their reform results and reforms, the Annex Table 3.1 matrix, the Annex Table 3.5 key steps, and the systems, capacity and TA content. Produce a structured internal summary of each sector's content before proceeding. Keep it internal unless the user asks to see it.
 
 ### Task 2 — Search for supplementary context (only if authorised in Task 1)
 
-Search for: recent PFM assessments for the country (PEFA, public expenditure reviews, fiduciary risk assessments); intergovernmental fiscal transfer and local government financing data; local authority performance assessments or equivalent; the national development strategy and PFM strategy; and relevant World Bank project documentation (local governance, service delivery, fiscal management operations). Summarise the findings for the user, saying which sources will be drawn on and for which sections. These sources mainly ground Section 1: the purpose, the policy objectives and challenges, and the bottlenecks. On the institutional platform, verify each supplementary source before citing it, as the session manager's Prompt S-5 does (`manager-platform.md`, in the `references/` folder of the olepfm-session-manager skill): cite only sources that are indexed in the knowledge base or uploaded to the session, and ask the user to upload the rest.
+Search for: recent PFM assessments for the country (PEFA, public expenditure reviews, fiduciary risk assessments); intergovernmental fiscal transfer and local government financing data; local authority performance assessments or equivalent; the national development strategy and PFM strategy; and relevant World Bank project documentation (local governance, service delivery, fiscal management operations). Summarise the findings for the user, saying which sources will be drawn on and for which sections. These sources mainly ground Section 1: the purpose, the policy objectives and challenges, and the bottlenecks. On the institutional platform, verify each supplementary source before citing it, as the session manager's Prompt S-5 does (`manager-platform.md`, from the session manager skill): cite only sources that are indexed in the knowledge base or uploaded to the session, and ask the user to upload the rest.
 
 ### Task 3 — Synthesise common bottlenecks
 
 Read across all sector extractions to identify bottlenecks that appear in two or more reports. For each cross-cutting cluster: name it in clear, non-technical language stakeholders will recognise; list the sectors it appears in, with the sector-specific manifestation and precise figures from each report; note the common underlying causes; and note sector-specific bottlenecks that do not cut across sectors, which will become sector-specific reform results or actions rather than cross-sectoral objectives.
 
-Present the synthesis to the user as a table (format in `references/task-checklists.md`, section 2) and invite confirmation that the clustering is correct and complete. This is the foundation of Section 1.3 and must be agreed before drafting begins.
+Present the synthesis to the user as a table (format in `joint-action-plan-task-checklists.md`, section 2) and invite confirmation that the clustering is correct and complete. This is the foundation of Section 1.3 and must be agreed before drafting begins.
 
 ### Task 4 — Select the reform framework and design the objective and reform result structure
 
-Read `references/reform-frameworks.md`. Both frameworks use the hierarchy **Objective** (top-level grouping) → **Reform Result** (the specific change sought within it). Choose Framework 1 (PFM for Service Delivery), Framework 2 (PFM for Jobs and Resilience) or a combination according to the sectors in scope, consolidating overlaps when combining. The objective titles agreed here also head the bottleneck groups in Section 1.3, as the template requires, so fix the titles and their order now. Present the proposed objective and reform result structure to the user for approval before drafting. If the choice is not clear, present both frameworks with a brief explanation and ask.
+Read `joint-action-plan-reform-frameworks.md`. Both frameworks use the hierarchy **Objective** (top-level grouping) → **Reform Result** (the specific change sought within it). Choose Framework 1 (PFM for Service Delivery), Framework 2 (PFM for Jobs and Resilience) or a combination according to the sectors in scope, consolidating overlaps when combining. The objective titles agreed here also head the bottleneck groups in Section 1.3, as the template requires, so fix the titles and their order now. Present the proposed objective and reform result structure to the user for approval before drafting. If the choice is not clear, present both frameworks with a brief explanation and ask.
 
 ### Task 5 — Draft the Joint Action Plan
 
-Use the skeleton template in `assets/` as the master guide for every section: structure, content, length and formatting. Read the annotation for each section before drafting it. The document runs cover page, table of contents, abbreviations, Sections 1 to 4 (Introduction and Reform Context; Reform Strategy; Implementation Arrangements; Reform Results Framework) and bibliography; it has no annexes.
+Use the skeleton template (`joint-action-plan-template.md`) as the master guide for every section: structure, content, length and formatting. Read the annotation for each section before drafting it. The document runs cover page, table of contents, abbreviations, Sections 1 to 4 (Introduction and Reform Context; Reform Strategy; Implementation Arrangements; Reform Results Framework) and bibliography; it has no annexes.
 
 Rules that go beyond what the template states:
 
@@ -96,7 +96,7 @@ When the full draft exists, produce it as the Word document described under Outp
 
 ### Task 6 — Cross-check completeness against the source reports
 
-Before presenting the draft, compare the JAP against each sector report and list: (a) gaps, bottlenecks or problems in the reports that the JAP does not address; (b) missing actions, reforms proposed in the reports that the JAP does not capture; and (c) additions, content in the JAP that is not grounded in the reports, flagged either as an appropriate system-level cross-sectoral enabler to retain or as going beyond the evidence base for the user to decide. Use the formats in `references/task-checklists.md`, section 3. Present the gap analysis with recommendations and wait for the user's decisions before Task 7.
+Before presenting the draft, compare the JAP against each sector report and list: (a) gaps, bottlenecks or problems in the reports that the JAP does not address; (b) missing actions, reforms proposed in the reports that the JAP does not capture; and (c) additions, content in the JAP that is not grounded in the reports, flagged either as an appropriate system-level cross-sectoral enabler to retain or as going beyond the evidence base for the user to decide. Use the formats in `joint-action-plan-task-checklists.md`, section 3. Present the gap analysis with recommendations and wait for the user's decisions before Task 7.
 
 ### Task 7 — Revise and iterate
 
@@ -104,7 +104,7 @@ Incorporate the user's decisions and feedback. Edit the Word document in place f
 
 ### Task 8 — Finalise
 
-Run the finalisation checklist in `references/task-checklists.md`, section 4, then confirm the Word document follows the template: headings as set out under Output, footer and page setup unchanged, table of contents updated, tables and Box 1 formatted as in the template, and no annotation or Quick Reference text left from the skeleton. Then deliver the document.
+Run the finalisation checklist in `joint-action-plan-task-checklists.md`, section 4, then confirm the Word document follows the template: headings as set out under Output, footer and page setup unchanged, table of contents updated, tables and Box 1 formatted as in the template, and no annotation or Quick Reference text left from the skeleton. Then deliver the document.
 
 ## Edge cases
 

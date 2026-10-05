@@ -1,6 +1,6 @@
 ---
 title: OLePFM Step 3 (3a) — Annex Table 3.1 and Section 4.1
-description: Step 3 (file 3a) of the OLePFM report workflow. Generates the Chapter 4 introduction, Annex Table 3.1 (causal analysis of bottlenecks and proposed reforms), and Section 4.1 (reforms to deliver change objectives). Continue with 03b-stakeholders-systems-steps.md.
+description: Step 3 (file 3a) of the OLePFM report workflow. Generates the Chapter 4 introduction, Annex Table 3.1 (causal analysis of bottlenecks and proposed reforms), and Section 4.1 (reforms to deliver change objectives). Continue with manager-03b-stakeholders-systems-steps.md.
 ---
 
 # Step 3 (file 3a): Annex Table 3.1 and Section 4.1
@@ -17,7 +17,7 @@ Pause at every ✏️ intervention point and wait for user confirmation before p
 
 > **Critical sequencing:** Complete and confirm Annex Table 3.1 in full (Prompts 3-02 × n and 3-03, then check 3-Q5) **before** beginning Section 4.1 drafts (Prompts 3-04 × n and 3-05). The reform results in Table 3.1 are the authoritative source for all Section 4.1 content.
 
-> When Prompt 3-05 is complete and confirmed, continue with `03b-stakeholders-systems-steps.md`.
+> When Prompt 3-05 is complete and confirmed, continue with `manager-03b-stakeholders-systems-steps.md`.
 
 ---
 
@@ -123,7 +123,7 @@ If any discrepancy exists between the Table 3.1 entries from Prompt 3-02 and the
 
 Please review the completed Annex Table 3.1 and confirm, for each priority bottleneck: (i) that the Underlying Causes were derived from a multi-branch five-whys run to the end on each sub-bottleneck (working analysis present and non-trivial); (ii) that the causes are concrete and evidenced, not generic; (iii) that every root-cause family maps to at least one reform in Reforms Required, and every reform maps back to a cause (no orphans); and (iv) that any out-of-scope cause is flagged as a parallel track rather than dropped. Flag any bottleneck whose cause analysis is thin or whose reforms do not cover its causes, and re-run Prompt 3-02 for that bottleneck if so.
 
-The other Step 3 quality checks (3-Q1 to 3-Q4) are in `03c-conclusion-compilation.md`.
+The other Step 3 quality checks (3-Q1 to 3-Q4) are in `manager-03c-conclusion-compilation.md`.
 
 ---
 
@@ -205,4 +205,4 @@ Open the section with the standard template introductory text.
 | 3-04 (×n) | Section 4.1 entry per bottleneck |
 | 3-05 | Compiled Section 4.1 |
 
-Continue with `03b-stakeholders-systems-steps.md`.
+Continue with `manager-03b-stakeholders-systems-steps.md`.

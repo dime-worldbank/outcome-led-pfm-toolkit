@@ -1,11 +1,11 @@
 ---
 title: OLePFM Compilation and QA (4c) — Cross-Document Quality Assurance
-description: Compilation and QA (file 4c) of the OLePFM report workflow. Runs the five cross-document quality assurance checks (Prompts QA-1 to QA-5) over Main Report Parts 1 and 2 and the Annex before the report is released. Run after 04b-part2-and-annex.md and the draft render in 04b-render-word-template.md.
+description: Compilation and QA (file 4c) of the OLePFM report workflow. Runs the five cross-document quality assurance checks (Prompts QA-1 to QA-5) over Main Report Parts 1 and 2 and the Annex before the report is released. Run after manager-04b-part2-and-annex.md and the draft render in manager-04b-render-word-template.md.
 ---
 
 # Compilation and QA (file 4c): Cross-Document Quality Assurance
 
-**Compilation and QA, file 4 of 4.** Run these prompts after all three final documents have been compiled in `04a-audit-and-part1.md` and `04b-part2-and-annex.md`. If any check changes content, re-run Prompt C-14 in `04b-render-word-template.md` afterwards so the delivered `.docx` carries the corrections.
+**Compilation and QA, file 4 of 4.** Run these prompts after all three final documents have been compiled in `manager-04a-audit-and-part1.md` and `manager-04b-part2-and-annex.md`. If any check changes content, re-run Prompt C-14 in `manager-04b-render-word-template.md` afterwards so the delivered `.docx` carries the corrections.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 

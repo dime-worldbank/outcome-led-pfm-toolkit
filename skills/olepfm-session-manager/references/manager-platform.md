@@ -7,7 +7,7 @@ description: Rules that apply only when the OLePFM workflow runs on the institut
 
 **When this file applies.** Use it when the session runs on the institutional platform, that is, when Setup 1 (`manager-setup.md`) found the Report Template and the Synthesis Handbook in the root of the knowledge base. Skip it when the user supplies the documents directly, as in Claude Code or Claude.ai: the principle still holds there (cite only what you have read), but the verification prompt below is written for the platform's knowledge base. It applies in report mode and in workshop mode (`manager-workshop.md`), since both run the Sources stage.
 
-**Why it exists.** On the platform, Prompts S-1 to S-4 (`00-source-prep.md`) find sources in two ways: through web searches, and in the bibliographies of documents that are already indexed in the knowledge base. Neither means the source itself is indexed. A web search result gives a title and a snippet; a bibliography entry shows only that another document cited the work. If the full text is not indexed, the AI cannot read it, any claim attributed to it cannot be checked, and the citation is unreliable. Prompt S-5 checks every source, asks the user to upload what is missing, and marks what remains unavailable so that it is never cited.
+**Why it exists.** On the platform, Prompts S-1 to S-4 (`manager-00-source-prep.md`) find sources in two ways: through web searches, and in the bibliographies of documents that are already indexed in the knowledge base. Neither means the source itself is indexed. A web search result gives a title and a snippet; a bibliography entry shows only that another document cited the work. If the full text is not indexed, the AI cannot read it, any claim attributed to it cannot be checked, and the citation is unreliable. Prompt S-5 checks every source, asks the user to upload what is missing, and marks what remains unavailable so that it is never cited.
 
 **What it adds, and where.** One prompt, S-5, run after S-4 and before the Sources completion gate; a **Status** column in the running source table, which carries through the rest of the session; three citation rules for Steps 1 to 3; extra items for the Sources completion gate in `manager.md`; and one extra item each for the consistency audit (Prompt C-01) and the bibliography (Prompt C-09). The prompt files themselves do not change.
 
@@ -54,7 +54,7 @@ Re-check only the rows in the upload request. Set each one that is now readable 
 
 ## Citation rules for Steps 1 to 3 (platform)
 
-These apply to every prompt from Step 1 onward, in addition to the hyperlink rule in `00-source-prep.md`.
+These apply to every prompt from Step 1 onward, in addition to the hyperlink rule in `manager-00-source-prep.md`.
 
 1. **Cite only Indexed or Uploaded sources.** Never cite a source marked Not available, and never cite a document that is not in the running table.
 2. **Cite the document you read, not the one it cites.** If a fact is known only because an indexed document cites another work, cite the indexed document, adding "citing [author, year]" where useful. Do not cite the other work as if you had read it.

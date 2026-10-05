@@ -14,7 +14,7 @@ This document is the orchestration guide for producing a complete OLePFM Sector 
 | Mode | When | Follow |
 |---|---|---|
 | **Full report** | The user wants an OLePFM Sector Reform Design Report | This document, from Session Setup through Compilation and QA |
-| **Workshop table preparation** | The user says "start OLePFM workshop preparation" or wants the Working Tables for a reform design workshop | `manager-workshop.md` (in `references/`): reuses Setup 2, the Sources stage and a subset of the Step 1 and Step 2 prompts, stops after Table 2.1 and scaffolds the rest blank |
+| **Workshop table preparation** | The user says "start OLePFM workshop preparation" or wants the Working Tables for a reform design workshop | `manager-workshop.md`: reuses Setup 2, the Sources stage and a subset of the Step 1 and Step 2 prompts, stops after Table 2.1 and scaffolds the rest blank |
 
 Workshop mode is an overlay on the report workflow, not a separate process: the instructions to the AI below (sequential execution, one prompt at a time, pause at every ✏️ point, never invent placeholder values) apply in both modes.
 
@@ -51,25 +51,25 @@ You are assisting with the production of an OLePFM Sector Reform Design Report. 
 
 6. **Do not invent or skip.** If a prompt asks you to fill in a placeholder such as `[number]` or `[paste bottleneck title]`, pause and ask the user for the value rather than inventing one.
 
-7. **Reference check table at the end of each chapter.** When a step's chapters are compiled (Prompts 1-15, 2-10 and 3-14), append to each chapter a table of its cited claims (source, document URL, exact supporting text) following `manager-reference-check.md` (in `references/`). Quote verbatim or mark the row not verified; never invent a passage. Every charted number gets a row; Data360 values with claim tags count as verified. The tables are review aids and stay out of the compiled report unless the user asks for them.
+7. **Reference check table at the end of each chapter.** When a step's chapters are compiled (Prompts 1-15, 2-10 and 3-14), append to each chapter a table of its cited claims (source, document URL, exact supporting text) following `manager-reference-check.md`. Quote verbatim or mark the row not verified; never invent a passage. Every charted number gets a row; Data360 values with claim tags count as verified. The tables are review aids and stay out of the compiled report unless the user asks for them.
 
-8. **Chart interaction.** Every data chart follows the chart interaction workflow written into Prompt 1-07 (`01a-section2-3.md`) and ER-1-07: show the interactive chart and its data table together (table beneath, never one without the other); render with a fenced ` ```chart ` block in Chart.js schema (line, bar, pie, scatter; never Recharts keys or a ` ```recharts ` fence); take every value from the Data360 API or another cited source, never from memory, with its claim tag in the table; cite indicator name, code, database and the Data360 explorer link under the table; and present every chart as a draft that is final only when the user locks it in, exactly as at a ✏️ point.
+8. **Chart interaction.** Every data chart follows the chart interaction workflow written into Prompt 1-07 (`manager-01a-section2-3.md`) and ER-1-07: show the interactive chart and its data table together (table beneath, never one without the other); render with a fenced ` ```chart ` block in Chart.js schema (line, bar, pie, scatter; never Recharts keys or a ` ```recharts ` fence); take every value from the Data360 API or another cited source, never from memory, with its claim tag in the table; cite indicator name, code, database and the Data360 explorer link under the table; and present every chart as a draft that is final only when the user locks it in, exactly as at a ✏️ point.
 
 ---
 
 ## SESSION SETUP
 
-Complete the two setup parts in `manager-setup.md` (in `references/`) before starting the Sources stage. **Setup 1** verifies that the Report Template and the Synthesis Handbook are accessible. **Setup 2** establishes and locks the session context (country, sector, development outcome and public sector result), using the Sector Outcome Reference in that file; it also says when a sector uses variant prompts. Do not begin Sources until the context is confirmed.
+Complete the two setup parts in `manager-setup.md` before starting the Sources stage. **Setup 1** verifies that the Report Template and the Synthesis Handbook are accessible. **Setup 2** establishes and locks the session context (country, sector, development outcome and public sector result), using the Sector Outcome Reference in that file; it also says when a sector uses variant prompts. Do not begin Sources until the context is confirmed.
 
 ### Skill Files
 
-The prompt files (`00-source-prep.md` through `04c-cross-document-qa.md`) are in the knowledge base's skills folder, accessible by default — no upload required. In this repository they are the files in the `references/` folder beside this SKILL.md. Their prompt numbering (S-n, 1-nn, 2-nn, 3-nn, C-nn, QA-n, n-Qk checks, ER- prefix for the economic-resilience variant) is explained at the end of `manager-setup.md`.
+The prompt files (`manager-00-source-prep.md` through `manager-04c-cross-document-qa.md`) sit alongside this file and are accessible by default — no upload required. Every file of this skill starts with `manager-`; in this repository `manager.md` is SKILL.md. Their prompt numbering (S-n, 1-nn, 2-nn, 3-nn, C-nn, QA-n, n-Qk checks, ER- prefix for the economic-resilience variant) is explained at the end of `manager-setup.md`.
 
 ## SOURCES: Source Preparation
 
-**Skill file:** `00-source-prep.md`
+**Skill file:** `manager-00-source-prep.md`
 
-Run Prompts S-1 through S-4 from `00-source-prep.md` in sequence.
+Run Prompts S-1 through S-4 from `manager-00-source-prep.md` in sequence.
 
 > **Institutional platform (knowledge base present):** after Prompt S-4, run Prompt S-5 from `manager-platform.md` to check that every listed source is indexed in the knowledge base, and ask the user to upload any that are not. That file also adds items to the Sources completion gate below and to the consistency audit (Prompt C-01). Skip it when the user supplies the documents directly, as in Claude Code.
 
@@ -92,11 +92,11 @@ Before advancing to Step 1, confirm all of the following:
 
 ## STEP 1: Chapters 1 & 2 and Annex Step 1
 
-**Skill files:** `01a-chapters1-2.md`, then `01a-section2-3.md`, then `01b-annex1.md`
+**Skill files:** `manager-01a-chapters1-2.md`, then `manager-01a-section2-3.md`, then `manager-01b-annex1.md`
 
-Run Prompts 1-01 to 1-03 from `01a-chapters1-2.md`, then Prompts 1-04 to 1-11 from `01a-section2-3.md`, then `01b-annex1.md` (Prompts 1-12 to 1-15).
+Run Prompts 1-01 to 1-03 from `manager-01a-chapters1-2.md`, then Prompts 1-04 to 1-11 from `manager-01a-section2-3.md`, then `manager-01b-annex1.md` (Prompts 1-12 to 1-15).
 
-> **Economic resilience or another cross-cutting fiscal outcome (macro-fiscal stability, fiscal or debt sustainability):** after Prompt 1-03, replace Prompts 1-04 to 1-10 with ER-1-04 to ER-1-10 from `01a-variant-economic-resilience.md` (ER-1-04 to ER-1-06) and `01a-variant-economic-resilience-2.md` (ER-1-07 to ER-1-10), then return to Prompt 1-11 in `01a-section2-3.md` and continue with `01b-annex1.md`. Run the extra check ER-1-Q5 and record the variant's three template deviations (its deviation register lists them) for the consistency audit (Prompt C-01).
+> **Economic resilience or another cross-cutting fiscal outcome (macro-fiscal stability, fiscal or debt sustainability):** after Prompt 1-03, replace Prompts 1-04 to 1-10 with ER-1-04 to ER-1-10 from `manager-01a-variant-economic-resilience.md` (ER-1-04 to ER-1-06) and `manager-01a-variant-economic-resilience-2.md` (ER-1-07 to ER-1-10), then return to Prompt 1-11 in `manager-01a-section2-3.md` and continue with `manager-01b-annex1.md`. Run the extra check ER-1-Q5 and record the variant's three template deviations (its deviation register lists them) for the consistency audit (Prompt C-01).
 
 ### Step 1 Completion Gate
 
@@ -153,9 +153,9 @@ Challenge 5 (if applicable):
 
 ## STEP 2: Chapter 3 and Annex Step 2
 
-**Skill file:** `02-chapter3-annex2.md`
+**Skill file:** `manager-02-chapter3-annex2.md`
 
-Run all prompts in `02-chapter3-annex2.md` in sequence.
+Run all prompts in `manager-02-chapter3-annex2.md` in sequence.
 > Note: The session context and source list are already in context — begin directly with Prompt 2-01.
 
 ### Step 2 Completion Gate
@@ -207,9 +207,9 @@ Bottleneck 6: [title] | Change objective:
 
 ## STEP 3: Chapters 4 & 5 and Annex Step 3
 
-**Skill files:** `03a-reform-results.md`, then `03b-stakeholders-systems-steps.md`, then `03c-conclusion-compilation.md`
+**Skill files:** `manager-03a-reform-results.md`, then `manager-03b-stakeholders-systems-steps.md`, then `manager-03c-conclusion-compilation.md`
 
-Run all prompts in `03a-reform-results.md` in sequence (Prompts 3-01, 3-02 × n, 3-03, 3-04 × n, 3-05), then `03b-stakeholders-systems-steps.md` (Prompts 3-06 to 3-10, 3-11 × n, 3-12), then `03c-conclusion-compilation.md` (Prompts 3-13 and 3-14).
+Run all prompts in `manager-03a-reform-results.md` in sequence (Prompts 3-01, 3-02 × n, 3-03, 3-04 × n, 3-05), then `manager-03b-stakeholders-systems-steps.md` (Prompts 3-06 to 3-10, 3-11 × n, 3-12), then `manager-03c-conclusion-compilation.md` (Prompts 3-13 and 3-14).
 > Note: The session context and source list are already in context — begin directly with Prompt 3-01.
 
 > **Critical sequencing:** Complete and confirm Annex Table 3.1 (Prompts 3-02 × n and 3-03, then check 3-Q5) **before** beginning Section 4.1 drafts (Prompts 3-04 × n and 3-05). The reform results in Table 3.1 are the authoritative source for all Section 4.1 content.
@@ -271,7 +271,7 @@ Report date:
 
 ## COMPILATION AND QA: Final Compilation and Quality Assurance
 
-**Skill files:** `04a-audit-and-part1.md`, then `04b-part2-and-annex.md`, then `04b-render-word-template.md`, then `04c-cross-document-qa.md`
+**Skill files:** `manager-04a-audit-and-part1.md`, then `manager-04b-part2-and-annex.md`, then `manager-04b-render-word-template.md`, then `manager-04c-cross-document-qa.md`
 
 > **Start with the consistency audit (Prompt C-01) before any compilation step.** Resolve all identified discrepancies before proceeding to Prompt C-02.
 
@@ -279,7 +279,7 @@ Report date:
 
 > **Institutional platform:** add the source-availability item from `manager-platform.md` to the audit (Prompt C-01) and apply its bibliography rule in Prompt C-09, so every citation is checked against the Status column of the running source table.
 
-Run all prompts in `04a-audit-and-part1.md` in sequence (Prompts C-01 to C-05), then `04b-part2-and-annex.md` (Prompts C-06 to C-13), then `04b-render-word-template.md` (Prompt C-14, a draft render), then `04c-cross-document-qa.md` (Prompts QA-1 to QA-5). If QA changes any content, re-run Prompt C-14.
+Run all prompts in `manager-04a-audit-and-part1.md` in sequence (Prompts C-01 to C-05), then `manager-04b-part2-and-annex.md` (Prompts C-06 to C-13), then `manager-04b-render-word-template.md` (Prompt C-14, a draft render), then `manager-04c-cross-document-qa.md` (Prompts QA-1 to QA-5). If QA changes any content, re-run Prompt C-14.
 
 ### Compilation and QA Completion Gate
 

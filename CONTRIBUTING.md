@@ -45,6 +45,7 @@
 
 - Start every file in `references/` with YAML frontmatter (`---` delimiters) that has `title` and `description`; the platform the files are exported to requires it, and the validator fails without it.
 - Keep `SKILL.md` and every file in `references/` under 20,000 characters. The platform the files are exported to rejects larger files. Split at a prompt boundary rather than trimming; the validator fails on any file over the limit.
+- That platform has no sub-folders: all skill files sit in one flat folder. Start the name of every file in `references/` and `assets/` with the skill's prefix, the tail of the folder name (`manager-` for `olepfm-session-manager`, `joint-action-plan-` for `olepfm-joint-action-plan`), so a flat listing shows which workflow a file belongs to; `SKILL.md` is exported as `<prefix>.md`. Never write a folder path such as `references/` inside `SKILL.md` or a reference file; refer to files by name only. The validator checks both.
 
 - Write instructions in the imperative and explain why a step matters. Claude follows reasoning better than bare rules.
 - Keep the skill general. It should work across countries and engagements, not just the example you built it from.

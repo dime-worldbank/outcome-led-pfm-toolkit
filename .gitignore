@@ -138,3 +138,6 @@ tokens/
 !/.claude-plugin/**
 !/.github/**/*.yml
 !/.github/**/*.yaml
+
+# OuR Assistant information page (docs/index.html); GitHub Pages can serve docs/
+!/docs/**/*.html

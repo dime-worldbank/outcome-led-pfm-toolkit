@@ -13,7 +13,7 @@ These are held in the **root folder of the knowledge base** (alongside the skill
 
 | Document | Where it is stored |
 |---|---|
-| OLePFM Sector Reform Design Report Template | Knowledge base — root folder |
+| OLePFM Sector Reform Design Report Template, the Word file that Prompt C-14 and the workshop handout clone | Knowledge base — root folder |
 | OLePFM Synthesis Handbook (Williamson et al., 2024) | Knowledge base — root folder |
 | Sector Outcome Notes and prior diagnostic reports | Backend library — searched by sector |
 
@@ -41,11 +41,11 @@ Please confirm you can access these pre-loaded documents, both stored in the **r
 1. OLePFM Sector Reform Design Report Template
 2. OLePFM Synthesis Handbook (Williamson et al., 2024)
 
-If either does not appear at first, search the root again on title keywords alone — "Sector Reform Design Report Template" and "Synthesis Handbook" — as the stored file name may differ. For each, state whether you can access it, its title, and the file name it is stored under. If either is still missing, list the file names you can see at the root, then stop and alert the user before proceeding.
+If either does not appear at first, search the root again on title keywords alone — "Sector Reform Design Report Template" and "Synthesis Handbook" — as the stored file name may differ. For each, state whether you can access it, its title, and the file name it is stored under. For the Report Template, confirm it is the Word (.docx) file and not a text copy: the report (Prompt C-14) and the workshop handout are produced by cloning it. If either is still missing, list the file names you can see at the root, then stop and alert the user before proceeding.
 
 ---
 
-> **Do not proceed to Setup 2 until the AI confirms both documents are accessible.**
+> **Do not proceed to Setup 2 until the AI confirms both documents are accessible and the Report Template is the Word file.**
 
 ### Setup 2: Establish Session Context (two parts)
 

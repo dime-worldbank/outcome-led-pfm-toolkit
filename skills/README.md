@@ -18,7 +18,7 @@ olepfm-session-manager/
 │   └── manager-report-template.md             OLePFM Sector Reform Design Report Template: structure and standard text the prompts follow
 └── references/
     ├── manager-setup.md                       session setup: document check, country/sector/outcome context, Sector Outcome Reference
-    ├── manager-workshop.md                    workshop mode: overlay that reuses the files below, stops after Table 2.1
+    ├── manager-workshop.md                    workshop mode: overlay that reuses the files below, stops after Table 2.1, renders into the Word template
     ├── manager-platform.md                    institutional platform only: Prompt S-5 checks sources against the knowledge base, upload request, citation rules
     ├── manager-reference-check.md             reference check table at the end of each chapter: claim, source, document URL, exact text (at Prompts 1-15, 2-10, 3-14)
     ├── manager-00-source-prep.md              Sources: source preparation (Prompts S-1 to S-4)
@@ -39,7 +39,7 @@ olepfm-session-manager/
 
 **Report mode** follows SKILL.md from Session Setup through Compilation and QA, loading one prompt file at a time. At each step's compilation prompt, `manager-reference-check.md` adds a reference check table to the end of every chapter (claim, source, document URL, exact text from the document) so the user can check the references before the completion gate; the tables stay out of the compiled report unless asked for.
 
-**Workshop mode** is an overlay on the same workflow. `manager-workshop.md` reuses Setup 2 (in `manager-setup.md`), the Sources stage (`manager-00-source-prep.md`, Prompts S-1 to S-4) and a handful of Step 1 and Step 2 prompts (1-02, 1-03, 1-05, 1-08, 1-13 and 2-02) to pre-populate Tables 1.1 to 2.1, then scaffolds Tables 2.2 to 3.5 blank for the workshop. The AI behaviour rules in SKILL.md apply in both modes. Because everything lives in one folder, there is one copy of each prompt and nothing to keep in sync.
+**Workshop mode** is an overlay on the same workflow. `manager-workshop.md` reuses Setup 2 (in `manager-setup.md`), the Sources stage (`manager-00-source-prep.md`, Prompts S-1 to S-4) and a handful of Step 1 and Step 2 prompts (1-02, 1-03, 1-05, 1-08, 1-13 and 2-02) to pre-populate Tables 1.1 to 2.1, then scaffolds Tables 2.2 to 3.5 blank for the workshop. Its step 5 renders the Working Tables into the Sector Reform Design Report Word template's landscape annex tables, the same way Prompt C-14 renders the report. The AI behaviour rules in SKILL.md apply in both modes. Because everything lives in one folder, there is one copy of each prompt and nothing to keep in sync.
 
 The prompt files are not standalone skills. Each one depends on session context and drafts produced by the stages before it, and the manager calls them by file name. Step 1, Step 3 and Compilation and QA are split into sub-files (a, b, c), and the 01a and 04b files are split once more (`manager-01a-section2-3.md`, `manager-04b-render-word-template.md`), only because the platform limits each file to 20,000 characters. They remain split here so the same files can be uploaded unchanged; each file says which prompts it holds and which file comes next.
 
@@ -72,6 +72,18 @@ olepfm-joint-action-plan/
 ```
 
 This skill runs after the session manager: its inputs are the Sector Reform Design Reports that skill produces, and its extraction map names the report sections and annex tables to read. Its process is numbered Task 1 to Task 8 so it is never confused with the OLePFM Steps. It was divided from the client's "Joint Action Plan Compiler v5" file; when the client sends a new version, divide it the same way rather than pasting it whole.
+
+## Word templates
+
+Every deliverable is handed over as a Word document rendered into its official template by cloning the `.docx` and filling it in place, never by converting Markdown. The templates are not committed; the Markdown twins in `assets/` carry their text.
+
+Each workflow verifies that its template is accessible, and is the Word file, before anything is drafted.
+
+| Deliverable | Word template | Verified at | Render instructions |
+|---|---|---|---|
+| Sector Reform Design Report (Main Report Parts 1 and 2 and the Annex, delivered as one file) | OLePFM Sector Reform Design Report Template | Setup 1 in `manager-setup.md` | Prompt C-14 in `manager-04b-render-word-template.md` |
+| Working Tables for a workshop | The same Report Template, annex section only, or a dedicated Working Tables template if the knowledge base holds one | Step 1 of `manager-workshop.md`, which runs Setup 1 | Step 5 in `manager-workshop.md` |
+| Joint Action Plan | OLePFM Joint Action Plan Template | The Setup section of `olepfm-joint-action-plan/SKILL.md` | Output section and Task 8 in `olepfm-joint-action-plan/SKILL.md` |
 
 ## Sector variants
 

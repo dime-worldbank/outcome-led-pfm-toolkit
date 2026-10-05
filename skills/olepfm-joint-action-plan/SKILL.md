@@ -25,7 +25,7 @@ It sits downstream of the `olepfm-session-manager` skill: that skill produces on
 | Document | Where | Role |
 |---|---|---|
 | Annotated Skeleton Template | `joint-action-plan-template.md` (bundled with this skill) | The master guide for structure, section content and length. Every section of the JAP follows it. Read the annotation for a section before drafting that section. |
-| Annotated Skeleton Template, Word file | The knowledge base on the institutional platform (document title "OLePFM Joint Action Plan Template"); not kept in this repository, so ask the user for it when working elsewhere | The formatting authority. The compiled JAP is delivered as a Word document that follows this file: its heading styles, body text, bullets, tables, page setup and footer. See Output below. |
+| Annotated Skeleton Template, Word file | The knowledge base on the institutional platform (document title "OLePFM Joint Action Plan Template"); not kept in this repository, so ask the user for it when working elsewhere; verified at Setup, before Task 1 | The formatting authority. The compiled JAP is delivered as a Word document that follows this file: its heading styles, body text, bullets, tables, page setup and footer. See Output below. |
 | Sector diagnostic reports (two or more) | Provided by the user | The evidence base. Normally OLePFM Sector Reform Design Reports produced with the `olepfm-session-manager` skill. |
 | OLePFM Synthesis Handbook (*Making Public Resources Count for Development*) | Provided by the user | The methodological backbone: outcome-led framing, theory of change concepts and reform design principles. |
 
@@ -40,15 +40,33 @@ If the reports or the Handbook are not in the conversation, ask for them. Do not
 
 ## Output: a Word document on the template
 
-When the JAP is compiled, the deliverable is a Word document that follows the Annotated Skeleton Template's Word file (the OLePFM Joint Action Plan Template in the knowledge base, or the copy the user provides). Whatever tool writes the file (on the institutional platform, the platform's own document tools; elsewhere, the environment's Word capability), give it the template as the formatting reference and apply the template's conventions:
+When the JAP is compiled, the deliverable is a Word document that follows the Annotated Skeleton Template's Word file (the OLePFM Joint Action Plan Template in the knowledge base, or the copy the user provides). Whatever tool writes the file (on the institutional platform, the platform's own document tools; elsewhere, the environment's Word capability), clone the template and write the compiled text into it in place, never convert Markdown to Word, and apply the template's conventions:
 
 - **Headings.** Heading 1 for the document title on the cover page; Heading 2 for Abbreviations, each numbered section and the Bibliography; Heading 3 for the numbered subsections; Heading 4 for the objective headings (the bottleneck groups and the OBJECTIVE X headings); Heading 5 for each Reform Result. Write the section numbers in the heading text; the styles do not number them.
 - **Body text.** The template's Normal style. Labels such as "The problem:", "The reform result:", "Cross-sectoral reforms:" and "Bottleneck X: Title" are bold text at the start of a paragraph, not headings, so they stay out of the table of contents.
-- **Lists and tables.** The template's bullet style for bulleted features and items. Tables span the text width with single borders and a bold header row: four columns for action tables, five for the results framework, exactly as the template draws them.
-- **Box 1.** A shaded, bordered box containing the bold box title and one paragraph per sector.
-- **Page.** A4, 2.54 cm margins and the template's footer, all left as they are. The cover page stands on its own page, followed by a Word table of contents that lists the numbered sections and subsections.
+- **Lists and tables.** The template's List Paragraph bullets for bulleted items. Tables span the text width with single borders and a bold header row, with the columns the template draws: two for Abbreviations; the objective-by-sector matrix and the five-column results chain in Section 2.1; four (# | Action | Responsible | Timeframe) for action tables; five for the results framework.
+- **Box 1.** The template's indented paragraph block with a grey left border, not a shaded or fully boxed table: the box title line, then one paragraph per sector, each carrying the same indent and border.
+- **Page.** A4, 2.54 cm margins and the template's footer, all left as they are. The cover page stands on its own page. Where the skeleton has only a "Table of Contents" label, insert a Word table-of-contents field listing the numbered sections and subsections, and update it before delivery.
+- **Skeleton residue.** Remove the skeleton's own title and version line, its introductory paragraph, the "Cover Page" and "Table of Contents" labels, every bracketed annotation, the Quick Reference section and any generator line at the end. Before delivery, scan the document and report the count of bracketed placeholders, skeleton labels and Quick Reference text remaining, which must be 0.
 
-Write the document from the compiled text. Do not convert the Markdown skeleton with its annotations: nothing in square brackets and no Quick Reference section may remain. Save the file in the user's engagement folder, named by country, version and date, never inside this repository.
+Save the file in the user's engagement folder, named by country, version and date, never inside this repository.
+
+## Setup: verify the templates
+
+Before Task 1, confirm that both templates are accessible, as the session manager's Setup 1 does for the report. On the institutional platform the Word template sits in the root folder of the knowledge base and the skeleton sits alongside this skill's files; neither needs uploading. Paste:
+
+---
+
+Please confirm you can access these two documents before we start the Joint Action Plan:
+
+1. OLePFM Joint Action Plan Template, the Word file (knowledge base root)
+2. OLePFM Joint Action Plan Annotated Skeleton Template, the file `joint-action-plan-template.md` bundled with this skill
+
+If the Word template does not appear at first, search the root again on the title keywords "Joint Action Plan Template", as the stored file name may differ. For each, state whether you can access it, its title and the file name it is stored under, and confirm that the first is a Word (.docx) file, since the compiled JAP is produced by cloning it. If either is missing, list the file names you can see at the root, then stop and ask me for the file before proceeding.
+
+---
+
+Do not begin Task 1 until both are confirmed. In Claude Code, the skeleton is bundled with the skill and the user supplies the Word template.
 
 ## The eight tasks
 
@@ -104,7 +122,7 @@ Incorporate the user's decisions and feedback. Edit the Word document in place f
 
 ### Task 8 — Finalise
 
-Run the finalisation checklist in `joint-action-plan-task-checklists.md`, section 4, then confirm the Word document follows the template: headings as set out under Output, footer and page setup unchanged, table of contents updated, tables and Box 1 formatted as in the template, and no annotation or Quick Reference text left from the skeleton. Then deliver the document.
+Run the finalisation checklist in `joint-action-plan-task-checklists.md`, section 4, then confirm the Word document follows the template: headings as set out under Output, footer and page setup unchanged, table of contents updated, tables and Box 1 formatted as in the template, and the skeleton-residue scan at 0. Then deliver the document.
 
 ## Edge cases
 

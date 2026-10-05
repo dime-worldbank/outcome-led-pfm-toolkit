@@ -13,6 +13,8 @@ Skills follow the [Agent Skills](https://agentskills.io) format: a folder with a
 
 OLePFM stands for Outcome-Led Public Financial Management. The session manager has two modes. Report mode runs five stages, Sources, Steps 1 to 3 and Compilation and QA, loading one prompt file at a time. Workshop mode is an overlay on the same workflow: it reuses the setup, the Sources stage and a subset of the Step 1 and Step 2 prompts, then stops after Table 2.1 and leaves the remaining tables blank for the workshop.
 
+On the client's platform the toolkit runs as **OuR Assistant**. [docs/index.html](docs/index.html) is its information page: what the tool does, the three steps it supports, what happens at each sub-step, and how research-led and stakeholder-led design differ. It is a self-contained HTML page; enable GitHub Pages from the `docs/` folder to serve it, or open the file in a browser.
+
 See [skills/README.md](skills/README.md) for the full index and conventions.
 
 ## Install
@@ -49,6 +51,7 @@ Zip a single skill folder (the folder containing `SKILL.md`) and upload it under
 ```
 .
 ├── skills/                     # one folder per skill (SKILL.md + bundled resources)
+├── docs/                       # OuR Assistant information page (docs/index.html)
 ├── scripts/validate_skills.py  # checks every skill's frontmatter and layout
 ├── .claude-plugin/             # plugin + marketplace manifests for Claude Code
 └── .github/workflows/          # runs the validator on every push and PR

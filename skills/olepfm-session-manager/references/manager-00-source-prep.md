@@ -1,13 +1,15 @@
 ---
 title: OLePFM Sources — Source Preparation
-description: Sources stage of the OLePFM report workflow. Identifies all sources needed across the full report — analytical, fiscal, political economy, and digital systems. Run once at the start of the session before any chapter drafting begins.
+description: Sources stage of the OLePFM report workflow. Identifies all sources needed across the full report — analytical, fiscal, political economy, and digital systems. Only sources with a live, correct downloadable link are entered in the running source table; a source whose file cannot be downloaded is not listed. Run once at the start of the session before any chapter drafting begins.
 ---
 
 # Sources: Source Preparation
 
 This skill is run once at the start of the session (the Sources stage, before Step 1). It identifies all sources needed across the full report — analytical, fiscal, political economy, and systems. Complete and confirm all four prompts before proceeding to Step 1.
 
-Every source is entered into a **single running numbered table** — columns **No. | Author | Year | Title | Relevance | Link | Download**. **Link** is the URL the in-text citation points to (the page where the source is published). **Download** is a direct link to the document file itself (usually a PDF) so the reader can obtain a copy; it is often the same URL as Link, and it stays blank for a web page or online database that has no file. Numbering starts at 1 in S-1 and continues unbroken through S-2, S-3 and S-4 — never restarted per prompt — so each source keeps one stable number for the rest of the session. Record a link for every source wherever one exists; in-text citations hyperlink to it (see S-1). Record only links you have actually seen in the search results; never construct or guess a file URL.
+Every source is entered into a **single running numbered table** — columns **No. | Author | Year | Title | Relevance | Link | Download**. **Link** is the URL the in-text citation points to (the page where the source is published). **Download** is a direct link to the document file itself (usually a PDF) or, for an online database, to a data export or API query that returns the data; it is often the same URL as Link. For a document the user has supplied to the session, it holds the file name instead. A verified Download link is a condition of entry: a source with no live, correct downloadable link is not listed in the table at all, however relevant it looks, because its document cannot be obtained, uploaded or checked. Mention such a source, if at all, in one line beneath the table as *not listed: no downloadable file*, so the user can look for it elsewhere. Numbering starts at 1 in S-1 and continues unbroken through S-2, S-3 and S-4 — never restarted per prompt — so each source keeps one stable number for the rest of the session. Record a verified Link and Download for every source; in-text citations hyperlink to the Link (see S-1). Record only links you have actually seen in the search results; never construct or guess a file URL.
+
+**Link check.** Before a URL goes into the Link or Download column, check that it is **live and correct**. Live: open it where the environment can fetch pages and confirm it resolves without an error page, a login wall or a redirect to a generic home or search page. Correct: what opens is the named document, with the title, author and year of the row, and the Download link opens the file itself, not a landing page. Where pages cannot be fetched, a link counts as checked only when a web search in this session returned that URL for that document; say so in the Relevance column. Never enter a URL from memory or built from a pattern: a plausible link that does not open is worse than none. A link that fails the check is replaced with one that passes, or the source is left out of the table. Never fill the Download column with a placeholder: every row has a verified Download link. Re-check a link whenever its row is edited.
 
 ---
 
@@ -17,7 +19,7 @@ Search for and identify the most relevant and recent sources from the intranet a
 
 This should include analytical reports as well as official government websites, including those which provide sector and fiscal information.
 
-Present the sources as a **numbered table** with columns **No. | Author | Year | Title | Relevance | Link | Download**, numbered sequentially from 1. Put each source's URL in the Link column (as a Markdown link) where one exists — in-text citations hyperlink to it. In the Download column put a direct link to the document file (usually the PDF), also as a Markdown link, where one exists; leave it blank for a web page or online database with no file. Record only links you have seen; never guess a file URL. Keep one running table; S-2–S-4 add rows and continue the same numbering rather than starting over.
+Present the sources as a **numbered table** with columns **No. | Author | Year | Title | Relevance | Link | Download**, numbered sequentially from 1. Put each source's URL in the Link column (as a Markdown link) where one exists — in-text citations hyperlink to it. In the Download column put a verified direct link to the document file (usually the PDF) or data export, also as a Markdown link. List only sources that have one: a source whose file cannot be downloaded through a live, correct link is left out of the table and at most noted in one line beneath it. Record only links you have seen and checked as live and correct (see the link check above). Keep one running table; S-2–S-4 add rows and continue the same numbering rather than starting over.
 
 When generating every section of the report, cite each source as a Markdown hyperlink to its link — e.g. ([World Bank, 2010](https://example.org/report)) — so the reader can open and verify it. Where a source has no link, cite it in plain text as ([author], [year]).
 
@@ -31,6 +33,7 @@ When generating every section of the report, cite each source as a Markdown hype
 - [ ] Official government sector strategy documents are identified
 - [ ] Internationally comparable data sources (WHO, World Bank, IMF) are included
 - [ ] Any significant gaps in coverage are flagged
+- [ ] Every row has a verified Download link that opens the file; sources without one were left out; no guessed or dead links
 
 Add any missing sources with an additional search, giving each the next number in the running table — do not renumber sources already listed.
 
@@ -53,6 +56,7 @@ Include subnational government budget, revenue and expenditure data in your sear
 - [ ] The most recent budget documents are identified
 - [ ] Both central and subnational spending data sources are covered
 - [ ] Any gaps in spending data are flagged for the fiscal analysis in Section 2.3.2
+- [ ] Every new row has a verified Download link that opens the file; sources without one were left out
 
 ---
 
@@ -71,6 +75,7 @@ Add the new sources as rows in the running table from S-2 (same columns), number
 - [ ] Previous reform attempts (successful and unsuccessful) are documented
 - [ ] Known sources of stakeholder resistance are identified
 - [ ] Development partner political economy assessments are included where available
+- [ ] Every new row has a verified Download link that opens the file; sources without one were left out
 
 Flag any significant gaps now.
 
@@ -91,9 +96,10 @@ Add the new sources as rows in the running table from S-3 (same columns), number
 - [ ] The main sector information systems (HMIS, IFMIS, payroll systems, etc.) are identified
 - [ ] Known digital systems gaps or interoperability failures are documented
 - [ ] Active capacity development programmes are noted
+- [ ] Every new row has a verified Download link that opens the file; sources without one were left out
 
 Flag any significant gaps now.
 
 ---
 
-**Sources complete when all four prompts have been reviewed and approved and every source sits in one continuously numbered table.**
+**Sources complete when all four prompts have been reviewed and approved, every source sits in one continuously numbered table, and every row has a verified Download link.**

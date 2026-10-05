@@ -23,7 +23,7 @@ I want to prepare the OLePFM Working Tables for an upcoming reform design worksh
 
 1. **Set up.** Run Setup 1 in `manager-setup.md` first and stop if it fails: it confirms that the Report Template Word file, which step 5 clones, and the Synthesis Handbook are accessible. Then establish country, sector and development outcome as in Setup 2 of the same file (including the off-list sourcing order), then run source preparation (`manager-00-source-prep.md`, Prompts S-1 to S-4). On the institutional platform, also run Prompt S-5 from `manager-platform.md` and apply its citation rules. Cite sources as hyperlinked parentheticals.
 
-2. **Populate 1.1–2.1.** Generate each table with the existing prompt, then lay it out in the Working Tables format with a short **facilitation note** for the workshop:
+2. **Populate 1.1–2.1.** Generate each table with the existing prompt, append its reference check table (`manager-reference-check.md`) and resolve every not-reachable, not-verified or uncited row, then lay it out in the Working Tables format with a short **facilitation note** for the workshop:
 
    | Table | Columns | Generate with | Facilitation note |
    |---|---|---|---|
@@ -32,7 +32,7 @@ I want to prepare the OLePFM Working Tables for an upcoming reform design worksh
    | **1.3 Main Financing Channels** | Financing Channel · Description & Purpose · Organizations (flow of funds) · Relative Value · Key Problems | Prompt 1-14 (from the Section 2.3.2 flows table, Prompt 1-08) | *Pre-populated by AI. Review the channels, values and problems.* |
    | **2.1 Roles of Public Finance** | Role · Potential Role · Actual Role | Prompt 2-02 (the four roles) | *Pre-populated by AI. Read before identifying challenges; validate the potential and actual roles.* |
 
-   Pause here for the user to review the populated 1.1–2.1 before the blank scaffold is added.
+   Pause here for the user to review the populated 1.1–2.1 and their reference check tables before the blank scaffold is added.
 
 3. **Scaffold 2.2 onward (blank).** Add the remaining sections as **empty tables — column headers and a workshop-exercise note only, no AI content:**
 
@@ -53,7 +53,7 @@ I want to prepare the OLePFM Working Tables for an upcoming reform design worksh
    - **Template.** Use the Report Template Word file confirmed in Setup 1 (step 1); if it is no longer found, match on the title keywords "Sector Reform Design Report Template"; in Claude Code, ask the user for the `.docx`. If the knowledge base holds a dedicated OLePFM Working Tables Word template, use that instead and fill its tables the same way.
    - **Cover.** Replace the line "Report Template" with "[Sector] Sector — Working Tables" and add "[Country]" and the workshop date; keep the branding images. The word "Template" must not appear on the cover.
    - **Strip the report body.** Delete the Acronyms table, Chapters 1 to 5 (the portrait main-report section) and every paragraph in the "Instructions" style. Keep the cover, the table of contents field and the landscape annex section with its Step 1, Step 2 and Step 3 headings.
-   - **Fill 1.1 to 2.1.** Write the confirmed content into the template's existing Tables 1.1, 1.2, 1.3 and 2.1, preserving the `Grid Table` styles, and trim fully empty skeleton rows in those four tables only.
+   - **Fill 1.1 to 2.1.** Write the confirmed content into the template's existing Tables 1.1, 1.2, 1.3 and 2.1, preserving the `Grid Table` styles, and trim fully empty skeleton rows in those four tables only. The reference check tables stay out of the handout unless the user asks for them.
    - **Scaffold 2.2 to 3.5.** Leave the header row and the template's empty rows in place for the workshop to write in; add no AI content. Under every table heading, 1.1 to 3.5, insert the facilitation or exercise note from steps 2 and 3 as one italic paragraph in the template's body style.
    - **Economic-resilience variant.** Where Table 1.3 is replaced by the fiscal-cycle narrative (ER-1-08), put the narrative under the Table 1.3 heading in the body style, delete the empty table and say so in the note.
    - **Footer.** Set the footer to "[Country] [Sector] OLePFM Working Tables".

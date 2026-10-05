@@ -141,3 +141,5 @@ tokens/
 
 # OuR Assistant information page (docs/index.html); GitHub Pages can serve docs/
 !/docs/**/*.html
+!/docs/**/*.png
+!/docs/**/*.svg

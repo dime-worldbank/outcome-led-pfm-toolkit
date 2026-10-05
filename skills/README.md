@@ -20,7 +20,7 @@ olepfm-session-manager/
     ├── manager-setup.md                       session setup: document check, country/sector/outcome context, Sector Outcome Reference
     ├── manager-workshop.md                    workshop mode: overlay that reuses the files below, stops after Table 2.1, renders into the Word template
     ├── manager-platform.md                    institutional platform only: Prompt S-5 checks sources against the knowledge base, upload request, citation rules
-    ├── manager-reference-check.md             reference check table at the end of each chapter: claim, source, document URL, exact text (at Prompts 1-15, 2-10, 3-14)
+    ├── manager-reference-check.md             reference check table after every cited draft (claim, source, document URL, text reachable, exact text), merged per chapter at Prompts 1-15, 2-10, 3-14
     ├── manager-00-source-prep.md              Sources: source preparation (Prompts S-1 to S-4)
     ├── manager-01a-chapters1-2.md             Step 1: Chapter 1 and Sections 2.1 to 2.2 (Prompts 1-01 to 1-03)
     ├── manager-01a-section2-3.md              Step 1: Section 2.3 (Prompts 1-04 to 1-11) and the Step 1 quality checks
@@ -37,7 +37,7 @@ olepfm-session-manager/
     └── manager-04c-cross-document-qa.md       Compilation and QA: cross-document checks (Prompts QA-1 to QA-5)
 ```
 
-**Report mode** follows SKILL.md from Session Setup through Compilation and QA, loading one prompt file at a time. At each step's compilation prompt, `manager-reference-check.md` adds a reference check table to the end of every chapter (claim, source, document URL, exact text from the document) so the user can check the references before the completion gate; the tables stay out of the compiled report unless asked for.
+**Report mode** follows SKILL.md from Session Setup through Compilation and QA, loading one prompt file at a time. After every prompt whose output cites a source, `manager-reference-check.md` adds a reference check table (claim, source, document URL, whether the source's text could be retrieved in this session, exact text from the document) so the user can check the references at that prompt's ✏️ point; the compilation prompts merge them into one table per chapter before the completion gate, and the tables stay out of the compiled report unless asked for. The workshop overlay and the joint action plan skill apply the same rule to their cited tables and sections.
 
 **Workshop mode** is an overlay on the same workflow. `manager-workshop.md` reuses Setup 2 (in `manager-setup.md`), the Sources stage (`manager-00-source-prep.md`, Prompts S-1 to S-4) and a handful of Step 1 and Step 2 prompts (1-02, 1-03, 1-05, 1-08, 1-13 and 2-02) to pre-populate Tables 1.1 to 2.1, then scaffolds Tables 2.2 to 3.5 blank for the workshop. Its step 5 renders the Working Tables into the Sector Reform Design Report Word template's landscape annex tables, the same way Prompt C-14 renders the report. The AI behaviour rules in SKILL.md apply in both modes. Because everything lives in one folder, there is one copy of each prompt and nothing to keep in sync.
 
@@ -95,7 +95,7 @@ The standard prompts are written for service-delivery sectors. Where a sector ne
 
 ## Platform-specific rules
 
-Rules that apply only on the institutional platform (where the knowledge base holds the pre-loaded documents and indexes what the user uploads) live in `manager-platform.md`, not in the prompt files or in SKILL.md. The manager dispatches to it with a one-line note, as it does for sector variants, so the prompt files stay platform-neutral and run unchanged in Claude Code. The file currently holds one addition: Prompt S-5, run after S-4, which checks that every source in the running table is indexed in the knowledge base or uploaded to the session, asks the user to upload the rest, and sets the citation rules that follow (cite only Indexed or Uploaded sources; cite the document read, not the one it cites; verify a new source before citing it). It also adds items to the Sources completion gate and to the consistency audit (Prompt C-01). Put any future platform-only rule in the same file.
+Rules that apply only on the institutional platform (where the knowledge base holds the pre-loaded documents and indexes what the user uploads) live in `manager-platform.md`, not in the prompt files or in SKILL.md. The manager dispatches to it with a one-line note, as it does for sector variants, so the prompt files stay platform-neutral and run unchanged in Claude Code. The file currently holds one addition: Prompt S-5, run after S-4, which checks that every source in the running table is indexed in the knowledge base or uploaded to the session, asks the user to upload the rest, and sets the citation rules that follow (cite only Indexed or Uploaded sources; cite the document read, not the one it cites; verify a new source before citing it). It also adds items to the Sources completion gate and to the consistency audit (Prompt C-01), and defines reachability on the platform: a source's text is reachable only when the internal knowledge base or `project_search` returns it, which is what the reference check tests. Put any future platform-only rule in the same file.
 
 ## Crosswalk from the previous prompt codes
 

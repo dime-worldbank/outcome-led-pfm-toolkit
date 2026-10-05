@@ -90,7 +90,7 @@ Search for: recent PFM assessments for the country (PEFA, public expenditure rev
 
 Read across all sector extractions to identify bottlenecks that appear in two or more reports. For each cross-cutting cluster: name it in clear, non-technical language stakeholders will recognise; list the sectors it appears in, with the sector-specific manifestation and precise figures from each report; note the common underlying causes; and note sector-specific bottlenecks that do not cut across sectors, which will become sector-specific reform results or actions rather than cross-sectoral objectives.
 
-Present the synthesis to the user as a table (format in `joint-action-plan-task-checklists.md`, section 2) and invite confirmation that the clustering is correct and complete. This is the foundation of Section 1.3 and must be agreed before drafting begins.
+Present the synthesis to the user as a table (format in `joint-action-plan-task-checklists.md`, section 2), with a reference check table for its figures as described in Task 5, and invite confirmation that the clustering is correct and complete. This is the foundation of Section 1.3 and must be agreed before drafting begins.
 
 ### Task 4 — Select the reform framework and design the objective and reform result structure
 
@@ -110,11 +110,13 @@ Rules that go beyond what the template states:
 - **Section 3.3** closes with the relationship with ongoing reform processes, naming the actual programmes, strategies and projects the JAP coordinates with and the interface with each; generic language is not sufficient.
 - **Section 4** uses cross-sectoral indicators only, with every baseline marked TBD and a note that baselines will be established through a joint assessment at the start of implementation.
 
+**Reference check after every drafted section.** Each time a section that cites a source is drafted or redrafted (Sections 1.2, 1.3, 2.1, 2.2, 3.2 and 3.3 in particular), append a reference check table following the session manager's `manager-reference-check.md`: one row per claim, with the sector report or supplementary source as the document, a Text reachable column showing that its text was retrieved in this session, and the exact passage quoted from it, never paraphrased or invented; a source whose text cannot be reached is marked not reachable, and a claim whose passage cannot be found is marked not verified. Resolve every not-verified, partially supported or uncited row before drafting the next section. The tables are review aids: keep them out of the Word document unless the user asks for a reviewers' annex.
+
 When the full draft exists, produce it as the Word document described under Output and give the user that file.
 
 ### Task 6 — Cross-check completeness against the source reports
 
-Before presenting the draft, compare the JAP against each sector report and list: (a) gaps, bottlenecks or problems in the reports that the JAP does not address; (b) missing actions, reforms proposed in the reports that the JAP does not capture; and (c) additions, content in the JAP that is not grounded in the reports, flagged either as an appropriate system-level cross-sectoral enabler to retain or as going beyond the evidence base for the user to decide. Use the formats in `joint-action-plan-task-checklists.md`, section 3. Present the gap analysis with recommendations and wait for the user's decisions before Task 7.
+Before presenting the draft, compare the JAP against each sector report and list: (a) gaps, bottlenecks or problems in the reports that the JAP does not address; (b) missing actions, reforms proposed in the reports that the JAP does not capture; and (c) additions, content in the JAP that is not grounded in the reports, flagged either as an appropriate system-level cross-sectoral enabler to retain or as going beyond the evidence base for the user to decide. Use the formats in `joint-action-plan-task-checklists.md`, section 3, starting from the reference check tables: any claim still not verified is a gap or an addition to settle here. Present the gap analysis with recommendations and wait for the user's decisions before Task 7.
 
 ### Task 7 — Revise and iterate
 

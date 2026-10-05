@@ -62,6 +62,7 @@ Present the gap analysis as a structured section with a recommendation on which 
 | Terminology | Objective for top-level groupings; Reform Result for the changes within each; Action for table entries; no residual Pillar, Sub-Pillar or MPA |
 | Bottleneck groups | The group headings in Section 1.3 are the objective titles of Section 2.2, in the same order and number |
 | Systems, capacity and TA | Section 3.2 content explicitly linked to named reform results in Section 2.2 |
+| Reference check | Every section's reference check table reviewed; every row verified or resolved; tables left out of the Word document unless requested |
 | Word document | Follows the Word template as set out under Output in `joint-action-plan.md` (this skill's SKILL.md): headings, footer, tables, Box 1, table of contents; skeleton-residue scan at 0 |
 | Annexes | None; the document ends at the bibliography |
 | Bibliography | Every source cited in the document is listed |

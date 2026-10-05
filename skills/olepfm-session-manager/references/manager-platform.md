@@ -1,6 +1,6 @@
 ---
 title: OLePFM Session Manager — Institutional Platform Rules
-description: Rules that apply only when the OLePFM workflow runs on the institutional platform with its knowledge base. Adds Prompt S-5, run after S-4, which checks that every source in the running table is indexed in the knowledge base or uploaded to the session and asks the user to upload the rest; the citation rules that follow for Steps 1 to 3; and the items it adds to the Sources completion gate and the consistency audit (Prompt C-01). Skip when the user supplies the documents directly, as in Claude Code.
+description: Rules that apply only when the OLePFM workflow runs on the institutional platform with its knowledge base. Adds Prompt S-5, run after S-4, which checks that every source in the running table is indexed in the knowledge base or uploaded to the session and asks the user to upload the rest; the citation rules that follow for Steps 1 to 3; what makes a source's text reachable on the platform (indexed in the internal knowledge base or returned by project_search); and the items it adds to the Sources completion gate and the consistency audit (Prompt C-01). Skip when the user supplies the documents directly, as in Claude Code.
 ---
 
 # Institutional Platform Rules: Source Verification
@@ -13,23 +13,23 @@ description: Rules that apply only when the OLePFM workflow runs on the institut
 
 ---
 
-## Prompt S-5 — Knowledge Base Verification of the Source List
+## Prompt S-5 — Reachability Verification of the Source List (adds the Status column)
 
 Run after Prompt S-4 has been reviewed and approved, on the complete running table.
 
 ---
 
-For every source in the running table from Prompts S-1 to S-4, check whether the document itself is indexed in the knowledge base. Search the knowledge base for each source on its title keywords first, then on author and year, since the stored file name may differ from the title. Count a source as indexed only if you can open its own text. A web search result, or an entry in the bibliography or reference list of another indexed document, does not count: it shows that the document exists or was cited, not that you can read it.
+For every source in the running table from Prompts S-1 to S-4, check whether the document itself is indexed in the knowledge base. Search the knowledge base for each source on its title keywords first, then on author and year, since the stored file name may differ from the title. Count a source as indexed only if a knowledge base search or `project_search` returns the document's own text now; a file whose text the search does not return (a scanned PDF, an image) is Not indexed, and you say why. A web search result, or an entry in the bibliography or reference list of another indexed document, does not count: it shows that the document exists or was cited, not that you can read it.
 
 Add a **Status** column to the running table, so the columns are **No. | Author | Year | Title | Relevance | Link | Download | Status**, and fill it for every row with one of:
 
 - **Indexed** — the document is in the knowledge base. Give the file name it is stored under, for example `Indexed (stored as: xyz.pdf)`.
-- **Uploaded** — the user has uploaded the document to this session.
+- **Uploaded** — the user has uploaded the document to the project or session and `project_search` returns its text.
 - **Not indexed** — neither. The source is known only from a web search or from another document's bibliography.
 
 Keep every source's number as it is: do not remove, reorder or renumber rows.
 
-Below the table, list the **Not indexed** sources as an **upload request**: for each, give its number, author, year and title, and repeat its Download link so the user can fetch the file (or its Link where there is no Download link), and say where else the document can be obtained if you know. Ask the user to upload to this session the documents they can obtain, and say that you will re-check them once uploaded. Treat a web page, online database or data portal as a document: ask for a saved copy of the page or an extract of the data, since that is what will be cited.
+Below the table, list the **Not indexed** sources as an **upload request**: for each, give its number, author, year and title, and repeat its verified Download link so the user can fetch the file, and say where else the document can be obtained if you know. Ask the user to upload to this session the documents they can obtain, and say that you will re-check them once uploaded. Treat a web page, online database or data portal as a document: its Download link is the data export or file to upload, since that is what will be cited.
 
 Then stop and wait for the user.
 
@@ -37,7 +37,7 @@ Then stop and wait for the user.
 
 ### ✏️ Review the output — focus on these points
 
-**Knowledge base verification (Prompt S-5).** Every citation in the report will rest on this column, so check it before Step 1.
+**Reachability verification (Prompt S-5).** Every citation in the report will rest on this column, so check it before Step 1.
 
 - [ ] Every row has a Status, and every Indexed entry names the file it is stored under
 - [ ] No source is marked Indexed only because a web search found it or another document cites it
@@ -48,9 +48,13 @@ Upload what you can, then say "uploaded" to have those sources re-checked, or "p
 
 ### After the user uploads
 
-Re-check only the rows in the upload request. Set each one that is now readable to **Uploaded** (or **Indexed**, if it turns out to be in the knowledge base after all) and present the full table again, numbering unchanged. Repeat for as long as the user keeps uploading. When the user says "proceed", change every row still marked Not indexed to **Not available: do not cite**, and keep the row in the table so the gap stays visible and the numbering stays stable. Then apply the Sources completion gate, with the additions below.
+Re-check only the rows in the upload request. Set each one whose text `project_search` now returns to **Uploaded** (or **Indexed**, if it turns out to be in the knowledge base after all) and present the full table again, numbering unchanged. Repeat for as long as the user keeps uploading. When the user says "proceed", change every row still marked Not indexed to **Not available: do not cite**, and keep the row in the table so the gap stays visible and the numbering stays stable. Then apply the Sources completion gate, with the additions below.
 
 ---
+
+## Link check on the platform
+
+The link check in `manager-00-source-prep.md` asks the AI to open each URL. Where the platform cannot open web pages, a link counts as checked only when this session's web search returned that URL for that document; a URL from memory is never entered. The Download links repeated in the S-5 upload request must have passed that check, because the user will click them to fetch the files.
 
 ## Citation rules for Steps 1 to 3 (platform)
 
@@ -60,7 +64,11 @@ These apply to every prompt from Step 1 onward, in addition to the hyperlink rul
 2. **Cite the document you read, not the one it cites.** If a fact is known only because an indexed document cites another work, cite the indexed document, adding "citing [author, year]" where useful. Do not cite the other work as if you had read it.
 3. **Verify before citing anything new.** A source found later in the session (while drafting a section, or when the user asks for an additional search at a review point) gets the next number in the running table and is checked as in Prompt S-5 before it is cited. Say that you are adding it; do not cite it silently.
 
-**Reference check tables.** The tables that `manager-reference-check.md` adds at the end of each chapter make breaches of these rules visible: a row whose Source is marked Not available in the running table, or whose Exact text reads *Not verified: document not read*, must be re-sourced or removed before the step's completion gate.
+## Reachability on the platform
+
+On the platform a source's text is reachable in exactly two ways: it has been **indexed in the internal knowledge base** (the backend library that Setup 1 and Prompt S-5 search), or it is **returned by `project_search`**, the vector search over the documents uploaded to the project or session. The reference check (`manager-reference-check.md`) tests reachability by running a knowledge base search or `project_search` for the passage and quoting from the text the search returns. A search that returns only a title, a file name or a bibliography entry, or no text at all, means the text is not reachable. A URL does not by itself make a source reachable here: a web source counts only once a saved copy of the page has been uploaded and `project_search` returns it. The Text reachable column therefore reads *Yes: knowledge base (stored as …)*, *Yes: project_search (uploaded as …)* or *No: not indexed in the knowledge base or project_search*.
+
+**Reference check tables.** The tables that `manager-reference-check.md` adds after every cited draft, and merges per chapter at compilation, make breaches of these rules visible: a row whose Source is marked Not available in the running table, or whose Text reachable column reads *No*, must be re-sourced, uploaded or removed before the step's completion gate. The reference check retrieves the text again at every draft: Status says where a document is, reachability says that the knowledge base or `project_search` returned its text.
 
 ---
 

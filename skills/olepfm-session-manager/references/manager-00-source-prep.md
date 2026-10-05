@@ -1,6 +1,6 @@
 ---
 title: OLePFM Sources — Source Preparation
-description: Sources stage of the OLePFM report workflow. Identifies all sources needed across the full report — analytical, fiscal, political economy, and digital systems. Only sources with a live, correct downloadable link are entered in the running source table; a source whose file cannot be downloaded is not listed. Run once at the start of the session before any chapter drafting begins.
+description: Sources stage of the OLePFM report workflow. Identifies all sources needed across the full report — analytical, fiscal, political economy, and digital systems. Only sources with a live, correct downloadable link are entered in the running source table; a source whose file cannot be downloaded is not listed, and an external source whose content cannot be read is flagged and requested for upload. Run once at the start of the session before any chapter drafting begins.
 ---
 
 # Sources: Source Preparation
@@ -10,6 +10,8 @@ This skill is run once at the start of the session (the Sources stage, before St
 Every source is entered into a **single running numbered table** — columns **No. | Author | Year | Title | Relevance | Link | Download**. **Link** is the URL the in-text citation points to (the page where the source is published). **Download** is a direct link to the document file itself (usually a PDF) or, for an online database, to a data export or API query that returns the data; it is often the same URL as Link. For a document the user has supplied to the session, it holds the file name instead. A verified Download link is a condition of entry: a source with no live, correct downloadable link is not listed in the table at all, however relevant it looks, because its document cannot be obtained, uploaded or checked. Mention such a source, if at all, in one line beneath the table as *not listed: no downloadable file*, so the user can look for it elsewhere. Numbering starts at 1 in S-1 and continues unbroken through S-2, S-3 and S-4 — never restarted per prompt — so each source keeps one stable number for the rest of the session. Record a verified Link and Download for every source; in-text citations hyperlink to the Link (see S-1). Record only links you have actually seen in the search results; never construct or guess a file URL.
 
 **Link check.** Before a URL goes into the Link or Download column, check that it is **live and correct**. Live: open it where the environment can fetch pages and confirm it resolves without an error page, a login wall or a redirect to a generic home or search page. Correct: what opens is the named document, with the title, author and year of the row, and the Download link opens the file itself, not a landing page. Where pages cannot be fetched, a link counts as checked only when a web search in this session returned that URL for that document; say so in the Relevance column. Never enter a URL from memory or built from a pattern: a plausible link that does not open is worse than none. A link that fails the check is replaced with one that passes, or the source is left out of the table. Never fill the Download column with a placeholder: every row has a verified Download link. Re-check a link whenever its row is edited.
+
+**Readability check.** Finding a source by web search, and confirming that its link is live, says nothing about whether its text can be read: a search result is a title and a snippet, not the document. For every external source, test whether its content can actually be read in this session by opening the page or file and reading it. Where it cannot, flag the row with **Upload needed** in the Relevance column and, below the table, ask the user to upload the document using its Download link. Never treat a snippet, a title or memory of the document as having read it. A flagged source is not cited until the user has uploaded it or it is found in the knowledge base. On the institutional platform, Prompt S-5 (`manager-platform.md`) turns these flags into the Status column and the formal upload request.
 
 ---
 
@@ -34,6 +36,7 @@ When generating every section of the report, cite each source as a Markdown hype
 - [ ] Internationally comparable data sources (WHO, World Bank, IMF) are included
 - [ ] Any significant gaps in coverage are flagged
 - [ ] Every row has a verified Download link that opens the file; sources without one were left out; no guessed or dead links
+- [ ] Every external source whose content could not be read is flagged Upload needed and listed for upload with its Download link
 
 Add any missing sources with an additional search, giving each the next number in the running table — do not renumber sources already listed.
 
@@ -57,6 +60,7 @@ Include subnational government budget, revenue and expenditure data in your sear
 - [ ] Both central and subnational spending data sources are covered
 - [ ] Any gaps in spending data are flagged for the fiscal analysis in Section 2.3.2
 - [ ] Every new row has a verified Download link that opens the file; sources without one were left out
+- [ ] Every new source whose content could not be read is flagged Upload needed and listed for upload
 
 ---
 
@@ -76,6 +80,7 @@ Add the new sources as rows in the running table from S-2 (same columns), number
 - [ ] Known sources of stakeholder resistance are identified
 - [ ] Development partner political economy assessments are included where available
 - [ ] Every new row has a verified Download link that opens the file; sources without one were left out
+- [ ] Every new source whose content could not be read is flagged Upload needed and listed for upload
 
 Flag any significant gaps now.
 
@@ -97,9 +102,10 @@ Add the new sources as rows in the running table from S-3 (same columns), number
 - [ ] Known digital systems gaps or interoperability failures are documented
 - [ ] Active capacity development programmes are noted
 - [ ] Every new row has a verified Download link that opens the file; sources without one were left out
+- [ ] Every new source whose content could not be read is flagged Upload needed and listed for upload
 
 Flag any significant gaps now.
 
 ---
 
-**Sources complete when all four prompts have been reviewed and approved, every source sits in one continuously numbered table, and every row has a verified Download link.**
+**Sources complete when all four prompts have been reviewed and approved, every source sits in one continuously numbered table, every row has a verified Download link, and every source whose content could not be read is flagged for upload.**

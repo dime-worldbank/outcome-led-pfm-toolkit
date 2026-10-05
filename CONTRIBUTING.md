@@ -12,12 +12,12 @@
 
    ```yaml
    ---
-   name: <skill-name>
+   title: <Skill title>
    description: What the skill does and when Claude should use it.
    ---
    ```
 
-   Use a short, lowercase, hyphenated name that says what the skill does, for example `pfm-budget-credibility-check`. The folder name must match the `name` field in `SKILL.md`.
+   Use a short, lowercase, hyphenated folder name that says what the skill does, for example `pfm-budget-credibility-check`; the folder name is the skill's name. The header is the same `title` and `description` pair as every file in `references/`.
 
 2. Fill in `SKILL.md`. The frontmatter `description` is what Claude reads to decide whether to use the skill, so say both what it does and when to use it. Be specific about trigger phrases and contexts. The body holds the instructions, ideally under 500 lines.
 

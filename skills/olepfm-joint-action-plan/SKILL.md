@@ -1,5 +1,4 @@
 ---
-name: olepfm-joint-action-plan
 title: OLePFM Joint Action Plan Compiler
 description: Compiles a Joint Action Plan (JAP) from two or more OLePFM sector diagnostic reports (the reports produced by the olepfm-session-manager skill), following the bundled OLePFM Joint Action Plan Annotated Skeleton Template and one or both PFM reform frameworks, and delivers it as a Word document that follows the bundled Word template. Use this whenever the user asks to compile, draft, synthesise or structure a joint action plan, joint reform agenda, joint reform plan or multi-sector reform strategy from OLePFM sector diagnoses, even if they do not say "JAP". Trigger phrases include "compile a joint action plan from these diagnostic reports", "synthesise these OLePFM reports into a joint strategy", "draft a joint reform agenda from these sector diagnoses" and "prepare a multi-sector action plan using the OLePFM approach".
 ---

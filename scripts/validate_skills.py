@@ -3,8 +3,8 @@
 
 Checks, for each skills/<name>/ folder:
   - SKILL.md exists
-  - it starts with YAML frontmatter containing non-empty `name` and `description`
-  - `name` matches the folder name and is lowercase with hyphens only
+  - it starts with YAML frontmatter containing non-empty `title` and `description`, the same header as every other skill file
+  - the folder name is the skill name: lowercase with hyphens only; a `name` field, if present, must match it
   - SKILL.md is under 500 lines (warning only)
   - SKILL.md and every references/*.md file is under 20,000 characters (platform limit)
   - every references/*.md file starts with YAML frontmatter carrying `title` and `description` (platform requirement)
@@ -64,14 +64,15 @@ def validate_skill(skill_dir: Path) -> tuple[list[str], list[str]]:
     if fm is None:
         errors.append(f"{rel}/SKILL.md: missing or malformed YAML frontmatter")
     else:
-        name = fm.get("name", "")
+        title = fm.get("title", "")
         desc = fm.get("description", "")
-        if not name:
-            errors.append(f"{rel}/SKILL.md: frontmatter has no `name`")
-        elif not NAME_RE.match(name):
-            errors.append(f"{rel}/SKILL.md: name '{name}' must be lowercase letters, digits and hyphens")
-        elif name != skill_dir.name:
-            errors.append(f"{rel}/SKILL.md: name '{name}' does not match folder '{skill_dir.name}'")
+        if not title:
+            errors.append(f"{rel}/SKILL.md: frontmatter has no `title`")
+        if not NAME_RE.match(skill_dir.name):
+            errors.append(f"{rel}: folder name must be lowercase letters, digits and hyphens")
+        name = fm.get("name")
+        if name is not None and name != skill_dir.name:
+            errors.append(f"{rel}/SKILL.md: `name` '{name}' does not match folder '{skill_dir.name}' (the folder name is the skill name; drop the line)")
         if not desc:
             errors.append(f"{rel}/SKILL.md: frontmatter has no `description`")
         elif len(desc) < 40:

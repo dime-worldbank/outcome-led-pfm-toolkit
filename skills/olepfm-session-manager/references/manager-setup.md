@@ -113,3 +113,9 @@ For a listed sector, use its entry below; for a sector not listed, build the out
 - **Public sector result:** Tax administration that raises adequate resources efficiently and equitably, with the capacity to forecast and manage revenue so budgets are realistic.
 
 ---
+
+---
+
+## Prompt numbering
+
+Prompts are numbered by stage and run in order: S-1 to S-4 (Sources), 1-01 to 1-15 (Step 1), 2-01 to 2-10 (Step 2), 3-01 to 3-14 (Step 3), C-01 to C-14 (Compilation) and QA-1 to QA-5 (final cross-document checks). Optional quality checks at the end of a step are numbered 1-Q1, 2-Q1 and so on. Inside each file, prompts are grouped under the OLePFM sub-step they serve (for example Sub-step 1.4, Map the sector policy, institutional and public finance context). A sector variant of a prompt keeps the standard number with a prefix: ER-1-05 is the economic-resilience variant of Prompt 1-05. The prompt files are listed in `manager.md` under each stage; where a stage's file was split for the platform's file-size limit (`01a-chapters1-2.md` and `01a-section2-3.md`; `04b-part2-and-annex.md` and `04b-render-word-template.md`), the manager names both and each file says which prompts it holds.

@@ -1,6 +1,6 @@
 ---
 title: OLePFM Step 1 (1a) variant — Economic Resilience: Section 2.3 Prompts (file 1 of 2)
-description: Drop-in replacements for Prompts 1-04 to 1-10 (Section 2.3) when the outcome is cross-cutting and fiscal — economic resilience, macro-fiscal stability, fiscal or debt sustainability. Replaces the service-delivery institutional tiers, financial-flows table and sector-spending charts with fiscal-outcome tiers, a self-reinforcing fiscal-cycle narrative and diagram, and macro-fiscal charts. Use together with 01a-chapters1-2.md; every other Step 1 prompt is unchanged.
+description: Drop-in replacements for Prompts 1-04 to 1-10 (Section 2.3) when the outcome is cross-cutting and fiscal — economic resilience, macro-fiscal stability, fiscal or debt sustainability. Replaces the service-delivery institutional tiers, financial-flows table and sector-spending charts with fiscal-outcome tiers, a self-reinforcing fiscal-cycle narrative and diagram, and macro-fiscal charts. Use together with 01a-section2-3.md; every other Step 1 prompt is unchanged.
 ---
 
 # Step 1 (file 1a) variant: Economic Resilience — Section 2.3 prompts (file 2 of 2)
@@ -110,7 +110,7 @@ State the overall PEFA score and note any deterioration since the previous asses
 
 Make corrections before proceeding.
 
-> **Return to the standard file.** Continue with Prompt 1-11 (Section 2.3.3: Feasibility Assessment) in `01a-chapters1-2.md`, then `01b-annex1.md` (Prompts 1-12, 1-13 and 1-15; skip 1-14).
+> **Return to the standard file.** Continue with Prompt 1-11 (Section 2.3.3: Feasibility Assessment) in `01a-section2-3.md`, then `01b-annex1.md` (Prompts 1-12, 1-13 and 1-15; skip 1-14).
 
 ---
 

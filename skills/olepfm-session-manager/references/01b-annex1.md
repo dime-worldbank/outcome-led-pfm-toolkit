@@ -1,11 +1,11 @@
 ---
 title: OLePFM Step 1 (1b) — Annex Step 1 and Compilation
-description: Step 1 (file 1b) of the OLePFM report workflow. Generates Annex Step 1 (Tables 1.1, 1.2 and 1.3) and compiles Chapters 1 and 2 with Annex Step 1 into a single document. Run after 01a-chapters1-2.md.
+description: Step 1 (file 1b) of the OLePFM report workflow. Generates Annex Step 1 (Tables 1.1, 1.2 and 1.3) and compiles Chapters 1 and 2 with Annex Step 1 into a single document. Run after 01a-chapters1-2.md and 01a-section2-3.md.
 ---
 
 # Step 1 (file 1b): Annex Step 1 and Compilation
 
-**Step 1, file 2 of 2.** Run these prompts after the Chapter 1 and Chapter 2 drafts from `01a-chapters1-2.md` are complete and confirmed. Those drafts are already in context — begin directly with Prompt 1-12.
+**Step 1, file 3 of 3.** Run these prompts after the Chapter 1 and Chapter 2 drafts from `01a-chapters1-2.md` and `01a-section2-3.md` are complete and confirmed. Those drafts are already in context — begin directly with Prompt 1-12.
 
 Pause at every ✏️ intervention point and wait for user confirmation before proceeding.
 

@@ -36,7 +36,7 @@ Paste the following to confirm the pre-loaded documents are accessible:
 
 ---
 
-Please confirm you can access these pre-loaded documents. Both are stored in the **app-wide knowledge base**, in its **root folder** (alongside the skills folder, not inside it). Search that knowledge base first, before the project's uploaded files and before the web:
+Please confirm you can access these pre-loaded documents. Both are stored in the **app-wide knowledge base**, in its **root folder** (alongside the skills folder, not inside it). Search that knowledge base first, with `vector_search`, before the project's uploaded files and before the web:
 
 1. OLePFM Sector Reform Design Report Template
 2. OLePFM Synthesis Handbook (Williamson et al., 2024)

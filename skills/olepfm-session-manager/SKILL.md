@@ -1,6 +1,6 @@
 ---
 title: OLePFM Session Manager
-description: Orchestration guide for producing a complete OLePFM Sector Reform Design Report in a single AI session. Upload first. Controls stage sequencing (Sources, Steps 1 to 3, Compilation and QA), intervention points, inter-step data recording, and AI behavior rules. Also prepares the Working Tables for a reform design workshop when the user says "start OLePFM workshop preparation" or asks for workshop tables. Use for any OLePFM, outcome-led PFM or sector reform design report or workshop request.
+description: Orchestration guide for producing a complete OLePFM Sector Reform Design Report in a single AI session. Upload first. Controls stage sequencing (Sources, Steps 1 to 3, Compilation and QA), intervention points, inter-step data recording, and AI behavior rules. Also prepares the Sector Background paper and Working Tables for a reform design workshop when the user says "start OLePFM workshop preparation" or asks for workshop tables. Use for any OLePFM, outcome-led PFM or sector reform design report or workshop request.
 ---
 
 # OLePFM Sector Reform Design: Session Manager
@@ -14,7 +14,7 @@ This document is the orchestration guide for producing a complete OLePFM Sector 
 | Mode | When | Follow |
 |---|---|---|
 | **Full report** | The user wants an OLePFM Sector Reform Design Report | This document, from Session Setup through Compilation and QA |
-| **Workshop table preparation** | The user says "start OLePFM workshop preparation" or wants the Working Tables for a reform design workshop | `manager-workshop.md`: reuses Setup 2, the Sources stage and a subset of the Step 1 and Step 2 prompts, stops after Table 2.1, scaffolds the rest blank and renders the tables into the Report Word template |
+| **Workshop preparation** | The user says "start OLePFM workshop preparation" or wants the workshop background paper and tables | `manager-workshop.md`: drafts Chapters 1 and 2 and Tables 1.1, 1.2 and 2.1 with the Step 1 prompts, leaves 2.2 to 3.5 blank, renders into the Sector Background Word template |
 
 Workshop mode is an overlay on the report workflow, not a separate process: the instructions to the AI below (sequential execution, one prompt at a time, pause at every ✏️ point, never invent placeholder values) apply in both modes.
 

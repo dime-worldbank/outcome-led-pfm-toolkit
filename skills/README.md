@@ -15,10 +15,11 @@ Status values: `stub` (placeholder, not yet usable), `draft` (usable, not yet te
 olepfm-session-manager/
 ├── SKILL.md                                   entry point; picks report mode or workshop mode (exported as manager.md)
 ├── assets/
-│   └── manager-report-template.md             OLePFM Sector Reform Design Report Template: structure and standard text the prompts follow
+│   ├── manager-report-template.md             OLePFM Sector Reform Design Report Template: structure and standard text the prompts follow
+│   └── manager-sector-background-template.md  OLePFM Sector Background Information Template: Chapters 1 and 2, Annex Tables 1.1 and 1.2 and the Working Tables 2.1 to 3.5; the paper a workshop starts from
 └── references/
     ├── manager-setup.md                       session setup: document check, country/sector/outcome context, Sector Outcome Reference
-    ├── manager-workshop.md                    workshop mode: overlay that reuses the files below, stops after Table 2.1, renders into the Word template
+    ├── manager-workshop.md                    workshop mode: overlay that drafts Chapters 1 and 2 and Tables 1.1, 1.2 and 2.1 with the files below, leaves 2.2 to 3.5 blank, renders into the Sector Background template
     ├── manager-platform.md                    institutional platform only: search tools, link source, index check S-5 inside each sourcing prompt (Status column, upload request), citation rules
     ├── manager-reference-check.md             reference check table after every cited draft (claim, source, document URL, text readable, exact text), merged per chapter at Prompts 1-15, 2-10, 3-14
     ├── manager-00-source-prep.md              Sources: source preparation (Prompts S-1 to S-4)
@@ -39,7 +40,7 @@ olepfm-session-manager/
 
 **Report mode** follows SKILL.md from Session Setup through Compilation and QA, loading one prompt file at a time. After every prompt whose output cites a source, `manager-reference-check.md` adds a reference check table (claim, source, document URL, whether the source's text could be retrieved in this session, exact text from the document) so the user can check the references at that prompt's ✏️ point; the compilation prompts merge them into one table per chapter before the completion gate, and the tables stay out of the compiled report unless asked for. The workshop overlay and the joint action plan skill apply the same rule to their cited tables and sections.
 
-**Workshop mode** is an overlay on the same workflow. `manager-workshop.md` reuses Setup 2 (in `manager-setup.md`), the Sources stage (`manager-00-source-prep.md`, Prompts S-1 to S-4) and a handful of Step 1 and Step 2 prompts (1-02, 1-03, 1-05, 1-08, 1-13 and 2-02) to pre-populate Tables 1.1 to 2.1, then scaffolds Tables 2.2 to 3.5 blank for the workshop. Its step 5 renders the Working Tables into the Sector Reform Design Report Word template's landscape annex tables, the same way Prompt C-14 renders the report. The AI behaviour rules in SKILL.md apply in both modes. Because everything lives in one folder, there is one copy of each prompt and nothing to keep in sync.
+**Workshop mode** is an overlay on the same workflow. `manager-workshop.md` reuses Setup 2 (in `manager-setup.md`), the Sources stage (`manager-00-source-prep.md`, Prompts S-1 to S-4), the Step 1 prompts 1-01 to 1-13 and Prompt 2-02 to draft Chapters 1 and 2 and populate Annex Tables 1.1, 1.2 and 2.1, and leaves Tables 2.2 to 3.5 blank for the workshop. Its step 5 renders the paper into the OLePFM Sector Background Information Word template (Markdown twin `manager-sector-background-template.md`), the same way Prompt C-14 renders the report. The AI behaviour rules in SKILL.md apply in both modes. Because everything lives in one folder, there is one copy of each prompt and nothing to keep in sync.
 
 The prompt files are not standalone skills. Each one depends on session context and drafts produced by the stages before it, and the manager calls them by file name. Step 1, Step 3 and Compilation and QA are split into sub-files (a, b, c), and the 01a and 04b files are split once more (`manager-01a-section2-3.md`, `manager-04b-render-word-template.md`), only because the platform limits each file to 20,000 characters. They remain split here so the same files can be uploaded unchanged; each file says which prompts it holds and which file comes next.
 
@@ -82,7 +83,7 @@ Each workflow verifies that its template is accessible, and is the Word file, be
 | Deliverable | Word template | Verified at | Render instructions |
 |---|---|---|---|
 | Sector Reform Design Report (Main Report Parts 1 and 2 and the Annex, delivered as one file) | OLePFM Sector Reform Design Report Template | Setup 1 in `manager-setup.md` | Prompt C-14 in `manager-04b-render-word-template.md` |
-| Working Tables for a workshop | The same Report Template, annex section only, or a dedicated Working Tables template if the knowledge base holds one | Step 1 of `manager-workshop.md`, which runs Setup 1 | Step 5 in `manager-workshop.md` |
+| Sector Background Information paper for a workshop (Chapters 1 and 2, Annex Tables 1.1 and 1.2, Working Tables 2.1 to 3.5) | OLePFM Sector Background Information Template | Step 1 of `manager-workshop.md`, which runs Setup 1 and adds this template to the check | Step 5 in `manager-workshop.md` |
 | Joint Action Plan | OLePFM Joint Action Plan Template | The Setup section of `olepfm-joint-action-plan/SKILL.md` | Output section and Task 8 in `olepfm-joint-action-plan/SKILL.md` |
 
 ## Sector variants
@@ -132,6 +133,7 @@ The files are also used on a platform that keeps every skill file in **one flat 
 | `manager-setup.md`, `manager-workshop.md`, `manager-platform.md`, `manager-reference-check.md` | `olepfm-session-manager/references/<same name>` |
 | `manager-00-source-prep.md` to `manager-04c-cross-document-qa.md`, including `manager-01a-section2-3.md`, `manager-01a-variant-economic-resilience.md` and `manager-04b-render-word-template.md` | `olepfm-session-manager/references/<same name>` |
 | OLePFM Sector Reform Design Report Template (knowledge base root) | `olepfm-session-manager/assets/manager-report-template.md` |
+| OLePFM Sector Background Information Template (knowledge base root) | `olepfm-session-manager/assets/manager-sector-background-template.md` |
 | `joint-action-plan.md` | `olepfm-joint-action-plan/SKILL.md` (divided from the client's "Skill: OLePFM Joint Action Plan Compiler v5" file, tasks renumbered) |
 | `joint-action-plan-reform-frameworks.md`, `joint-action-plan-task-checklists.md` | `olepfm-joint-action-plan/references/<same name>` |
 | OLePFM Joint Action Plan Annotated Skeleton Template | `olepfm-joint-action-plan/assets/joint-action-plan-template.md` |

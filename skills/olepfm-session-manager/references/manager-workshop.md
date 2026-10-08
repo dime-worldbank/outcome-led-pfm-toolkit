@@ -1,13 +1,13 @@
 ---
-title: OLePFM Workshop Table Preparation
-description: Produces the Working Tables document a reform design workshop starts from. Establishes context and sources, then pre-populates the framing tables through 2.1 — Outcomes/Results/Challenges (1.1), Organizational Functions (1.2), Main Financing Channels (1.3), Roles of Public Finance (2.1) — using the standard generation prompts, and lays out 2.2 through 3.5 as blank exercise tables with facilitation notes for the workshop to complete, then renders the whole set into the OLePFM Sector Reform Design Report Word template so the handout carries the template's cover, landscape annex tables and footer. Use when preparing tables for an upcoming workshop; it reuses the Step 1 and Step 2 generation prompts and changes nothing in them. Trigger by saying "start OLePFM workshop preparation".
+title: OLePFM Workshop Preparation
+description: Produces the Sector Background Information paper a reform design workshop starts from. Chapters 1 and 2 of the Sector Reform Design Report (outcome, public sector results, challenges, and the policy, institutional, public finance and feasibility context, with the financial flows table and two diagrams), Annex Tables 1.1 and 1.2 and Table 2.1 populated from desk research, and Tables 2.2 to 3.5 left blank as workshop exercises with facilitation notes, rendered into the OLePFM Sector Background Information Word template. Establishes context and sources, then reuses the Step 1 and Step 2 generation prompts unchanged. Use when preparing for an upcoming workshop; trigger by saying "start OLePFM workshop preparation" or asking for workshop tables.
 ---
 
-# OLePFM Workshop Table Preparation
+# OLePFM Workshop Preparation
 
-Use this to produce the **Working Tables** document a reform design workshop starts from. The AI pre-populates the framing tables **through 2.1** from desk research; **2.2 onward are left blank** — those are the workshop's own exercises. It reuses the generation prompts in the Step 1 and Step 2 prompt files (`01a`, `01b`, `02`) and changes nothing in them. The handout is delivered as a Word document rendered into the Report template's annex section (step 5), the same way Prompt C-14 renders the full report. `manager.md` is the session manager's SKILL.md; the prompt files are the `manager-00` to `manager-04c` files beside it.
+Use this to produce the **Sector Background Information** paper a reform design workshop starts from: Chapters 1 and 2 of the report drafted from desk research, Annex Tables 1.1 and 1.2 and Table 2.1 populated, and Tables 2.2 to 3.5 left blank as the workshop's own exercises. It reuses the generation prompts in the Step 1 and Step 2 prompt files (`manager-01a-chapters1-2.md`, `manager-01a-section2-3.md`, `manager-01b-annex1.md`, `manager-02-chapter3-annex2.md`) and changes nothing in them. The paper is delivered as a Word document rendered into the OLePFM Sector Background Information Template (step 5), whose Markdown twin `manager-sector-background-template.md` is the structural authority: its headings, bracketed guidance and tables say what goes where. `manager.md` is the session manager's SKILL.md; the AI behaviour rules there (one prompt at a time, pause at every ✏️ point, never invent values, reference check after every cited draft) apply throughout.
 
-The workshop reviews 1.1–2.1 and fills in 2.2 onward; the completed tables then inform the report drafted with the standard workflow (`manager.md`).
+The workshop reviews the paper, validates Table 2.1 and fills in 2.2 onward; the completed tables then inform the full report drafted with the standard workflow (`manager.md`).
 
 ## Opening prompt
 
@@ -15,65 +15,81 @@ To start, say **start OLePFM workshop preparation** — no need to name the coun
 
 ---
 
-I want to prepare the OLePFM Working Tables for an upcoming reform design workshop. Guide me through it: first ask me for the country and sector, then pre-populate the framing tables through 2.1 and leave 2.2 onward as blank exercises for the workshop.
+I want to prepare the OLePFM Sector Background Information paper and Working Tables for an upcoming reform design workshop. Guide me through it: first ask me for the country and sector, then draft Chapters 1 and 2, populate Annex Tables 1.1, 1.2 and 2.1, and leave Tables 2.2 onward as blank exercises for the workshop.
 
 ---
 
 ## Steps
 
-1. **Set up.** Run Setup 1 in `manager-setup.md` first and stop if it fails: it confirms that the Report Template Word file, which step 5 clones, and the Synthesis Handbook are accessible. Then establish country, sector and development outcome as in Setup 2 of the same file (including the off-list sourcing order), then run source preparation (`manager-00-source-prep.md`, Prompts S-1 to S-4). On the institutional platform, also apply the index check S-5 from `manager-platform.md` inside each sourcing prompt and follow its citation rules. Cite sources as hyperlinked parentheticals.
+1. **Set up and verify the template.** Run Setup 1 in `manager-setup.md`, then paste this extra check before anything else is drafted:
 
-2. **Populate 1.1–2.1.** Generate each table with the existing prompt, append its reference check table (`manager-reference-check.md`) and resolve every not-readable, not-verified or uncited row, then lay it out in the Working Tables format with a short **facilitation note** for the workshop:
+   ---
 
-   | Table | Columns | Generate with | Facilitation note |
-   |---|---|---|---|
-   | **1.1 Outcomes, Public Sector Results and Challenges** | stacked blocks — Development Outcome · Public Sector Results · Selected Public Sector Challenges | Prompts 1-02 (Section 2.1) + 1-03 (Section 2.2) | *Pre-populated by AI. Review; agree preferably three and no more than five challenges — a challenge must not mention money.* |
-   | **1.2 Organizational Functions in Policy, Delivery and PFM** | Organization · Level of Government · Policy & Delivery Functions · PFM Functions | Prompt 1-13 (with 1-05) | *Pre-populated by AI. Validate; add any missing organizations.* |
-   | **1.3 Main Financing Channels** | Financing Channel · Description & Purpose · Organizations (flow of funds) · Relative Value · Key Problems | Prompt 1-14 (from the Section 2.3.2 flows table, Prompt 1-08) | *Pre-populated by AI. Review the channels, values and problems.* |
-   | **2.1 Roles of Public Finance** | Role · Potential Role · Actual Role | Prompt 2-02 (the four roles) | *Pre-populated by AI. Read before identifying challenges; validate the potential and actual roles.* |
+   Please also confirm you can access the **OLePFM Sector Background Information Template**, the Word file stored in the root folder of the app-wide knowledge base alongside the Report Template. Search that knowledge base with `vector_search` on the title keywords "Sector Background Information" and "Background Information Template", as the stored file name may differ; if a search returns nothing, list the root files and match on those keywords. State whether you can access it, its title and the file name it is stored under, and confirm it is the Word (.docx) file and not a text copy: the paper in step 5 is produced by cloning it. If it is still missing after the searches and the root listing, list the file names you can see at the root, stop and alert the user before proceeding.
 
-   Pause here for the user to review the populated 1.1–2.1 and their reference check tables before the blank scaffold is added.
+   ---
 
-3. **Scaffold 2.2 onward (blank).** Add the remaining sections as **empty tables — column headers and a workshop-exercise note only, no AI content:**
+   > **Do not proceed to Setup 2 until the AI confirms the template is accessible and is the Word file.** In Claude Code, ask the user for the `.docx` instead.
 
-   | Table | Columns | Workshop exercise note |
+   Then establish country, sector and development outcome as in Setup 2 of the same file (including the off-list sourcing order), then run the **full Sources stage exactly as `manager.md` runs it for the report**: Prompts S-1 to S-4 from `manager-00-source-prep.md`, each with its ranking, link check and readability check, and on the institutional platform the rules of `manager-platform.md` in full, which are the four-tool discovery before any filter, the two-pass link verification, the index check S-5 inside each sourcing prompt with its upload requests, the final pass and the must-have sources. Then apply the Sources completion gate in `manager.md`, with the platform's additions, declare **SOURCES COMPLETE** and wait for the user to confirm the sources before any drafting. The paper cites nothing outside the running source table; cite sources as hyperlinked parentheticals.
+
+2. **Draft Chapters 1 and 2.** Run the Step 1 prompts in order, one at a time, pausing at every ✏️ point and appending the reference check table (`manager-reference-check.md`) to every cited draft; resolve every not-readable, not-verified or uncited row before moving on. Each prompt's output fills one part of the template:
+
+   | Template section | Prompt | File |
    |---|---|---|
-   | **2.2 Public Sector Challenges and Bottlenecks** | Public Sector Challenges · Bottlenecks which Contribute to Public Sector Challenges · Type of Bottleneck · Impact on Service Delivery (H/M/L) · Feasibility of Reform (H/M/L) | *For each challenge, identify the bottlenecks that cause it (five-why).* |
-   | **2.3 Priority PFM Bottlenecks** | Bottleneck · Impact on Delivery (contribution to public sector challenges) · Feasibility of Change (rating + description) · Relevant Bottlenecks (from Table 2.2) | *Consolidate and prioritize the bottlenecks.* |
-   | **3.1 Causal Analysis of Bottlenecks and Proposed Reforms** | Sub-Bottlenecks (problems) · Underlying Causes · Stakeholders · Reform Result (Resolved Problem) · Reforms Required (which address causes) | *For each priority bottleneck, analyse causes and propose reforms.* |
-   | **3.2 Key Stakeholders in Reform** | Type · Members · Role | *Map authorizers, team leaders, results team, coalition.* |
-   | **3.3 Stakeholder Management Strategy** | Stakeholder · Change Objective(s) · Commitment (H/M/L) · Power to Block (H/M/L) · Source of Interest or Resistance · Motivation Strategy | *Plan how to move each key stakeholder.* |
-   | **3.4 Technical Assistance, Digital Systems and Capacity Support** | Name · Description of Changes Required to Address Bottlenecks · Lead Organization · Relevant Change Objectives · Timeframe | *List the systems, capacity and TA each reform needs.* |
-   | **3.5 Key Steps to Achieve Results (Action Plan)** | Reform Result · Key Steps to Achieve Results · Timing · Responsible | *Three key steps per reform result, sequenced with timing.* |
+   | Chapter 1. Introduction | 1-01 | `manager-01a-chapters1-2.md` |
+   | 2.1 Outcomes and Public Sector Results | 1-02 | same |
+   | 2.2 Key Public Sector Challenges | 1-03 | same |
+   | 2.3.1 Policy Framework | 1-04 | `manager-01a-section2-3.md` |
+   | 2.3.1 Institutional Architecture | 1-05 | same |
+   | Figure 1. Institutional Mapping | 1-06 | same |
+   | 2.3.2 Fiscal Policy Context | 1-07 | same |
+   | 2.3.2 Main Financial Flows and the Financial Flows Table | 1-08 | same |
+   | Figure 2. Mapping Financial Flows | 1-09 | same |
+   | 2.3.2 Public Financial Management | 1-10 | same |
+   | 2.3.3 Feasibility of Policy and Institutional Capability | 1-11 | same |
 
-4. **Assemble.** Assemble one Working Tables document — **Step 1** (1.1, 1.2, 1.3), **Step 2** (2.1 populated; 2.2, 2.3 blank), **Step 3** (3.1–3.5 blank) — following the OLePFM Working Tables layout, and show it to the user for a last content check before rendering.
+   Keep each section to the length the template's bracketed guidance gives: the paper is a background note, not the full report. Write the roadmap paragraph of Chapter 1 as the template says, Chapter 2 covered here and Chapters 3 to 5 to follow the workshop. Pause after Prompt 1-11 for the user to review the two chapters together.
 
-5. **Render into the Word template and hand off.** The file the workshop fills in and returns is a Word document on the official OLePFM Sector Reform Design Report template, whose landscape annex section already draws Tables 1.1 to 3.5 in the template's `Grid Table` styles. Render it the way Prompt C-14 (`manager-04b-render-word-template.md`) renders the full report: clone the template and fill it in place, never convert Markdown to Word.
+   > **Economic resilience or another cross-cutting fiscal outcome:** replace Prompts 1-04 to 1-10 with ER-1-04 to ER-1-10 from `manager-01a-variant-economic-resilience.md`. The fiscal-cycle narrative (ER-1-08) takes the place of the financial flows table and the fiscal-cycle diagram (ER-1-09) is Figure 2; say so under the heading.
 
-   - **Template.** Use the Report Template Word file confirmed in Setup 1 (step 1); if it is no longer found, match on the title keywords "Sector Reform Design Report Template"; in Claude Code, ask the user for the `.docx`. If the knowledge base holds a dedicated OLePFM Working Tables Word template, use that instead and fill its tables the same way.
-   - **Cover.** Replace the line "Report Template" with "[Sector] Sector — Working Tables" and add "[Country]" and the workshop date; keep the branding images. The word "Template" must not appear on the cover.
-   - **Strip the report body.** Delete the Acronyms table, Chapters 1 to 5 (the portrait main-report section) and every paragraph in the "Instructions" style. Keep the cover, the table of contents field and the landscape annex section with its Step 1, Step 2 and Step 3 headings.
-   - **Fill 1.1 to 2.1.** Write the confirmed content into the template's existing Tables 1.1, 1.2, 1.3 and 2.1, preserving the `Grid Table` styles, and trim fully empty skeleton rows in those four tables only. The reference check tables stay out of the handout unless the user asks for them.
-   - **Scaffold 2.2 to 3.5.** Leave the header row and the template's empty rows in place for the workshop to write in; add no AI content. Under every table heading, 1.1 to 3.5, insert the facilitation or exercise note from steps 2 and 3 as one italic paragraph in the template's body style.
-   - **Economic-resilience variant.** Where Table 1.3 is replaced by the fiscal-cycle narrative (ER-1-08), put the narrative under the Table 1.3 heading in the body style, delete the empty table and say so in the note.
-   - **Footer.** Set the footer to "[Country] [Sector] OLePFM Working Tables".
-   - **Artefact scan.** Confirm zero of: "Template" on the cover, "XXXX" placeholders, "Instructions"-style paragraphs, "[bracketed]" guidance, orphan "Figure:" or "Source:" lines, and any pre-filled cell in Tables 2.2 to 3.5. Report the count, which must be 0, then present the `.docx` for download.
+3. **Populate the annex tables.** Generate each with its existing prompt, append its reference check table and resolve every flagged row, then add a short **facilitation note** in italics under the table title:
+
+   | Table | Prompt | Facilitation note |
+   |---|---|---|
+   | **Annex Table 1.1** Outcomes, Results and Challenges | 1-12 (`manager-01b-annex1.md`) | *Pre-populated by AI. Review; agree preferably three and no more than five challenges — a challenge must not mention money.* |
+   | **Annex Table 1.2** Organizational Functions | 1-13 (same file) | *Pre-populated by AI. Validate; add any missing organizations.* |
+   | **Annex Table 2.1** Roles of Public Finance | 2-02 (`manager-02-chapter3-annex2.md`) | *Pre-populated by AI. Read before identifying challenges; validate the potential and actual roles.* |
+
+   Table 1.3 is not produced separately: the financial flows table in Section 2.3.2 (Prompt 1-08) carries the same channels, values and problems. Tables 2.2 to 3.5 stay exactly as the template draws them, header rows, preset row labels and exercise notes only, with no AI content. Pause here for the user to review the three populated tables.
+
+4. **Assemble and check.** Assemble the paper in template order: title and "[Country]: [Sector] Sector" line, Chapter 1, Chapter 2 with its figures and flows table, Annex Tables 1.1 and 1.2, then the Working Tables 2.1 to 3.5. Leave the reference check tables out of the paper unless the user asks for a reviewers' annex. Show it for a last content check before rendering.
+
+5. **Render into the Word template and hand off.** The deliverable is a Word file produced from the template, nothing else. Render the way Prompt C-14 (`manager-04b-render-word-template.md`) renders the full report: open the OLePFM Sector Background Information Template confirmed in step 1 with the platform's document tools (in Claude Code, the environment's Word capability), clone it, and write the confirmed content into the clone in place, keeping its heading and body styles, table style, section layout and footers. Never generate a new document from scratch and never convert Markdown, HTML or text to Word. If the template cannot be opened or cloned, stop and tell the user; do not hand over a substitute. The paper is finished only when the `.docx` is presented for download.
+
+   - **Title block.** Keep the title "OLePFM Sector Background Information"; replace "[Country]: [Sector] Sector" with the country and sector and add the workshop date on the next line.
+   - **Chapters.** Replace every bracketed guidance paragraph with the confirmed text of its section, in the template's body style, keeping the headings. Keep the two standard paragraphs of Chapter 1 that carry no brackets.
+   - **Figures.** Insert the institutional diagram (Prompt 1-06) as a picture where the Figure 1 placeholder sits and the financial flows diagram (1-09) at the Figure 2 placeholder, each above its caption, and delete the placeholder paragraphs. Export each draw.io diagram as a PNG wide enough to fill the text column.
+   - **Tables.** Fill the Financial Flows Table (one row per channel, adding or trimming rows to match), Annex Tables 1.1, 1.2 and 2.1 in the template's table style, trimming empty skeleton rows in those tables only. Leave Tables 2.2 to 3.5 untouched, including their exercise notes and preset row labels.
+   - **Footer.** Keep the template's footer as it is.
+   - **Artefact scan.** Confirm zero of: "[bracketed]" guidance anywhere, "[Country]" or "[Sector]" left unreplaced, "Insert Figure" placeholders, and any AI-written cell in Tables 2.2 to 3.5. Confirm the file still carries the template's heading styles, footer and the landscape section of the Working Tables, which shows it was cloned and not rebuilt. Report the count, which must be 0, then present the `.docx` for download.
 
    **✏️ Review the output — focus on these points**
 
-   **Word render** — the handout is what participants write in, so the template's tables must be intact and the blank tables really blank.
+   **Word render** — the paper is what participants read and write in, so the chapters must be complete and the blank tables really blank.
 
-   - [ ] Cover shows country, sector, "Working Tables" and the workshop date; the word "Template" is gone
-   - [ ] Only the annex section follows the cover and table of contents; no report chapters, acronyms table or grey guidance text
-   - [ ] Tables 1.1 to 2.1 carry the confirmed content with the `Grid Table` styling and landscape orientation intact
-   - [ ] Tables 2.2 to 3.5 are empty apart from header rows, each with its exercise note
-   - [ ] Footer reads "[Country] [Sector] OLePFM Working Tables"; the artefact scan reported 0
+   - [ ] The file is a `.docx` produced by cloning the template: its heading styles, footer and landscape tables section are present
+   - [ ] Title block shows the country, sector and workshop date; no bracketed guidance remains
+   - [ ] Chapters 1 and 2 follow the template headings, with both figures placed above their captions
+   - [ ] The Financial Flows Table and Annex Tables 1.1, 1.2 and 2.1 carry the confirmed content in the template's table style
+   - [ ] Tables 2.2 to 3.5 are empty apart from header rows, preset row labels and exercise notes
+   - [ ] The artefact scan reported 0
 
    Say "proceed" when satisfied, or provide corrections to re-render.
 
 ## Notes
 
-- **Populate only through 2.1.** 2.2 is the workshop's first live exercise, so the AI stops there; do not pre-fill 2.2 onward.
-- **Keep challenges free of money/PFM.** The challenges in 1.1 must be stated as delivery failures only — no mention of money, public finance or PFM.
-- **Draft to refine.** The populated tables are a starting point for the workshop to review and change, not a final answer.
-- **Cross-cutting fiscal outcome (economic resilience, fiscal or debt sustainability).** Use the variant prompts in `manager-01a-variant-economic-resilience.md` (ER-1-05, for Table 1.2) and `manager-01a-variant-economic-resilience-2.md` (ER-1-08). Table 1.3 (financing channels) does not apply; replace it with the fiscal-cycle narrative from ER-1-08 and note the substitution in the Working Tables.
+- **Populate only through Table 2.1.** Table 2.2 is the workshop's first live exercise, so the AI stops there; do not pre-fill 2.2 onward.
+- **Keep challenges free of money/PFM.** The challenges in Section 2.2 and Table 1.1 must be stated as delivery failures only — no mention of money, public finance or PFM.
+- **Draft to refine.** The paper and the populated tables are a starting point for the workshop to review and change, not a final answer.
+- **Length.** Follow the template's guidance on paragraph counts; cut rather than pad.

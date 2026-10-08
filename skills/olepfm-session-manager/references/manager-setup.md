@@ -13,7 +13,8 @@ These are held in the **app-wide knowledge base**, the platform's shared backend
 
 | Document | Where it is stored |
 |---|---|
-| OLePFM Sector Reform Design Report Template, the Word file that Prompt C-14 and the workshop handout clone | App-wide knowledge base — root folder |
+| OLePFM Sector Reform Design Report Template, the Word file that Prompt C-14 clones | App-wide knowledge base — root folder |
+| OLePFM Sector Background Information Template, the Word file the workshop paper is rendered into (checked by step 1 of `manager-workshop.md`, in workshop mode only) | App-wide knowledge base — root folder |
 | OLePFM Synthesis Handbook (Williamson et al., 2024) | App-wide knowledge base — root folder |
 | Sector Outcome Notes and prior diagnostic reports | App-wide knowledge base — searched by sector |
 

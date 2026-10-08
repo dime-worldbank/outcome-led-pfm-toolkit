@@ -8,6 +8,7 @@ Checks, for each skills/<name>/ folder:
   - SKILL.md is under 500 lines (warning only)
   - SKILL.md and every references/*.md file is under 20,000 characters (platform limit)
   - every references/*.md file starts with YAML frontmatter carrying `title` and `description` (platform requirement)
+  - the `description` of SKILL.md and every references/*.md file is at most 1,000 characters (platform limit)
   - every file in references/ and assets/ starts with the skill's prefix, a hyphen-aligned tail of the folder
     name (`manager-` for olepfm-session-manager), and all of them use the same one; the platform keeps every
     skill file in one flat folder, so the name is the only thing that says which skill a file belongs to
@@ -30,6 +31,7 @@ ALLOWED_DIRS = {"scripts", "references", "assets", "evals"}
 ALLOWED_FILES = {"SKILL.md", "README.md", "LICENSE", "LICENSE.md", "LICENSE.txt"}
 MAX_LINES = 500
 MAX_CHARS = 20000  # platform limit for SKILL.md and references/*.md; assets/ are exempt
+MAX_DESC_CHARS = 1000  # platform limit on the frontmatter `description` of those files
 FOLDER_PATH_RE = re.compile(r"(?<![\w/.-])(references|assets|scripts|skills)/")
 PREFIXED_DIRS = ("references", "assets")
 
@@ -94,12 +96,16 @@ def validate_skill(skill_dir: Path) -> tuple[list[str], list[str]]:
     for f in [skill_md] + sorted((skill_dir / "references").glob("*.md")):
         ftext = f.read_text(encoding="utf-8")
         n = len(ftext)
+        rfm = fm
         if f != skill_md:
             rfm = parse_frontmatter(ftext)
             if rfm is None:
                 errors.append(f"{f.relative_to(ROOT)}: must start with YAML frontmatter (--- delimiters) with `title` and `description`")
             elif not rfm.get("title") or not rfm.get("description"):
                 errors.append(f"{f.relative_to(ROOT)}: frontmatter needs both `title` and `description`")
+        dlen = len((rfm or {}).get("description", ""))
+        if dlen > MAX_DESC_CHARS:
+            errors.append(f"{f.relative_to(ROOT)}: description is {dlen} characters, over the {MAX_DESC_CHARS} platform limit; shorten it")
         if n > MAX_CHARS:
             errors.append(f"{f.relative_to(ROOT)}: {n} characters, over the {MAX_CHARS} platform limit; split the file")
         elif n > MAX_CHARS - 1000:

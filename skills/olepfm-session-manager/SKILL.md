@@ -51,7 +51,7 @@ You are assisting with the production of an OLePFM Sector Reform Design Report. 
 
 6. **Do not invent or skip.** If a prompt asks you to fill in a placeholder such as `[number]` or `[paste bottleneck title]`, pause and ask the user for the value rather than inventing one.
 
-7. **Reference check table after every cited draft.** Every time a prompt's output cites a source (a section, annex table, chart or redraft), append a table of its cited claims (source, document URL, exact supporting text) following `manager-reference-check.md`, and add its review item to that prompt's ✏️ checklist. At the compilation prompts (1-15, 2-10 and 3-14) merge them into one table per chapter. Retrieve each source's text to test that the platform can reach it, quote verbatim from what was returned, or mark the row not reachable or not verified; never invent a passage. Every charted number gets a row; Data360 values with claim tags count as verified. The tables are review aids and stay out of the compiled report unless the user asks for them.
+7. **Reference check table after every cited draft.** Every time a prompt's output cites a source (a section, annex table, chart or redraft), append a table of its cited claims (source, document URL, exact supporting text) following `manager-reference-check.md`, and add its review item to that prompt's ✏️ checklist. At the compilation prompts (1-15, 2-10 and 3-14) merge them into one table per chapter. Retrieve each source's text to test that the platform can read it, quote verbatim from what was returned, or mark the row not readable or not verified; never invent a passage. Every charted number gets a row; Data360 values with claim tags count as verified. The tables are review aids and stay out of the compiled report unless the user asks for them.
 
 8. **Chart interaction.** Every data chart follows the chart interaction workflow written into Prompt 1-07 (`manager-01a-section2-3.md`) and ER-1-07: show the interactive chart and its data table together (table beneath, never one without the other); render with a fenced ` ```chart ` block in Chart.js schema (line, bar, pie, scatter; never Recharts keys or a ` ```recharts ` fence); take every value from the Data360 API or another cited source, never from memory, with its claim tag in the table; cite indicator name, code, database and the Data360 explorer link under the table; and present every chart as a draft that is final only when the user locks it in, exactly as at a ✏️ point.
 
@@ -71,7 +71,7 @@ The prompt files (`manager-00-source-prep.md` through `manager-04c-cross-documen
 
 Run Prompts S-1 through S-4 from `manager-00-source-prep.md` in sequence.
 
-> **Institutional platform (knowledge base present):** after Prompt S-4, run Prompt S-5 from `manager-platform.md` to check that every listed source is indexed in the knowledge base, and ask the user to upload any that are not. That file also adds items to the Sources completion gate below and to the consistency audit (Prompt C-01). Skip it when the user supplies the documents directly, as in Claude Code.
+> **Institutional platform (knowledge base present):** inside each of Prompts S-1 to S-4, apply the index check S-5 from `manager-platform.md` to every source as its link is verified, so each table carries a Status column, and ask the user to upload any source that is not indexed. That file also adds items to the Sources completion gate below and to the consistency audit (Prompt C-01). Skip it when the user supplies the documents directly, as in Claude Code.
 
 ### Sources Completion Gate
 
@@ -84,7 +84,7 @@ Before advancing to Step 1, confirm all of the following:
 - [ ] Political economy and reform history sources are identified (relevant to Step 3)
 - [ ] Capacity and digital systems sources are identified (relevant to Step 3)
 - [ ] Every source sits in a single running table, numbered sequentially and unbroken across S-1 to S-4
-- [ ] Every row has a verified Download link that opens the file; sources without one are not listed
+- [ ] Every row has a verified Download link that opens the file or a non-empty page; sources without one are not listed
 - [ ] Any significant source gaps are flagged before proceeding
 
 > **SOURCES COMPLETE — confirm sources before proceeding to Step 1.**
@@ -134,7 +134,7 @@ Before advancing to Step 2, confirm all of the following:
 - [ ] Table 1.3 lists the same financing channels, values and problems as the Section 2.3.2 flows table
 
 **Reference check**
-- [ ] Reference check tables for Chapters 1 and 2 reviewed; every row not reachable, not verified, partially supported or uncited has been resolved
+- [ ] Reference check tables for Chapters 1 and 2 reviewed; every row not readable, not verified, partially supported or uncited has been resolved
 
 ### Inter-Step Record — Step 1 → Step 2
 
@@ -186,7 +186,7 @@ Before advancing to Step 3, confirm all of the following:
 - [ ] Annex Table 2.3 consistent with Section 3.2.2
 
 **Reference check**
-- [ ] Reference check table for Chapter 3 reviewed; every row not reachable, not verified, partially supported or uncited has been resolved
+- [ ] Reference check table for Chapter 3 reviewed; every row not readable, not verified, partially supported or uncited has been resolved
 
 ### Inter-Step Record — Step 2 → Step 3
 
@@ -250,7 +250,7 @@ Before advancing to Compilation and QA, confirm all of the following:
 - [ ] Concluding paragraph connects reform objectives back to the development outcome
 
 **Reference check**
-- [ ] Reference check tables for Chapters 4 and 5 reviewed; every row not reachable, not verified, partially supported or uncited has been resolved
+- [ ] Reference check tables for Chapters 4 and 5 reviewed; every row not readable, not verified, partially supported or uncited has been resolved
 
 ### Inter-Step Record — Step 3 → Compilation and QA
 

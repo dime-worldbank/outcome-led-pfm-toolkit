@@ -9,15 +9,15 @@ Complete Setup 1 and Setup 2 below before starting the Sources stage, then retur
 
 ### Pre-loaded Reference Documents
 
-These are held in the **root folder of the knowledge base** (alongside the skills folder, not inside it) and available to the AI by default. **Do not upload them again.** Verify access with the setup verification prompt below before starting.
+These are held in the **app-wide knowledge base**, the platform's shared backend library, which is not the set of files uploaded to a project or session. The two reference documents sit in its **root folder** (alongside the skills folder, not inside it) and are available to the AI by default. **Do not upload them again.** Verify access with the setup verification prompt below before starting.
 
 | Document | Where it is stored |
 |---|---|
-| OLePFM Sector Reform Design Report Template, the Word file that Prompt C-14 and the workshop handout clone | Knowledge base — root folder |
-| OLePFM Synthesis Handbook (Williamson et al., 2024) | Knowledge base — root folder |
-| Sector Outcome Notes and prior diagnostic reports | Backend library — searched by sector |
+| OLePFM Sector Reform Design Report Template, the Word file that Prompt C-14 and the workshop handout clone | App-wide knowledge base — root folder |
+| OLePFM Synthesis Handbook (Williamson et al., 2024) | App-wide knowledge base — root folder |
+| Sector Outcome Notes and prior diagnostic reports | App-wide knowledge base — searched by sector |
 
-> **If the AI cannot find them:** the stored file name may differ from the title — have it list the root files and match on keywords, not an exact title.
+> **If the AI cannot find them:** it has usually searched the wrong place (the project's uploaded files, or the web) or on an exact title. Have it search the app-wide knowledge base on keywords, then list the root files and match on keywords, not an exact title.
 
 > **In this repository:** the Report Template is the file `manager-report-template.md` in this skill. Read it whenever a prompt says "using the OLePFM Sector Reform Design Report Template". The Synthesis Handbook and sector notes are not in the repository; ask the user to provide them.
 
@@ -27,7 +27,7 @@ Upload these at the start of each session:
 
 | Document | Required |
 |---|---|
-| A sector note you hold | Only if the chosen sector is not covered on the backend |
+| A sector note you hold | Only if the chosen sector is not covered in the app-wide knowledge base |
 | Working Tables (for a workshop) | Prepared beforehand with `manager-workshop.md`; not a report input |
 
 ### Setup 1: Verify the Pre-loaded Documents
@@ -36,12 +36,12 @@ Paste the following to confirm the pre-loaded documents are accessible:
 
 ---
 
-Please confirm you can access these pre-loaded documents, both stored in the **root folder of the knowledge base** (alongside the skills folder, not inside it):
+Please confirm you can access these pre-loaded documents. Both are stored in the **app-wide knowledge base**, in its **root folder** (alongside the skills folder, not inside it). Search that knowledge base first, before the project's uploaded files and before the web:
 
 1. OLePFM Sector Reform Design Report Template
 2. OLePFM Synthesis Handbook (Williamson et al., 2024)
 
-If either does not appear at first, search the root again on title keywords alone — "Sector Reform Design Report Template" and "Synthesis Handbook" — as the stored file name may differ. For each, state whether you can access it, its title, and the file name it is stored under. For the Report Template, confirm it is the Word (.docx) file and not a text copy: the report (Prompt C-14) and the workshop handout are produced by cloning it. If either is still missing, list the file names you can see at the root, then stop and alert the user before proceeding.
+Search on title keywords, not the exact title, as the stored file name may differ: "Sector Reform Design Report Template", "Report Template" and "OLePFM" for the first; "Synthesis Handbook", "Synthesis" and "Williamson" for the second. If a search returns nothing, list the file names in the root folder of the app-wide knowledge base and match on the same keywords. For each, state whether you can access it, its title, and the file name it is stored under. For the Report Template, confirm it is the Word (.docx) file and not a text copy: the report (Prompt C-14) and the workshop handout are produced by cloning it. Do not report a document as missing before the keyword searches and the root listing have both been tried; only then list the file names you can see at the root, stop and alert the user before proceeding.
 
 ---
 
@@ -55,7 +55,7 @@ Once setup is verified, paste the following as your **next message**:
 
 ---
 
-I am ready to establish the session context for an Outcome-Led PFM Reform Diagnosis and Design Report. Run the two-step setup: ask my **country** and **sector** — a standard sector from the Sector Outcome Reference below, or another — then establish and confirm its **development outcome** and **public sector result**. The Report Template, Synthesis Handbook, and the sector notes and prior reports are pre-loaded on the backend.
+I am ready to establish the session context for an Outcome-Led PFM Reform Diagnosis and Design Report. Run the two-step setup: ask my **country** and **sector** — a standard sector from the Sector Outcome Reference below, or another — then establish and confirm its **development outcome** and **public sector result**. The Report Template, Synthesis Handbook, and the sector notes and prior reports are pre-loaded in the app-wide knowledge base.
 
 Do not proceed to the Sources stage until I have confirmed the country, sector and outcome.
 
@@ -66,11 +66,11 @@ Do not proceed to the Sources stage until I have confirmed the country, sector a
 1. **Ask for country and sector first — nothing else.** Present the standard sectors from the Sector Outcome Reference below as the options, and note the user may instead name a **sector not listed there**. **Revenue Mobilization** is a cross-cutting enabler, not a standalone sector — offer it only alongside one of the other five, never on its own. Wait for the user's answer.
 
 2. **Establish the outcome for that sector.** Draft the **development outcome** and **public sector result** from the best available guide, searching in this order:
-   1. a **Sector Outcome Note or analytical report** for the sector on the backend — search the knowledge base for this first;
-   2. a **previous OLePFM diagnostic report for the same sector** in another country, on the backend;
+   1. a **Sector Outcome Note or analytical report** for the sector in the app-wide knowledge base — search it for this first, on keywords;
+   2. a **previous OLePFM diagnostic report for the same sector** in another country, in the app-wide knowledge base;
    3. the **Synthesis Handbook**, if the sector is one it covers — and, for a standard sector, its entry in the Sector Outcome Reference below.
 
-   If none exists — the sector is not in the Synthesis and nothing matches on the backend — ask the user to **upload a sector note if they have one**; if not, **proceed without a guide, following the OLePFM framework as closely as possible**. Then ask the user to confirm the framing, or narrow it to what matters most for their country.
+   If none exists — the sector is not in the Synthesis and nothing matches in the app-wide knowledge base — ask the user to **upload a sector note if they have one**; if not, **proceed without a guide, following the OLePFM framework as closely as possible**. Then ask the user to confirm the framing, or narrow it to what matters most for their country.
 
 3. **Lock the context.** Once the user confirms, restate it in this form (plain Markdown, no blockquote), then confirm readiness for the Sources stage:
 

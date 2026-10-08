@@ -21,9 +21,9 @@ I want to prepare the OLePFM Working Tables for an upcoming reform design worksh
 
 ## Steps
 
-1. **Set up.** Run Setup 1 in `manager-setup.md` first and stop if it fails: it confirms that the Report Template Word file, which step 5 clones, and the Synthesis Handbook are accessible. Then establish country, sector and development outcome as in Setup 2 of the same file (including the off-list sourcing order), then run source preparation (`manager-00-source-prep.md`, Prompts S-1 to S-4). On the institutional platform, also run Prompt S-5 from `manager-platform.md` and apply its citation rules. Cite sources as hyperlinked parentheticals.
+1. **Set up.** Run Setup 1 in `manager-setup.md` first and stop if it fails: it confirms that the Report Template Word file, which step 5 clones, and the Synthesis Handbook are accessible. Then establish country, sector and development outcome as in Setup 2 of the same file (including the off-list sourcing order), then run source preparation (`manager-00-source-prep.md`, Prompts S-1 to S-4). On the institutional platform, also apply the index check S-5 from `manager-platform.md` inside each sourcing prompt and follow its citation rules. Cite sources as hyperlinked parentheticals.
 
-2. **Populate 1.1–2.1.** Generate each table with the existing prompt, append its reference check table (`manager-reference-check.md`) and resolve every not-reachable, not-verified or uncited row, then lay it out in the Working Tables format with a short **facilitation note** for the workshop:
+2. **Populate 1.1–2.1.** Generate each table with the existing prompt, append its reference check table (`manager-reference-check.md`) and resolve every not-readable, not-verified or uncited row, then lay it out in the Working Tables format with a short **facilitation note** for the workshop:
 
    | Table | Columns | Generate with | Facilitation note |
    |---|---|---|---|

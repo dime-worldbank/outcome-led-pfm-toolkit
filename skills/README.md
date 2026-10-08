@@ -19,8 +19,8 @@ olepfm-session-manager/
 └── references/
     ├── manager-setup.md                       session setup: document check, country/sector/outcome context, Sector Outcome Reference
     ├── manager-workshop.md                    workshop mode: overlay that reuses the files below, stops after Table 2.1, renders into the Word template
-    ├── manager-platform.md                    institutional platform only: Prompt S-5 checks sources against the knowledge base, upload request, citation rules
-    ├── manager-reference-check.md             reference check table after every cited draft (claim, source, document URL, text reachable, exact text), merged per chapter at Prompts 1-15, 2-10, 3-14
+    ├── manager-platform.md                    institutional platform only: search tools, link source, index check S-5 inside each sourcing prompt (Status column, upload request), citation rules
+    ├── manager-reference-check.md             reference check table after every cited draft (claim, source, document URL, text readable, exact text), merged per chapter at Prompts 1-15, 2-10, 3-14
     ├── manager-00-source-prep.md              Sources: source preparation (Prompts S-1 to S-4)
     ├── manager-01a-chapters1-2.md             Step 1: Chapter 1 and Sections 2.1 to 2.2 (Prompts 1-01 to 1-03)
     ├── manager-01a-section2-3.md              Step 1: Section 2.3 (Prompts 1-04 to 1-11) and the Step 1 quality checks
@@ -50,7 +50,7 @@ Every prompt has a unique ID that says which stage it belongs to and where it si
 | Stage | Prompt IDs | File(s) |
 |---|---|---|
 | Sources | S-1 to S-4 | `manager-00-source-prep.md` |
-| Sources, institutional platform only | S-5 | `manager-platform.md` |
+| Sources, institutional platform only | S-5, inside each of S-1 to S-4 | `manager-platform.md` |
 | Step 1 | 1-01 to 1-15 | `manager-01a-chapters1-2.md`, `manager-01a-section2-3.md`, `manager-01b-annex1.md` |
 | Step 2 | 2-01 to 2-10 | `manager-02-chapter3-annex2.md` |
 | Step 3 | 3-01 to 3-14 | `manager-03a-reform-results.md`, `manager-03b-stakeholders-systems-steps.md`, `manager-03c-conclusion-compilation.md` |
@@ -95,7 +95,7 @@ The standard prompts are written for service-delivery sectors. Where a sector ne
 
 ## Platform-specific rules
 
-Rules that apply only on the institutional platform (where the knowledge base holds the pre-loaded documents and indexes what the user uploads) live in `manager-platform.md`, not in the prompt files or in SKILL.md. The manager dispatches to it with a one-line note, as it does for sector variants, so the prompt files stay platform-neutral and run unchanged in Claude Code. The file currently holds one addition: Prompt S-5, run after S-4, which checks that every source in the running table is indexed in the knowledge base or uploaded to the session, asks the user to upload the rest, and sets the citation rules that follow (cite only Indexed or Uploaded sources; cite the document read, not the one it cites; verify a new source before citing it). It also adds items to the Sources completion gate and to the consistency audit (Prompt C-01), and defines reachability on the platform: a source's text is reachable only when the internal knowledge base or `project_search` returns it, which is what the reference check tests. Put any future platform-only rule in the same file.
+Rules that apply only on the institutional platform (where the knowledge base holds the pre-loaded documents and indexes what the user uploads) live in `manager-platform.md`, not in the prompt files or in SKILL.md. The manager dispatches to it with a one-line note, as it does for sector variants, so the prompt files stay platform-neutral and run unchanged in Claude Code. The file names the platform's search tools, the two-pass link verification through web_search (the platform cannot open pages) and the Enterprise Document Repository agent as the link source for knowledge-base documents, requires the user's must-have sources to be uploaded before Step 1, and holds the index check S-5, applied inside each of S-1 to S-4 to every source as its link is verified, which checks that it is indexed in the knowledge base or uploaded to the session, lets the user choose what to upload, removes the rest, and sets the citation rules that follow (cite only Indexed, Uploaded or Web page sources; cite the document read, not the one it cites; verify a new source before citing it). It also adds items to the Sources completion gate and to the consistency audit (Prompt C-01), and defines readability on the platform: a source's text is readable only when the app-wide knowledge base or `project_search` returns it, which is what the reference check tests. Put any future platform-only rule in the same file.
 
 ## Crosswalk from the previous prompt codes
 
